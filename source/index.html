@@ -1,12 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  </body>
+  <title>Погнали!</title>
+</head>
+<body>
+  <header class="header">
+    <a class="logo"><img class="logo__image" src="logo.svg" alt="Погнали"></a>
+    <a class="menu" href="#" aria-label="меню"></a>
+  </header>
+  <main class="main">
+    <header class="main-header">
+      <h1 class="main-header__caption">В путешествие
+        с крутыми попутчиками!
+      </h1>
+      <ul class="main-header__list">
+        <li class="main-header__item"><a href="tel:+78005558628" aria-label="телефон: 8 800 555-86-28"></a></li>
+        <li class="main-header__item"><a href="email:mail@htmlacademy.ru" aria-label="email:mail@htmlacademy.ru"></a></li>
+        <li class="main-header__item"><a href="login.html">авторизация</a></li>
+      </ul>
+      <blockquote class="main-header__blockquote">
+        <p class="main-header__blockquote-text">«Лучшее приложение,
+          что я видел в жизни!»</p>
+        <cite class="main-header__blockquote-cite">Мурат Эльтазин главный редактор
+          газеты «гаджетлайф»</cite>
+      </blockquote>
+    </header>
+    <section class="action">
+      <h2 class="visually-hidden">Порядок действий</h2>
+      <ul class="action__list">
+        <li class="action__item">Выберите
+          направление</li>
+        <li class="action__item">Изучите идеи
+          путешественников</li>
+        <li class="action__item">Находите тех,
+          кто похож на вас</li>
+        <li class="action__item">Путешествуйте
+          вместе!</li>
+      </ul>
+    </section>
+    <section class="about">
+      <h2 class="about__caption">О сервисе</h2>
+      <p class="about__text">Любое путешествие веселее
+        с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+        чужих. </p>
+      <p class="about__text">А если найдете кого-то
+        близкого по духу — скорее
+        зовите в совместный трип!</p>
+    </section>
+    <section class="direction">
+      <h2 class="direction__caption">Направления</h2>
+      <p class="direction__text">Мы не продаем туры
+        и ничего не рекламируем.
+        Люди сами пишут о странах, куда хотели бы отправиться
+        и чем можно там заняться.
+      </p>
+      <ul class="direction__list">
+        <li class="direction__item">
+          <img src="tailand.jpg" alt="Таиланд">
+          <div>
+            <h3>Таиланд</h3>
+            <span>18321</span>
+            <p>Таиланд</p>
+          </div>
+        </li>
+        <li class="direction__item">
+          <img src="france.jpg" alt="Франция">
+          <div>
+            <h3>Франция</h3>
+            <span>12518</span>
+            <p>Трэ бьен, манифик!</p>
+          </div>
+        </li>
+        <li class="direction__item">
+          <img src="czech.jpg" alt="Чехия">
+          <div>
+            <h3>Чехия</h3>
+            <span>5326</span>
+            <p>Закоулки старой Европы</p>
+          </div>
+        </li>
+      </ul>
+      <a class="direction__link" href="form.htmls">Показать все</a>
+    </section>
+    <section class="companion">
+      <h2 class="companion__caption">Попутчики</h2>
+      <p class="companion__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
+        маршрут для хайкинга.
+      </p>
+      <p class="companion__text">Теперь можно легко найти единомышленников!</p>
+      <ul class="companion__list">
+        <li class="companion__item">
+          <img src="tana.jpg" alt="Таня Фирсова">
+          <div>
+            <p>99</p>
+            <p>level</p>
+          </div>
+          <div>
+            <h3>Таня Фирсова</h3>
+            <p>#ЗОЖ #ПП #Фитнес #пляж
+              #авокадо #смузи</p>
+          </div>
+        </li>
+        <li class="companion__item">
+          <img src="peta.jpg" alt="Петя Демин">
+          <div>
+            <p>80</p>
+            <p>level</p>
+          </div>
+          <div>
+            <h3>Петя Демин</h3>
+            <p>#бургер #бар #футбол
+              #концерт #крафт</p>
+          </div>
+        </li>
+      </ul>
+      <a class="companion__link" href="catalog.html">Показать всех</a>
+    </section>
+    <section class="rate">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <article class="rate-all">
+        <h2 class="rate-all__caption"><a href="#">Добавьте
+            свой
+            профиль</a></h2>
+        <ul class="rate-all__list">
+          <li class="rate-all__item">Базовое размещение
+            Бесплатно</li>
+          <li class="rate-all__item">Вывод на первых позициях
+            99 руб./мес</li>
+          <li class="rate-all__item">Кастомный цвет карточки
+            59 руб./мес</li>
+        </ul>
+        <a class="rate-all__link" href="#modal">Показать тарифы для бизнеса</a>
+      </article>
+      <article class="rate-business">
+        <h2 class="rate-business__caption">Бизнес-тарифы</h2>
+        <ul class="rate-business__list">
+          <li class="rate-business__item">Реклама у блоггера
+            300 000 руб./пост</li>
+          <li class="rate-business__item">Накрутка подписчиков
+            от 1 руб./шт.</li>
+          <li class="rate-business__item">Лайки от ботов
+            от 20 коп./лайк</li>
+          <li class="rate-business__item">Ваш продакт-плейсмент
+            Индивидуально</li>
+        </ul>
+        <a class="rate-business__link" href="#">Закрыть окно</a>
+      </article>
+    </section>
+    <!-- <section>
+      <h2>Заинтересовались?</h2>
+      <p>Зарегистрируйтесь,
+        это быстро и бесплатно!
+        Уже зарегистрированы? Тогда скорее <a href="login.html">авторизуйтесь</a>.</p>
+      <form action="#">
+        <input type="email">
+        <button>
+          <span>регистрация</span>
+        </button>
+      </form>
+      <p>Остались вопросы?
+          Мы с радостью на них ответим!</p>
+      <a href="tel:8 800 555-86-28">8 800 555-86-28</a>
+      <a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </section>
+    <footer>
+      <div>
+      <address>ул. Большая
+          Конюшенная, 19/8</address>
+      <a href="#">Проложить маршрут</a></div>
+      <img src="map.jpg" alt="ул. Большая
+      Конюшенная, 19/8">
+      </footer> -->
+  </main>
+  <footer class="footer">
+    <a class="logo"><img class="logo__image" src="logo-footer.svg" alt="погнали"></a> 
+    <ul class="footer__social-list social">
+      <li class="social__item"><a href="#" aria-label="погнали в facebook"></a></li>
+      <li class="social__item"><a href="#" aria-label="погнали в vkontact"></a></li>
+      <li class="social__item"><a href="#" aria-label="погнали в instagram"></a></li>
+    </ul>
+    <div class="developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"></a>
+    </div>
+  </footer>
+
+  <section class="modal">
+    <a class="logo" href="index.html"><img class="logo__image" src="logo.svg" alt="погнали"></a>
+    <button class="modal__close" type="submit">
+      <span>Закрыть</span>
+    </button>
+    <h2 class="modal__caption">О сервисе
+      Направления
+      Попутчики
+    </h2>
+    <a class="modal__link" href="login.html">авторизация</a>
+    <ul class="modal__info">
+      <li class="info__item"><a href="tel:+78005558628">8 800 555-86-28</a></li>
+      <li class="info__item"><a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+    </ul>
+    <ul class="social">
+      <li class="social__item"><a href="#" aria-label="погнали в facebook"></a></li>
+      <li class="social__item"><a href="#" aria-label="погнали в vkontact"></a></li>
+      <li class="social__item"><a href="#" aria-label="погнали в instagram"></a></li>
+    </ul>
+  </section>
+</body>
+
 </html>
