@@ -14,15 +14,16 @@
     <a class="logo"><img class="logo__image" src="logo.svg" alt="Погнали"></a>
     <a class="menu" href="#" aria-label="меню"></a>
     <section class="nav">
+      <h2 class="visually-hidden">навигация</h2>
       <a class="logo" href="index.html"><img class="logo__image" src="logo.svg" alt="погнали"></a>
       <button class="nav__close" type="submit">
         <span>Закрыть</span>
       </button>
       <ul class="nav__list">
-          <li class="nav__item">О сервисе</li>
-          <li class="nav__item">Направления</li>
-          <li class="nav__item">Попутчики</li>
-        </ul>
+        <li class="nav__item">О сервисе</li>
+        <li class="nav__item">Направления</li>
+        <li class="nav__item">Попутчики</li>
+      </ul>
       <a class="nav__link" href="login.html">авторизация</a>
       <ul class="nav__info info">
         <li class="info__item"><a href="tel:+78005558628">8 800 555-86-28</a></li>
@@ -176,30 +177,32 @@
         <a class="rate-business__link" href="#">Закрыть окно</a>
       </article>
     </section>
-    <!-- <section>
-      <h2>Заинтересовались?</h2>
-      <p>Зарегистрируйтесь,
+    <section class="registrate">
+      <h2 class="registrate__caption">Заинтересовались?</h2>
+      <p class="registrate__text">Зарегистрируйтесь,
         это быстро и бесплатно!
         Уже зарегистрированы? Тогда скорее <a href="login.html">авторизуйтесь</a>.</p>
-      <form action="#">
-        <input type="email">
-        <button>
-          <span>регистрация</span>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="registrate__form">
+        <label for="email" class="visually-hidden">email</label>
+        <input id="email" type="email" class="registrate__email">
+        <button class="registrate__button">
+          <span class="registrate__button-text">регистрация</span>
         </button>
       </form>
-      <p>Остались вопросы?
-          Мы с радостью на них ответим!</p>
-      <a href="tel:8 800 555-86-28">8 800 555-86-28</a>
-      <a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <p class="registrate__question">Остались вопросы?
+        Мы с радостью на них ответим!</p>
+      <a class="registrate__link-tel" href="tel:+78005558628">8 800 555-86-28</a>
+      <a class="registrate__link-email" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </section>
-    <footer>
-      <div>
-      <address>ул. Большая
+    <footer class="footer">
+      <div class="footer__box">
+        <address class="footer__adress">ул. Большая
           Конюшенная, 19/8</address>
-      <a href="#">Проложить маршрут</a></div>
-      <img src="map.jpg" alt="ул. Большая
+        <a class="footer__adress-map" href="#">Проложить маршрут</a>
+      </div>
+      <img class="footer__map" src="map.jpg" alt="ул. Большая
       Конюшенная, 19/8">
-      </footer> -->
+    </footer>
   </main>
   <footer class="footer">
     <a class="logo"><img class="logo__image" src="logo-footer.svg" alt="погнали"></a> 
