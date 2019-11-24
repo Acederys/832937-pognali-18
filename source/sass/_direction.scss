@@ -1,0 +1,69 @@
+.direction {
+  background-color: $bac-color-bissenes;
+
+  &__caption {
+    font-family: $font-bold;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    font-size: 24px;
+    letter-spacing: 0.024;
+    color: $color-caption;
+  }
+
+  &__text {
+    font-family: $font-lig;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.38;
+    font-size: 16px;
+    letter-spacing: 0.022;
+    color: $color-text-gray;
+  }
+
+  &__link {
+    background-color: $color-yellow;
+    font-family: $font-bold;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    font-size: 18px;
+    letter-spacing: 0.018;
+    color: $color-btn;
+    text-decoration: none;
+  }
+}
+
+.direction-about {
+  background-color: $color-white;
+
+  &__caption {
+    font-family: $font-bold;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    font-size: 21px;
+    letter-spacing: 0.021;
+    color: $color-text-blue;
+  }
+
+  &__like {
+    font-family: $font-med;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.88;
+    font-size: 16px;
+    letter-spacing: 0.024;
+    color: $color-text-contry;
+  }
+
+  &__text {
+    font-family: $font-med;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.13;
+    font-size: 16px;
+    letter-spacing: 0.018;
+    color: $color-text-contry;
+  }
+}

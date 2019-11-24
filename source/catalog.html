@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <link rel="stylesheet" href="css/style.css">
   <title>Погнали!</title>
 </head>
 
@@ -43,10 +43,10 @@
     <section class="filter">
       <h2 class="filter__caption">Фильтрация по странам</h2>
       <nav class="filter__continent continent">
-        <a class="content__item" href="#">Европа</a>
-        <a class="content__item" href="#">Азия</a>
-        <a class="content__item" href="#">Америка</a>
-        <a class="content__item" href="#">Острова</a>
+        <a class="continent__item" href="#">Европа</a>
+        <a class="continent__item" href="#">Азия</a>
+        <a class="continent__item" href="#">Америка</a>
+        <a class="continent__item" href="#">Острова</a>
       </nav>
       <ul class="filter__list">
         <li class="filter__item"><a href="#">А</a></li>
@@ -87,6 +87,7 @@
         <li class="country__item"><a href="#">Австрия</a></li>
         <li class="country__item"><a href="#">Азербайджанм</a></li>
       </ul>
+      <a class="filter__link">свернуть</a>
     </section>
     <section class="catalog">
       <ul class="catalog__list">
@@ -98,10 +99,10 @@
           <p class="catalog__about">#ЗОЖ #ПП #Фитнес #пляж
             #авокадо #смузи</p>
           <p class="catalog__want">хочет посетить:</p>
-          <ul class="country">
-            <li class="country__item">Шри-ланка</li>
-            <li class="country__item">Таиланд</li>
-            <li class="country__item">Сейшелы</li>
+          <ul class="contry-want">
+            <li class="contry-want__item">Шри-ланка</li>
+            <li class="contry-want__item">Таиланд</li>
+            <li class="contry-want__item">Сейшелы</li>
           </ul>
           <p class="transport">транспорт:</p>
           <p class="level">левел:</p>
@@ -116,9 +117,9 @@
           <p class="catalog__about">#бургер #бар #футбол
             #концерт #крафт</p>
           <p class="catalog__want">хочет посетить:</p>
-          <ul class="country">
-            <li class="country__item">Бельгия</li>
-            <li class="country__item">Чехия</li>
+          <ul class="contry-want">
+            <li class="contry-want__item">Бельгия</li>
+            <li class="contry-want__item">Чехия</li>
           </ul>
           <p class="transport">транспорт:</p>
           <p class="level">левел:</p>
@@ -133,10 +134,10 @@
           <p class="catalog__about">#рэп #тату #хайпбист
             #кроссовки #суприм</p>
           <p class="catalog__want">хочет посетить:</p>
-          <ul class="country">
-            <li class="country__item">США</li>
-            <li class="country__item">Австралия</li>
-            <li class="country__item">Доминикана</li>
+          <ul class="contry-want">
+            <li class="contry-want__item">США</li>
+            <li class="contry-want__item">Австралия</li>
+            <li class="contry-want__item">Доминикана</li>
           </ul>
           <p class="transport">транспорт:</p>
           <p class="level">левел:</p>
@@ -161,11 +162,11 @@
           <a class="catalog__link" href="#">Позвать!</a>
         </li>
       </ul>
-      <a href="#">Показать еще</a>
+      <a class="catalog__still" href="#">Показать еще</a>
     </section>
-    <div>
-      <a href="#" aria-label="назад"></a>
-      <a href="#" aria-label="вперед"></a>
+    <div class="arrow">
+      <a class="arrow__link" href="#" aria-label="назад"></a>
+      <a class="arrow__link" href="#" aria-label="вперед"></a>
     </div>
   </main>
   <footer class="footer">

@@ -1,0 +1,15 @@
+.footer {
+  background-color: $color-white;
+}
+
+.developer {
+  &__text {
+    font-family: $font-normal;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.38;
+    font-size: 16px;
+    letter-spacing: 0.022;
+    color: $color-text-gray;
+  }
+}

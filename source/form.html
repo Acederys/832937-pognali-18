@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <link rel="stylesheet" href="css/style.css">
   <title>Погнали!</title>
 </head>
 
@@ -40,19 +40,19 @@
     <header class="header-form">
       <h1 class="header-form__caption">Направления</h1>
     </header>
-    <section class="about">
-      <div class="about__box ">
-        <p class="about__number">80</p>
-        <p class="about__level">level</p>
+    <section class="about-form">
+      <div class="about-form__box ">
+        <p class="about-form__number">80</p>
+        <p class="about-form__level">level</p>
       </div>
-      <img class="about-photo" src="me.svg" alt="мое фото">
-      <a class="about__new-photo" href="#">Сменить фото</a>
+      <img class="about-form-photo" src="me.svg" alt="мое фото">
+      <a class="about-form__new-photo" href="#">Сменить фото</a>
       <div class="tags">
         <h2 class="tags__caption">Тэги</h2>
         <p class="tags_text">#бургер #бар #футбол #концерт #крафт</p>
       </div>
       <div class="transport">
-        <h2 class="transport__caption">Тэги</h2>
+        <h2 class="transport__caption">Транспорт</h2>
         <span class="transport__item" aria-label="самолет"></span>
         <span class="transport__item" aria-label="автобус"></span>
         <span class="transport__item" aria-label="велосипед"></span>
@@ -65,13 +65,13 @@
         <li class="plan__item">
           <h3 class="plan__item-caption">Франция, Италия</h3>
           <p class="plan__text">3 попутчика</p>
-          <p class="plan__date">26 мар — 29 мар</p>
+          <p class="plan__text">26 мар — 29 мар</p>
           <a class="plan__change" href="#">Изменить</a>
         </li>
         <li class="plan__item">
           <h3 class="plan__item-caption">Таиланд, Индонезия</h3>
           <p class="plan__text">1 попутчик</p>
-          <p class="plan__date">1 июл — 15 июл</p>
+          <p class="plan__text">1 июл — 15 июл</p>
           <a class="plan__change" href="#">Изменить</a>
         </li>
       </ol>
@@ -81,7 +81,7 @@
       <form class="plan-add__form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="plan-add__item item-add">
           <legend class="item-add__step">Шаг 1. </legend>
-          <h3 class="item-add__caption">Даты пребывания</h3>
+          <h3 class="item-add__step">Даты пребывания</h3>
           <p class="item-add__text">Укажите предпочтительное количество попутчиков, которых
             вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
           <label class="plan-add__label" for="companion">ищу попутчиков:
@@ -91,14 +91,14 @@
             <span class="plan-add__span">дн.</span></label>
           <input id="duration" class="plann-add__input" type="text">
           <input id="children" class="plann-add__checkbox" type="checkbox">
-          <label class="plan-add__label" for="children">Можно с детьми</label>
+          <label class="plan-add__label-checkbox" for="children">Можно с детьми</label>
           <label for="month">Март 2019</label>
           <input id="month" class="plan-add__input" type="month">
           <button class="plan-add__button" type="submit">Следующий шаг</button>
         </fieldset>
         <fieldset class="plan-add__item item-add">
           <legend class="item-add__step">Шаг 2. </legend>
-          <h3 class="item-add__caption">Маршрут</h3>
+          <h3 class="item-add__step">Маршрут</h3>
           <p class="item-add__text">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу
             несколько.</p>
           <label for="country-1">Босния и герцегов</label>
@@ -109,11 +109,11 @@
           <input id="country-option" class="plan-add__input" type="text">
           <a class="plan-add__country-add" href="#">Добавить страну</a>
           <button class="plan-add__button" type="submit">Следующий шаг</button>
-          <a class="plan-add__back" href="#">На шаг назад</a>
+          <a class="plan-add__back plan-add__button" href="#">На шаг назад</a>
         </fieldset>
         <fieldset class="plan-add__item item-add">
           <legend class="item-add__step">Шаг 3. </legend>
-          <h3 class="item-add__caption">Развлечения</h3>
+          <h3 class="item-add__step">Развлечения</h3>
           <p class="item-add__text">Наконец, расскажите о своих планах времяпровождения.
             Можно писать в свободной форме и ставить тэги.
           </p>
@@ -122,7 +122,7 @@
           <label for="plan-text-2">Чехия</label>
           <textarea id="plan-text-2" class="plan-add__textarea"></textarea>
           <button class="plan-add__button" type="submit">Отправить</button>
-          <a class="plan-add__back" href="#">На шаг назад</a>
+          <a class="plan-add__back plan-add__button" href="#">На шаг назад</a>
         </fieldset>
       </form>
     </section>

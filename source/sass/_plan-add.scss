@@ -1,0 +1,75 @@
+.plan-add {
+  background-color: $bac-dark-gray;
+  &__caption {
+    font-family: $font-bold;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.024;
+  }
+  &__step {
+    font-family: $font-bold;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.02;
+    color: $color-btn;
+  }
+  &__text {
+    font-family: BloggerSans;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 0.022;
+    color: $color-text-gray;
+  }
+  &__label {
+    font-family: $font-med;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.016;
+    color: $color-btn;
+    text-transform: uppercase;
+  }
+  &__span {
+    font-family: $font-med;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.016;
+    color: $color-span;
+  }
+  &__label-checkbox {
+    font-family: $font-normal;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.015;
+  }
+  &__button {
+    font-family: $font-bold;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: 0.029;
+    color: $color-text-blue;
+  }
+}
+
+.month {
+  font-family: $font-bold;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.02;
+  color: $color-span;
+}
