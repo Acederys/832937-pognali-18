@@ -1,0 +1,57 @@
+.catalog {
+  background-color: $bac-color-bissenes;
+}
+
+.catalog__item {
+  background-color: $color-white;
+}
+
+.catalog__caption {
+  font-family: $font;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.02;
+  color: $color-btn;
+}
+
+.catalog__about {
+  font-family: $font;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.018;
+  color: $color-text-gray;
+}
+
+.catalog__want {
+  font-family: $font;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.018;
+  color: $color-text-gray;
+}
+
+.catalog__link {
+  font-family: $font;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.76;
+  letter-spacing: 0.029;
+  text-transform: uppercase;
+}
+
+.catalog__still {
+  font-family: $font;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.76;
+  letter-spacing: 0.029;
+  text-transform: uppercase;
+}

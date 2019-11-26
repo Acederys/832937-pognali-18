@@ -1,0 +1,82 @@
+.plan-add {
+  background-color: $bac-dark-gray;
+}
+
+.plan-add__caption {
+  font-family: $font;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.024;
+}
+
+.plan-add__step {
+  font-family: $font;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.02;
+  color: $color-btn;
+}
+
+.plan-add__text {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.022;
+  color: $color-text-gray;
+}
+
+.plan-add__label {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.016;
+  color: $color-btn;
+  text-transform: uppercase;
+}
+
+.plan-add__span {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.016;
+  color: $color-span;
+}
+
+.plan-add__label-checkbox {
+  font-family: $font;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.015;
+}
+
+.plan-add__button {
+  font-family: $font;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.76;
+  letter-spacing: 0.029;
+  color: $color-text-blue;
+}
+
+.plan-add__month {
+  font-family: $font;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.02;
+  color: $color-span;
+}

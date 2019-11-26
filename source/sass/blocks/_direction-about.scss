@@ -1,0 +1,33 @@
+.direction-about {
+  background-color: $color-white;
+}
+
+.direction-about__caption {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  font-size: 21px;
+  letter-spacing: 0.021;
+  color: $color-text-blue;
+}
+
+.direction-about__text {
+  font-family: $font;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.13;
+  font-size: 16px;
+  letter-spacing: 0.018;
+  color: $color-text-contry;
+}
+
+.direction-about__like {
+  font-family: $font;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.88;
+  font-size: 16px;
+  letter-spacing: 0.024;
+  color: $color-text-contry;
+}

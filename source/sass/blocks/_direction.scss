@@ -1,0 +1,35 @@
+.direction {
+  background-color: $bac-color-bissenes;
+}
+
+.direction __caption {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  font-size: 24px;
+  letter-spacing: 0.024;
+  color: $color-caption;
+}
+
+.direction __text {
+  font-family: $font;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.38;
+  font-size: 16px;
+  letter-spacing: 0.022;
+  color: $color-text-gray;
+}
+
+.direction__link {
+  background-color: $color-yellow;
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  font-size: 18px;
+  letter-spacing: 0.018;
+  color: $color-btn;
+  text-decoration: none;
+}

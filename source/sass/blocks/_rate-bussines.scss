@@ -1,0 +1,33 @@
+.rate-bussines {
+  background-color: $color-white;
+}
+
+.rate-bussines__caption {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  font-size: 24px;
+  letter-spacing: 0.024;
+}
+
+.rate-bussines__item {
+  font-family: $font;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.38;
+  font-size: 16px;
+  letter-spacing: 0.022;
+  color: $color-text-gray;
+}
+
+.rate-bussines__link {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  font-size: 16px;
+  color: $color-dark-blue;
+  background-color: $window-close;
+  text-decoration: none;
+}

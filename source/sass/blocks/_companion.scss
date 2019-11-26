@@ -1,0 +1,46 @@
+.companion {
+  background-image: url(../img/rogovaya-back-mobile@1x.png);
+  background-repeat: no-repeat;
+}
+
+.companion__caption {
+  font-family: $font;
+  font-weight: 700;
+  font-style: none;
+  line-height: 1;
+  font-size: 24px;
+  letter-spacing: 0.024;
+  color: $color-caption;
+}
+
+.companion__text {
+  font-family: $font;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.38;
+  font-size: 16px;
+  letter-spacing: 0.022;
+  color: $color-white;
+}
+
+.companion__article {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.38;
+  font-size: 16px;
+  letter-spacing: 0.022;
+  color: $color-white;
+}
+
+.companion__link {
+  background-color: $color-yellow;
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  font-size: 18px;
+  letter-spacing: 0.018;
+  color: $color-btn;
+  text-decoration: none;
+}
