@@ -1,0 +1,47 @@
+.main-header {
+  background-image: url(../img/globe-back-mobile@1x.jpg);
+}
+
+.main-header__caption {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.11;
+  font-size: 36px;
+  font-size: 36px;
+  letter-spacing: 0.039;
+  color: $color-white;
+}
+
+.main-header__item {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.76;
+  font-size: 17px;
+  letter-spacing: 0.029;
+}
+
+.main-header__blockquote {
+  background-color: $color-text-blue;
+}
+
+.main-header__blockquote-text {
+  font-family: $font;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.38;
+  font-size: 16px;
+  letter-spacing: 0.022;
+  color: $color-white;
+}
+
+.main-header__blockquote-cite {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.022;
+  color: $color-white;
+}
