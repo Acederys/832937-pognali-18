@@ -12,63 +12,69 @@
 
 <body>
   <header class="header">
-    <a class="logo"><img class="logo__image" src="logo.svg" alt="Погнали"></a>
-    <a class="menu" href="#" aria-label="меню"></a>
-    <section class="nav">
-      <h2 class="visually-hidden">навигация</h2>
-      <a class="logo" href="index.html"><img class="logo__image" src="logo.svg" alt="погнали"></a>
-      <button class="nav__close" type="submit">
-        <span>Закрыть</span>
-      </button>
-      <ul class="nav__list">
-        <li class="nav__item">О сервисе</li>
-        <li class="nav__item">Направления</li>
-        <li class="nav__item">Попутчики</li>
-      </ul>
-      <a class="nav__link" href="login.html">авторизация</a>
-      <ul class="nav__info info">
-        <li class="info__item"><a href="tel:+78005558628">8 800 555-86-28</a></li>
-        <li class="info__item"><a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-      </ul>
-      <ul class="social">
-        <li class="social__item"><a href="#" aria-label="погнали в facebook"></a></li>
-        <li class="social__item"><a href="#" aria-label="погнали в vkontact"></a></li>
-        <li class="social__item"><a href="#" aria-label="погнали в instagram"></a></li>
-      </ul>
-    </section>
+    <div class="container">
+      <a class="logo"><img class="logo__image" src="logo.svg" alt="Погнали"></a>
+      <a class="menu" href="#" aria-label="меню"></a>
+      <section class="nav">
+        <h2 class="visually-hidden">навигация</h2>
+        <a class="logo" href="index.html"><img class="logo__image" src="logo.svg" alt="погнали"></a>
+        <button class="nav__close" type="submit">
+          <span>Закрыть</span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item">О сервисе</li>
+          <li class="nav__item">Направления</li>
+          <li class="nav__item">Попутчики</li>
+        </ul>
+        <a class="nav__link" href="login.html">авторизация</a>
+        <ul class="nav__info info">
+          <li class="info__item"><a href="tel:+78005558628">8 800 555-86-28</a></li>
+          <li class="info__item"><a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+        </ul>
+        <ul class="social">
+          <li class="social__item"><a href="#" aria-label="погнали в facebook"></a></li>
+          <li class="social__item"><a href="#" aria-label="погнали в vkontact"></a></li>
+          <li class="social__item"><a href="#" aria-label="погнали в instagram"></a></li>
+        </ul>
+      </section>
+    </div>
   </header>
   <main class="main">
-    <header class="main-header">
-      <h1 class="main-header__caption">В путешествие
-        с крутыми попутчиками!
-      </h1>
-      <ul class="main-header__list">
-        <li class="main-header__item"><a href="tel:+78005558628" aria-label="телефон: 8 800 555-86-28"></a></li>
-        <li class="main-header__item"><a href="email:mail@htmlacademy.ru" aria-label="email:mail@htmlacademy.ru"></a>
-        </li>
-        <li class="main-header__item"><a href="login.html">авторизация</a></li>
-      </ul>
-      <blockquote class="main-header__blockquote">
-        <p class="main-header__blockquote-text">«Лучшее приложение,
-          что я видел в жизни!»</p>
-        <cite class="main-header__blockquote-cite">Мурат Эльтазин главный редактор
-          газеты «гаджетлайф»</cite>
-      </blockquote>
+    <header class="main-header ">
+      <div class="container main-header__box">
+        <h1 class="main-header__caption">В путешествие
+          с крутыми попутчиками!
+        </h1>
+        <ul class="main-header__list">
+          <li class="main-header__item"><a href="tel:+78005558628" aria-label="телефон: 8 800 555-86-28"></a></li>
+          <li class="main-header__item"><a href="email:mail@htmlacademy.ru" aria-label="email:mail@htmlacademy.ru"></a>
+          </li>
+          <li class="main-header__item"><a href="login.html">авторизация</a></li>
+        </ul>
+        <blockquote class="main-header__blockquote">
+          <p class="main-header__blockquote-text">«Лучшее приложение,
+            что я видел в жизни!»</p>
+          <cite class="main-header__blockquote-cite">Мурат Эльтазин главный редактор
+            газеты «гаджетлайф»</cite>
+        </blockquote>
+      </div>
     </header>
     <section class="action">
-      <h2 class="visually-hidden">Порядок действий</h2>
-      <ul class="action__list">
-        <li class="action__item">Выберите
-          направление</li>
-        <li class="action__item">Изучите идеи
-          путешественников</li>
-        <li class="action__item">Находите тех,
-          кто похож на вас</li>
-        <li class="action__item">Путешествуйте
-          вместе!</li>
-      </ul>
+      <div class="action__box container">
+        <h2 class="visually-hidden">Порядок действий</h2>
+        <ul class="action__list">
+          <li class="action__item action__item--bac-1">Выберите
+            направление</li>
+          <li class="action__item action__item--bac-2 action__item--margin">Изучите идеи
+            путешественников</li>
+          <li class="action__item action__item--bac-3">Находите тех,
+            кто похож на вас</li>
+          <li class="action__item action__item--bac-4 action__item--bac-rad action__item--margin">Путешествуйте
+            вместе!</li>
+        </ul>
+      </div>
     </section>
-    <section class="about">
+    <section class="about container">
       <h2 class="about__caption">О сервисе</h2>
       <p class="about__text">Любое путешествие веселее
         с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
@@ -77,7 +83,7 @@
         близкого по духу — скорее
         зовите в совместный трип!</p>
     </section>
-    <section class="direction">
+    <section class="direction container">
       <h2 class="direction__caption">Направления</h2>
       <p class="direction__text">Мы не продаем туры
         и ничего не рекламируем.
@@ -112,7 +118,7 @@
       </ul>
       <a class="direction__link" href="form.html">Показать все</a>
     </section>
-    <section class="companion">
+    <section class="companion container">
       <h2 class="companion__caption">Попутчики</h2>
       <p class="companion__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
         коктейль, а другому
@@ -134,7 +140,7 @@
         </li>
         <li class="companion__item">
           <img src="peta.jpg" alt="Петя Демин">
-          <div >
+          <div>
             <p>80</p>
             <p>level</p>
           </div>
@@ -147,7 +153,7 @@
       </ul>
       <a class="companion__link" href="catalog.html">Показать всех</a>
     </section>
-    <section class="rate">
+    <section class="rate container">
       <h2 class="visually-hidden">Тарифы</h2>
       <article class="rate-all">
         <h2 class="rate-all__caption"><a href="#">Добавьте
@@ -163,7 +169,7 @@
         </ul>
         <a class="rate-all__link" href="#modal">Показать тарифы для бизнеса</a>
       </article>
-      <article class="rate-bussines">
+      <article class="rate-bussines container">
         <h2 class="rate-bussines__caption">Бизнес-тарифы</h2>
         <ul class="rate-bussines__list">
           <li class="rate-bussines__item">Реклама у блоггера
@@ -178,7 +184,7 @@
         <a class="rate-bussines__link" href="#">Закрыть окно</a>
       </article>
     </section>
-    <section class="registrate">
+    <section class="registrate container">
       <h2 class="registrate__caption">Заинтересовались?</h2>
       <p class="registrate__text">Зарегистрируйтесь,
         это быстро и бесплатно!
@@ -195,7 +201,7 @@
       <a class="registrate__link" href="tel:+78005558628">8 800 555-86-28</a>
       <a class="registrate__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </section>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="main-footer__box">
         <address class="main-footer__adress">ул. Большая
           Конюшенная, 19/8</address>
@@ -205,7 +211,7 @@
       Конюшенная, 19/8">
     </footer>
   </main>
-  <footer class="footer">
+  <footer class="footer container container">
     <a class="logo">
       <img class="logo__image" src="logo-footer.svg" alt="погнали">
     </a>
