@@ -5,21 +5,18 @@ body {
 
 .container {
   width: 270px;
-  padding: 0 25px;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .container {
     width: 688px;
-    padding: 0 40px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1320px;
-    padding: 0 60px;
   }
 }
 
