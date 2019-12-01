@@ -1,6 +1,12 @@
 .direction {
   background-color: $bac-color-bissenes;
 }
+.direction__box {
+  padding-top: 72px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 
 .direction__caption {
   font-family: $font;
@@ -10,6 +16,8 @@
   font-size: 24px;
   letter-spacing: 0.024;
   color: $color-caption;
+
+  padding-left: 24px;
 }
 
 .direction__text {
@@ -20,6 +28,48 @@
   font-size: 16px;
   letter-spacing: 0.022;
   color: $color-text-gray;
+
+  padding-left: 24px;
+}
+
+.direction__list {
+  padding-left: 0;
+}
+
+.direction-about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 270px;
+  padding-left: 23px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  &--border-radius{
+    border-radius: 10px;
+  }
+}
+
+.direction-about__caption {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  font-size: 21px;
+  letter-spacing: 0.021;
+  color: $color-text-blue;
+
+  margin: 0;
+}
+
+.direction-about__like {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: 0.03;
+  color: $color-text-contry;
 }
 
 .direction__link {
@@ -32,4 +82,23 @@
   letter-spacing: 0.018;
   color: $color-btn;
   text-decoration: none;
+
+  padding-top: 23px;
+  padding-left: 24px;
+  padding-bottom: 23px;
+  width: 270px;
+  &--border-radius {
+    border-radius: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 688px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1320px;
+  }
 }
