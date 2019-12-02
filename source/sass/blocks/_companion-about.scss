@@ -1,0 +1,39 @@
+.companion-about {
+  background-color: $color-white;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 22px;
+  &--border-radius {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.companion-about__text {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: $color-text-gray;
+
+  width: 177px;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+  .companion-about {
+    width: 285px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .companion-about__caption {
+    width: 100%;
+    text-align: center;
+  }
+}

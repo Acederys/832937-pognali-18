@@ -1,6 +1,11 @@
 .direction {
   background-color: $bac-color-bissenes;
+
+  padding-bottom: 30px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
+
 .direction__box {
   padding-top: 72px;
   display: flex;
@@ -36,42 +41,6 @@
   padding-left: 0;
 }
 
-.direction-about {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 270px;
-  padding-left: 23px;
-  padding-top: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  &--border-radius{
-    border-radius: 10px;
-  }
-}
-
-.direction-about__caption {
-  font-family: $font;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1;
-  font-size: 21px;
-  letter-spacing: 0.021;
-  color: $color-text-blue;
-
-  margin: 0;
-}
-
-.direction-about__like {
-  font-family: $font;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: 0.03;
-  color: $color-text-contry;
-}
-
 .direction__link {
   background-color: $color-yellow;
   font-family: $font;
@@ -87,18 +56,74 @@
   padding-left: 24px;
   padding-bottom: 23px;
   width: 270px;
+
   &--border-radius {
     border-radius: 10px;
   }
 }
+
 @media (min-width: 768px) {
-  .container {
-    width: 688px;
+  .direction {
+    padding-bottom: 75px;
+  }
+
+  .direction__caption {
+    padding-left: 33px;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .direction__text {
+    padding-left: 33px;
+    width: 375px;
+    margin-bottom: 105px;
+  }
+
+  .direction__list {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .direction__link {
+    width: 618px;
+
+    &--border-radius {
+      border-radius: 10px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1320px;
+  .direction {
+    padding-bottom: 130px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .direction__box {
+    padding-top: 72px;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .direction__caption {
+    width: 520px;
+  }
+
+  .direction__text {
+    width: 520px;
+    padding-left: 24px;
+  }
+
+  .direction__list {
+    width: 740px;
+    order: -1;
+    margin-bottom: 85px;
+  }
+
+  .direction__link {
+    width: 270px;
+    margin-top: -365px;
+    margin-right: 240px;
   }
 }
