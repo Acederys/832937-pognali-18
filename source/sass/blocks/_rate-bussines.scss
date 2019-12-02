@@ -1,5 +1,12 @@
 .rate-bussines {
   background-color: $color-white;
+  padding-top: 33px;
+  margin-top: -90px;
+  display: none;
+
+  &--border-radius {
+    border-radius: 25px;
+  }
 }
 
 .rate-bussines__caption {
@@ -9,6 +16,15 @@
   line-height: 1;
   font-size: 24px;
   letter-spacing: 0.024;
+  text-align: center;
+  color: $color-caption;
+  padding-left: 25px;
+}
+
+.rate-bussines__list {
+  width: 219px;
+  padding-left: 0;
+  padding-left: 25px;
 }
 
 .rate-bussines__item {
@@ -19,6 +35,15 @@
   font-size: 16px;
   letter-spacing: 0.022;
   color: $color-text-gray;
+
+  list-style: none;
+
+  &--border {
+    border-top: 1px solid $color-text-gray;
+    opacity: 0.5;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .rate-bussines__link {
@@ -30,4 +55,60 @@
   color: $color-dark-blue;
   background-color: $window-close;
   text-decoration: none;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  text-align: center;
+  display: block;
+
+  &--border-radius {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rate-bussines {
+    margin-top: 77px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .rate-bussines__caption {
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .rate-bussines__list {
+    width: 506px;
+  }
+
+  .rate-bussines__item {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .rate-bussines__link {
+    font-family: $font;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    font-size: 16px;
+    color: $color-dark-blue;
+    background-color: $window-close;
+    text-decoration: none;
+    width: 100%;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    text-align: center;
+    display: block;
+
+    &--border-radius {
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+  }
 }

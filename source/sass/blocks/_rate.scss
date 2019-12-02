@@ -1,4 +1,12 @@
 .rate {
   background-color: $bac-color-bissenes;
+  padding-top: 82px;
+  padding-bottom: 18px;
+  &--border-radius {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
 }
+
+
 
