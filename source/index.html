@@ -17,24 +17,24 @@
       <a class="menu" href="#" aria-label="меню"></a>
       <section class="nav">
         <h2 class="visually-hidden">навигация</h2>
-        <a class="logo" href="index.html"><img class="logo__image" src="logo.svg" alt="погнали"></a>
+        <a class="nav__logo" aria-label="Погнали"></a>
         <button class="nav__close" type="submit">
-          <span>Закрыть</span>
+          <span class="visually-hidden">Закрыть</span>
         </button>
         <ul class="nav__list">
-          <li class="nav__item">О сервисе</li>
-          <li class="nav__item">Направления</li>
-          <li class="nav__item">Попутчики</li>
+          <li class="nav__item"><a href="#">О сервисе</a></li>
+          <li class="nav__item"><a href="#">Направления</a></li>
+          <li class="nav__item"><a href="#">Попутчики</a></li>
         </ul>
-        <a class="nav__link" href="login.html">авторизация</a>
-        <ul class="nav__info info">
+        <a class="nav__link nav__link--border-radius" href="login.html">авторизация</a>
+        <ul class="nav__info info">
           <li class="info__item"><a href="tel:+78005558628">8 800 555-86-28</a></li>
           <li class="info__item"><a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
         </ul>
-        <ul class="social">
-          <li class="social__item"><a href="#" aria-label="погнали в facebook"></a></li>
-          <li class="social__item"><a href="#" aria-label="погнали в vkontact"></a></li>
-          <li class="social__item"><a href="#" aria-label="погнали в instagram"></a></li>
+        <ul class="social nav__social">
+          <li class="social__item nav__social-item"><a href="#" aria-label="погнали в facebook"></a></li>
+          <li class="social__item nav__social-item"><a href="#" aria-label="погнали в vkontact"></a></li>
+          <li class="social__item nav__social-item"><a href="#" aria-label="погнали в instagram"></a></li>
         </ul>
       </section>
     </div>
@@ -63,17 +63,17 @@
       <div class="action__box container">
         <h2 class="visually-hidden">Порядок действий</h2>
         <ul class="action__list">
-          <li class="action__item action__item--bac-1 action__item--border-radius-1">Выберите
+          <li class="action__item">Выберите
             направление</li>
           <li
-            class="action__item action__item--bac-2 action__item--margin action__item--border-radius-2 action__item--margin-decstop">
+            class="action__item  action__item--margin action__item--margin-decstop">
             Изучите идеи
             путешественников</li>
-          <li class="action__item action__item--bac-3 action__item--border-radius-3 action__item--margin-decstop">
+          <li class="action__item action__item--margin-decstop">
             Находите тех,
             кто похож на вас</li>
           <li
-            class="action__item action__item--bac-4 action__item--bac-rad action__item--margin action__item--border-radius-4 action__item--margin-decstop">
+            class="action__item action__item--bac-rad action__item--margin action__item--margin-decstop">
             Путешествуйте
             вместе!</li>
         </ul>
@@ -205,22 +205,24 @@
       </article>
       </div>
     </section>
-    <section class="registrate container">
+    <section class="registrate registrate--border-radius">
+      <div class="registrate__box container">
       <h2 class="registrate__caption">Заинтересовались?</h2>
       <p class="registrate__text">Зарегистрируйтесь,
         это быстро и бесплатно!
         Уже зарегистрированы? Тогда скорее <a href="login.html">авторизуйтесь</a>.</p>
       <form action="https://echo.htmlacademy.ru" method="POST" class="registrate__form">
         <label for="email" class="visually-hidden">email</label>
-        <input id="email" type="email" class="registrate__email">
+        <input id="email" type="email" class="registrate__email registrate__email--border-radius" placeholder="E-mail">
         <button class="registrate__button">
-          <span class="registrate__button-text">регистрация</span>
+          <span class="visually-hidden registrate__button-text">регистрация</span>
         </button>
       </form>
       <p class="registrate__question">Остались вопросы?
         Мы с радостью на них ответим!</p>
       <a class="registrate__link" href="tel:+78005558628">8 800 555-86-28</a>
       <a class="registrate__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </div>
     </section>
     <footer class="main-footer container">
       <div class="main-footer__box">
@@ -233,9 +235,7 @@
     </footer>
   </main>
   <footer class="footer container container">
-    <a class="logo">
-      <img class="logo__image" src="logo-footer.svg" alt="погнали">
-    </a>
+    <a class="footer__logo" aria-label="Погнали"></a>
     <ul class="footer__social-list social">
       <li class="social__item"><a href="#" aria-label="погнали в facebook"></a></li>
       <li class="social__item"><a href="#" aria-label="погнали в vkontact"></a></li>
@@ -243,7 +243,16 @@
     </ul>
     <div class="developer">
       <p class="developer__text">Разработано</p>
-      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"></a>
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+        <style type="text/css">
+        .st0{fill:#231F20;}
+        </style>
+        <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
+        l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8
+        l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9
+        L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"/>
+        </svg></a>
     </div>
   </footer>
 

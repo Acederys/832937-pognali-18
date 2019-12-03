@@ -69,10 +69,11 @@
 
 @media (min-width: 768px) {
   .rate-bussines {
-    margin-top: 77px;
-    display: flex;
+    padding-top: 77px;
+    // display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    display: none;
   }
 
   .rate-bussines__caption {
@@ -110,5 +111,46 @@
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .rate-bussines {
+    padding-top: 52px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 190px;
+    left: 345px;
+    width: 750px;
+
+  }
+
+  .rate-bussines__caption {
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .rate-bussines__list {
+    width: 630px;
+    padding-left: 59px;
+    padding-right: 60px;
+  }
+
+  .rate-bussines__link {
+    font-family: $font;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    font-size: 16px;
+    color: $color-dark-blue;
+    background-color: $window-close;
+    text-decoration: none;
+    width: 750px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    text-align: center;
+    display: block;
   }
 }

@@ -1,3 +1,10 @@
+.developer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 270px;
+}
+
 .developer__text {
   font-family: $font;
   font-weight: 400;
@@ -6,4 +13,25 @@
   font-size: 16px;
   letter-spacing: 0.022;
   color: $color-text-gray;
+
+}
+
+.developer__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+}
+
+@media (min-width: 768px) {
+  .developer {
+    width: 155px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .developer {
+    width: 155px;
+    align-items: center;
+  }
 }

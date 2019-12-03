@@ -17,6 +17,7 @@
   width: 101px;
   position: relative;
   margin-bottom: 46px;
+
   &::after {
     content: "";
     display: block;
@@ -45,6 +46,7 @@
   letter-spacing: 0.022;
   color: $color-text-gray;
   list-style: none;
+
   &--border {
     border-top: 1px solid $color-text-gray;
     opacity: 0.5;
@@ -63,6 +65,7 @@
   text-decoration: none;
   margin-top: 31px;
 }
+
 @media (min-width: 768px) {
   .rate-all {
     display: flex;
@@ -77,6 +80,7 @@
     width: 100%;
     position: relative;
     margin-bottom: 46px;
+
     &::after {
       content: "";
       display: none;
@@ -137,7 +141,6 @@
 
   .rate-all__item {
     font-size: 28px;
-
     width: 813px;
 
     &--border {
