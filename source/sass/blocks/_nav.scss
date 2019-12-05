@@ -6,6 +6,9 @@
   padding-top: 27px;
   padding-left: 27px;
   padding-right: 27px;
+  // display: block;
+  display: none;
+
 }
 
 .nav__logo {
@@ -82,6 +85,8 @@
     width: 768px;
     padding-top: 43px;
     padding-left: 39px;
+    // display: flex;
+    display: none;
   }
 
   .nav__logo {
@@ -147,10 +152,11 @@
     padding-left: 60px;
     padding-top: 20px;
     padding-bottom: 18px;
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     left: 0;
+    display: none;
   }
 
   .nav__logo {

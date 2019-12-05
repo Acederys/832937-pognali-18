@@ -1,5 +1,5 @@
 .header {
-  background-color: $color-dark-blue;
+  background-color: $color-text-blue;
 
   display: flex;
   justify-content: flex-start;
@@ -8,14 +8,32 @@
   position: relative;
 }
 
+.header__logo {
+  display: block;
+  width: 100px;
+  height: 19px;
+  background-image: url(../../img/logo-mobile-white@1x.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 @media (min-width: 768px) {
   .header {
     padding-top: 30px;
+  }
+
+  .header__logo {
+    width: 198px;
+    height: 53px;
+    background-image: url(../../img/logo-tablet-white@1x.png);
   }
 }
 
 @media (min-width: 1200px) {
   .header {
     padding-top: 44px;
+  }
+  .header__logo {
+    background-image: url(../../img/logo-desktop-white@1x.png);
   }
 }

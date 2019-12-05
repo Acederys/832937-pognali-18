@@ -1,9 +1,33 @@
 .catalog {
   background-color: $bac-color-bissenes;
+  padding-bottom: 27px;
+}
+
+.catalog__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.catalog__list {
+  width: 270px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .catalog__item {
   background-color: $color-white;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 18px;
+  padding-bottom: 22px;
+  width: 270px;
+
+  &--border-radius {
+    border-radius: 10px;
+  }
 }
 
 .catalog__caption {
@@ -14,6 +38,76 @@
   line-height: 1;
   letter-spacing: 0.02;
   color: $color-btn;
+  width: 100%;
+  position: relative;
+  padding-left: 100px;
+}
+
+.catalog__caption--firsova {
+  &:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-image: url(../../img/firsova-mobile@1x.jpg);
+  }
+}
+
+.catalog__caption--demin {
+  &:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-image: url(../../img/demin-mobile@1x.jpg);
+  }
+}
+
+.catalog__caption--smolov {
+  &:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-image: url(../../img/smolov-mobile@1x.jpg);
+  }
+}
+
+.catalog__caption--rogovaya {
+  &:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-image: url(../../img/rogovaya-mobile@1x.jpg);
+  }
+}
+
+.catalog__number {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: -10px;
 }
 
 .catalog__about {
@@ -24,6 +118,9 @@
   line-height: 1.2;
   letter-spacing: 0.018;
   color: $color-text-gray;
+
+  width: 166px;
+  margin-top: 16px;
 }
 
 .catalog__want {
@@ -36,6 +133,18 @@
   color: $color-text-gray;
 }
 
+
+.catalog__transport {
+  width: 150px;
+  display: block;
+  margin: 0;
+}
+
+.catalog__level {
+  display: block;
+  margin: 0;
+}
+
 .catalog__link {
   font-family: $font;
   font-size: 17px;
@@ -44,6 +153,16 @@
   line-height: 1.76;
   letter-spacing: 0.029;
   text-transform: uppercase;
+  text-align: center;
+
+  margin-top: 20px;
+  width: 230px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background-color: $color-yellow;
+  &--border-radius {
+    border-radius: 40px;
+  }
 }
 
 .catalog__still {
@@ -54,4 +173,8 @@
   line-height: 1.76;
   letter-spacing: 0.029;
   text-transform: uppercase;
+
+  display: block;
+  text-align: center;
+  padding-left: 33px;
 }

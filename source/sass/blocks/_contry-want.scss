@@ -1,3 +1,12 @@
+.contry-want {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+}
+
 .contry-want__item {
   font-family: $font;
   font-size: 15px;
@@ -6,4 +15,7 @@
   line-height: 1.2;
   letter-spacing: 0.018;
   text-transform: uppercase;
+
+  width: 100%;
+  padding-left: 34px;
 }

@@ -13,7 +13,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <a class="logo"><img class="logo__image" src="logo.svg" alt="Погнали"></a>
+      <a class="header__logo"></a>
       <a class="menu" href="#" aria-label="меню"></a>
       <section class="nav">
         <h2 class="visually-hidden">навигация</h2>
@@ -65,15 +65,13 @@
         <ul class="action__list">
           <li class="action__item">Выберите
             направление</li>
-          <li
-            class="action__item  action__item--margin action__item--margin-decstop">
+          <li class="action__item  action__item--margin action__item--margin-decstop">
             Изучите идеи
             путешественников</li>
           <li class="action__item action__item--margin-decstop">
             Находите тех,
             кто похож на вас</li>
-          <li
-            class="action__item action__item--bac-rad action__item--margin action__item--margin-decstop">
+          <li class="action__item action__item--bac-rad action__item--margin action__item--margin-decstop">
             Путешествуйте
             вместе!</li>
         </ul>
@@ -174,55 +172,56 @@
     </section>
     <section class="rate rate--border-radius">
       <div class="rate__box container">
-      <h2 class="visually-hidden">Тарифы</h2>
-      <article class="rate-all">
-        <h2 class="rate-all__caption">Добавьте
+        <h2 class="visually-hidden">Тарифы</h2>
+        <article class="rate-all">
+          <h2 class="rate-all__caption">Добавьте
             свой
             профиль</h2>
-        <ul class="rate-all__list">
-          <li class="rate-all__item rate-all__item--border">Базовое размещение
-            <span>Бесплатно</span></li>
-          <li class="rate-all__item rate-all__item--border">Вывод на первых позициях
-            <span>99 руб./мес</span></li>
-          <li class="rate-all__item rate-all__item--border">Кастомный цвет карточки
-            <span>59 руб./мес</span></li>
-        </ul>
-        <a class="rate-all__link" href="#modal">Показать тарифы для бизнеса</a>
-      </article>
-      <article class="rate-bussines rate-bussines--border-radius">
-        <h2 class="rate-bussines__caption">Бизнес-тарифы</h2>
-        <ul class="rate-bussines__list">
-          <li class="rate-bussines__item rate-bussines__item--border">Реклама у блоггера
-            <span>300 000 руб./пост</span></li>
-          <li class="rate-bussines__item rate-bussines__item--border">Накрутка подписчиков
-            <span>от 1 руб./шт.</span></li>
-          <li class="rate-bussines__item rate-bussines__item--border">Лайки от ботов
-            <span>от 20 коп./лайк</span></li>
-          <li class="rate-bussines__item rate-bussines__item--border">Ваш продакт-плейсмент
-            <span>Индивидуально</span></li>
-        </ul>
-        <a class="rate-bussines__link rate-bussines__link--border-radius " href="#">Закрыть окно</a>
-      </article>
+          <ul class="rate-all__list">
+            <li class="rate-all__item rate-all__item--border">Базовое размещение
+              <span>Бесплатно</span></li>
+            <li class="rate-all__item rate-all__item--border">Вывод на первых позициях
+              <span>99 руб./мес</span></li>
+            <li class="rate-all__item rate-all__item--border">Кастомный цвет карточки
+              <span>59 руб./мес</span></li>
+          </ul>
+          <a class="rate-all__link" href="#modal">Показать тарифы для бизнеса</a>
+        </article>
+        <article class="rate-bussines rate-bussines--border-radius">
+          <h2 class="rate-bussines__caption">Бизнес-тарифы</h2>
+          <ul class="rate-bussines__list">
+            <li class="rate-bussines__item rate-bussines__item--border">Реклама у блоггера
+              <span>300 000 руб./пост</span></li>
+            <li class="rate-bussines__item rate-bussines__item--border">Накрутка подписчиков
+              <span>от 1 руб./шт.</span></li>
+            <li class="rate-bussines__item rate-bussines__item--border">Лайки от ботов
+              <span>от 20 коп./лайк</span></li>
+            <li class="rate-bussines__item rate-bussines__item--border">Ваш продакт-плейсмент
+              <span>Индивидуально</span></li>
+          </ul>
+          <a class="rate-bussines__link rate-bussines__link--border-radius " href="#">Закрыть окно</a>
+        </article>
       </div>
     </section>
     <section class="registrate registrate--border-radius">
       <div class="registrate__box container">
-      <h2 class="registrate__caption">Заинтересовались?</h2>
-      <p class="registrate__text">Зарегистрируйтесь,
-        это быстро и бесплатно!
-        Уже зарегистрированы? Тогда скорее <a href="login.html">авторизуйтесь</a>.</p>
-      <form action="https://echo.htmlacademy.ru" method="POST" class="registrate__form">
-        <label for="email" class="visually-hidden">email</label>
-        <input id="email" type="email" class="registrate__email registrate__email--border-radius" placeholder="E-mail">
-        <button class="registrate__button">
-          <span class="visually-hidden registrate__button-text">регистрация</span>
-        </button>
-      </form>
-      <p class="registrate__question">Остались вопросы?
-        Мы с радостью на них ответим!</p>
-      <a class="registrate__link" href="tel:+78005558628">8 800 555-86-28</a>
-      <a class="registrate__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </div>
+        <h2 class="registrate__caption">Заинтересовались?</h2>
+        <p class="registrate__text">Зарегистрируйтесь,
+          это быстро и бесплатно!
+          Уже зарегистрированы? Тогда скорее <a href="login.html">авторизуйтесь</a>.</p>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="registrate__form">
+          <label for="email" class="visually-hidden">email</label>
+          <input id="email" type="email" class="registrate__email registrate__email--border-radius"
+            placeholder="E-mail">
+          <button class="registrate__button">
+            <span class="visually-hidden registrate__button-text">регистрация</span>
+          </button>
+        </form>
+        <p class="registrate__question">Остались вопросы?
+          Мы с радостью на них ответим!</p>
+        <a class="registrate__link" href="tel:+78005558628">8 800 555-86-28</a>
+        <a class="registrate__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
     </section>
     <footer class="main-footer container">
       <div class="main-footer__box">
@@ -243,15 +242,19 @@
     </ul>
     <div class="developer">
       <p class="developer__text">Разработано</p>
-      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
-        <style type="text/css">
-        .st0{fill:#231F20;}
-        </style>
-        <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"><svg
+          version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+          <style type="text/css">
+            .st0 {
+              fill: #231F20;
+            }
+
+          </style>
+          <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
         l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8
         l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9
-        L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"/>
+        L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z" />
         </svg></a>
     </div>
   </footer>
