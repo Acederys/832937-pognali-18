@@ -11,12 +11,14 @@ body {
 @media (min-width: 768px) {
   .container {
     width: 688px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1320px;
+    margin: 0 auto;
   }
 }
 
