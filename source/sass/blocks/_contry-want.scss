@@ -19,3 +19,14 @@
   width: 100%;
   padding-left: 34px;
 }
+@media (min-width: 768px) {
+  .contry-want__item {
+  width: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contry-want__item {
+    width: 100%;
+    }
+}
