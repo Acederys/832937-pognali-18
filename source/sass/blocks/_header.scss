@@ -12,7 +12,7 @@
   display: block;
   width: 100px;
   height: 19px;
-  background-image: url(../../img/logo-mobile-white@1x.png);
+  background-image: url("../../img/logo-mobile-white@1x.png");
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -25,7 +25,7 @@
   .header__logo {
     width: 198px;
     height: 53px;
-    background-image: url(../../img/logo-tablet-white@1x.png);
+    background-image: url("../../img/logo-tablet-white@1x.png");
   }
 }
 
@@ -34,6 +34,6 @@
     padding-top: 44px;
   }
   .header__logo {
-    background-image: url(../../img/logo-desktop-white@1x.png);
+    background-image: url("../../img/logo-desktop-white@1x.png");
   }
 }

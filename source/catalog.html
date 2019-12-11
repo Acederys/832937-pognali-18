@@ -95,68 +95,211 @@
     </section>
     <section class="catalog">
       <div class="catalog__box container">
-        <ul class="catalog__list">
-          <li class="catalog__item catalog__item--border-radius">
-            <h2 class="catalog__caption catalog__caption--firsova">Таня Фирсова</h2>
-            <p class="catalog__number">1,5 m</p>
-            <p class="catalog__about">#ЗОЖ #ПП #Фитнес #пляж
-              #авокадо #смузи</p>
-            <p class="catalog__want">хочет посетить:</p>
-            <ul class="contry-want">
-              <li class="contry-want__item">Шри-ланка</li>
-              <li class="contry-want__item">Таиланд</li>
-              <li class="contry-want__item">Сейшелы</li>
-            </ul>
-            <p class="catalog__transport">транспорт:</p>
-            <p class="catalog__level">левел:</p>
-            <a class="catalog__link catalog__link--border-radius" href="#">Позвать!</a>
-          </li>
-          <li class="catalog__item catalog__item--border-radius">
-            <h2 class="catalog__caption catalog__caption--demin">Петя
-              Демин</h2>
-            <p class="catalog__number">150</p>
-            <p class="catalog__about">#бургер #бар #футбол
-              #концерт #крафт</p>
-            <p class="catalog__want">хочет посетить:</p>
-            <ul class="contry-want">
-              <li class="contry-want__item">Бельгия</li>
-              <li class="contry-want__item">Чехия</li>
-            </ul>
-            <p class="catalog__transport">транспорт:</p>
-            <p class="catalog__level">левел:</p>
-            <a class="catalog__link catalog__link--border-radius" href="#">Позвать!</a>
-          </li>
-          <li class="catalog__item catalog__item--border-radius">
-            <h2 class="catalog__caption catalog__caption--smolov">Марк
-              Смолов</h2>
-            <p class="catalog__number">1700</p>
-            <p class="catalog__about">#рэп #тату #хайпбист
-              #кроссовки #суприм</p>
-            <p class="catalog__want">хочет посетить:</p>
-            <ul class="contry-want">
-              <li class="contry-want__item">США</li>
-              <li class="contry-want__item">Австралия</li>
-              <li class="contry-want__item">Доминикана</li>
-            </ul>
-            <p class="catalog__transport">транспорт:</p>
-            <p class="catalog__level">левел:</p>
-            <a class="catalog__link catalog__link--border-radius" href="#">Позвать!</a>
-          </li>
-          <li class="catalog__item catalog__item--border-radius">
-            <h2 class="catalog__caption catalog__caption--rogovaya">Лариса
-              Роговая</h2>
-            <p class="catalog__number">23</p>
-            <p class="catalog__about">#образование #карьера
-              #учеба #линкедин
+        <ul class="catalog-list">
+          <li class="catalog-list__item catalog-item">
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__image-link" href="#">
+                <img class="catalog-item__image" src="img/firsova-mobile@1x.jpg" width="270" height="270"
+                  alt="Фото Таня Фрисова">
+              </a>
+              <div class="catalog-item__wrapper-name">
+                <a class="catalog-item__name-link" href="#">
+                  <h3 class="catalog-item__name">Таня Фирсова</h3>
+                </a>
+                <div class="catalog-item__indicator catalog-item__indicator--offline">
+                  <span class="visually-hidden">Не в сети</span>
+                </div>
+              </div>
+              <div class="catalog-item__hashtags hashtags">
+                #ЗОЖ #ПП #Фитнес #пляж
+                #авокадо #смузи
+              </div>
+            </div>
+            <p class="catalog-item__section">
+              <span class="catalog-item__section-text">хочет посетить:</span>
             </p>
-            <p class="catalog__want">хочет посетить:</p>
-            <ul class="contry-want">
-              <li class="contry-want__item">Великобритания</li>
-              <li class="contry-want__item">Германия</li>
-            </ul>
-            <p class="catalog__transport">транспорт:</p>
-            <p class="catalog__level">левел:</p>
-            <a class="catalog__link catalog__link--border-radius" href="#">Позвать!</a>
+            <div class="catalog-item__flag flag contry-want">
+              <span class="contry-want__item">Шри-ланка</span>
+              <span class="contry-want__item">Таиланд</span>
+              <span class="contry-want__item">Сейшелы</span>
+            </div>
+            <div class="catalog-item__inner">
+              <p class="catalog-item__section catalog-item__section--transport">
+                <span class="catalog-item__section-text">транспорт:</span>
+              </p>
+              <div class="catalog-item__transport transport">
+                траспорт
+              </div>
+              <p class="catalog-item__section catalog-item__section--level">
+                <span class="catalog-item__section-text">левел:</span>
+              </p>
+              <div class="catalog-item__level level level--dark">
+                <span class="level__number">99</span>
+              </div>
+            </div>
+            <div class="catalog-item__buttons">
+              <a class="catalog-item__button button" href="#">Позвать!</a>
+              <div class="catalog-item__like">
+                <button class="catalog-item__like-button catalog-item__like-button--current" type="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <p class="catalog-item__like-count">1,5 М</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-list__item catalog-item">
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__image-link" href="#">
+                <img class="catalog-item__image" src="img/demin-mobile@1x.jpg" width="270" height="270"
+                  alt="Фото Таня Фрисова">
+              </a>
+              <div class="catalog-item__wrapper-name">
+                <a class="catalog-item__name-link" href="#">
+                  <h3 class="catalog-item__name">Петя
+                    Демин</h3>
+                </a>
+                <div class="catalog-item__indicator catalog-item__indicator--offline">
+                  <span class="visually-hidden">Не в сети</span>
+                </div>
+              </div>
+              <div class="catalog-item__hashtags hashtags">
+                #бургер #бар #футбол
+                #концерт #крафт
+              </div>
+            </div>
+            <p class="catalog-item__section">
+              <span class="catalog-item__section-text">хочет посетить:</span>
+            </p>
+            <div class="catalog-item__flag flag contry-want">
+              <span class="contry-want__item">Бельгия</span>
+              <span class="contry-want__item">Чехия</span>
+            </div>
+            <div class="catalog-item__inner">
+              <p class="catalog-item__section catalog-item__section--transport">
+                <span class="catalog-item__section-text">транспорт:</span>
+              </p>
+              <div class="catalog-item__transport transport">
+                траспорт
+              </div>
+              <p class="catalog-item__section catalog-item__section--level">
+                <span class="catalog-item__section-text">левел:</span>
+              </p>
+              <div class="catalog-item__level level level--dark">
+                <span class="level__number">99</span>
+              </div>
+            </div>
+            <div class="catalog-item__buttons">
+              <a class="catalog-item__button button" href="#">Позвать!</a>
+              <div class="catalog-item__like">
+                <button class="catalog-item__like-button catalog-item__like-button--current" type="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <p class="catalog-item__like-count">150</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-list__item catalog-item">
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__image-link" href="#">
+                <img class="catalog-item__image" src="img/smolov-mobile@1x.jpg" width="270" height="270"
+                  alt="Фото Таня Фрисова">
+              </a>
+              <div class="catalog-item__wrapper-name">
+                <a class="catalog-item__name-link" href="#">
+                  <h3 class="catalog-item__name">Марк
+                    Смолов</h3>
+                </a>
+                <div class="catalog-item__indicator catalog-item__indicator--offline">
+                  <span class="visually-hidden">Не в сети</span>
+                </div>
+              </div>
+              <div class="catalog-item__hashtags hashtags">
+                #рэп #тату #хайпбист
+                #кроссовки #суприм
+              </div>
+            </div>
+            <p class="catalog-item__section">
+              <span class="catalog-item__section-text">хочет посетить:</span>
+            </p>
+            <div class="catalog-item__flag flag contry-want">
+              <span class="contry-want__item">США</span>
+              <span class="contry-want__item">Австралия</span>
+              <span class="contry-want__item">Доминикана</span>
+            </div>
+            <div class="catalog-item__inner">
+              <p class="catalog-item__section catalog-item__section--transport">
+                <span class="catalog-item__section-text">транспорт:</span>
+              </p>
+              <div class="catalog-item__transport transport">
+                траспорт
+              </div>
+              <p class="catalog-item__section catalog-item__section--level">
+                <span class="catalog-item__section-text">левел:</span>
+              </p>
+              <div class="catalog-item__level level level--dark">
+                <span class="level__number">99</span>
+              </div>
+            </div>
+            <div class="catalog-item__buttons">
+              <a class="catalog-item__button button" href="#">Позвать!</a>
+              <div class="catalog-item__like">
+                <button class="catalog-item__like-button catalog-item__like-button--current" type="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <p class="catalog-item__like-count">1700</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-list__item catalog-item">
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__image-link" href="#">
+                <img class="catalog-item__image" src="img/rogovaya-mobile@1x.jpg" width="270" height="270"
+                  alt="Фото Таня Фрисова">
+              </a>
+              <div class="catalog-item__wrapper-name">
+                <a class="catalog-item__name-link" href="#">
+                  <h3 class="catalog-item__name">Лариса
+                    Роговая</h3>
+                </a>
+                <div class="catalog-item__indicator catalog-item__indicator--offline">
+                  <span class="visually-hidden">Не в сети</span>
+                </div>
+              </div>
+              <div class="catalog-item__hashtags hashtags">
+                #образование #карьера
+                #учеба #линкедин
+              </div>
+            </div>
+            <p class="catalog-item__section">
+              <span class="catalog-item__section-text">хочет посетить:</span>
+            </p>
+            <div class="catalog-item__flag flag contry-want">
+              <span class="contry-want__item">Великобритания</span>
+              <span class="contry-want__item">Германия</span>
+            </div>
+            <div class="catalog-item__inner">
+              <p class="catalog-item__section catalog-item__section--transport">
+                <span class="catalog-item__section-text">транспорт:</span>
+              </p>
+              <div class="catalog-item__transport transport">
+                траспорт
+              </div>
+              <p class="catalog-item__section catalog-item__section--level">
+                <span class="catalog-item__section-text">левел:</span>
+              </p>
+              <div class="catalog-item__level level level--dark">
+                <span class="level__number">99</span>
+              </div>
+            </div>
+            <div class="catalog-item__buttons">
+              <a class="catalog-item__button button" href="#">Позвать!</a>
+              <div class="catalog-item__like">
+                <button class="catalog-item__like-button catalog-item__like-button--current" type="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <p class="catalog-item__like-count">1700</p>
+              </div>
+            </div>
           </li>
         </ul>
         <a class="catalog__still" href="#">Показать еще</a>
