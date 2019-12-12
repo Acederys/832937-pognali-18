@@ -1,5 +1,17 @@
 .registrate {
   background-color: $color-dark-blue;
+  padding-top: 129px;
+  padding-bottom: 44px;
+  &--border-radius {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}
+
+.registrate__box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .registrate__caption {
@@ -10,6 +22,10 @@
   font-size: 24px;
   letter-spacing: 0.024;
   color: $color-caption;
+
+  margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .registrate__text {
@@ -20,6 +36,31 @@
   font-size: 16px;
   letter-spacing: 0.022;
   color: $color-white;
+
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.registrate__email {
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.018;
+  color: $color-text-contry;
+  width: 270px;
+
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  &::placeholder {
+    color: $color-text-contry;
+  }
+  &--border-radius {
+    border-radius: 10px;
+  }
 }
 
 .registrate__question {
@@ -30,6 +71,10 @@
   font-size: 16px;
   letter-spacing: 0.022;
   color: $color-white;
+
+  width: 212px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .registrate__link {
@@ -41,4 +86,98 @@
   letter-spacing: 0.022;
   color: $color-yellow;
   text-decoration: none;
+  text-transform: uppercase;
+
+  padding-left: 36px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .registrate {
+    padding-top: 129px;
+    padding-bottom: 62px;
+  }
+
+  .registrate__box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .registrate__caption {
+    font-size: 45px;
+
+  }
+
+  .registrate__text {
+    font-size: 28px;
+
+    width: 606px;
+
+  }
+
+  .registrate__email {
+    font-size: 24px;
+    width: 618px;
+
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-bottom: 32px;
+  }
+
+  .registrate__question {
+    font-size: 28px;
+
+    width: 100%;
+    margin-bottom: 66px;
+  }
+
+  .registrate__link {
+    font-size: 28px;
+    width: 100%;
+
+    padding-left: 91px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .registrate {
+    padding-top: 129px;
+    padding-bottom: 62px;
+  }
+
+  .registrate__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .registrate__email {
+    font-size: 24px;
+    display: block;
+    width: 1100px;
+
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-bottom: 32px;
+  }
+
+  .registrate__question {
+    font-size: 28px;
+
+    width: 100%;
+    margin-bottom: 66px;
+  }
+
+  .registrate__link {
+    font-size: 28px;
+    width: 305px;
+
+    padding-left: 91px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
 }

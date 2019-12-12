@@ -1,12 +1,557 @@
+// .catalog {
+//   background-color: $bac-color-bissenes;
+//   padding-bottom: 27px;
+// }
+
+// .catalog__box {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+// }
+
+// .catalog__list {
+//   list-style: none;
+//   padding-left: 0;
+// }
+
+// .catalog__item {
+//   background-color: $color-white;
+//   margin-bottom: 10px;
+//   display: flex;
+//   flex-flow: row;
+//   flex-wrap: wrap;
+//   padding-left: 18px;
+//   padding-bottom: 22px;
+//   width: 270px;
+
+//   &--border-radius {
+//     border-radius: 10px;
+//   }
+// }
+
+// .catalog__caption {
+//   font-family: $font;
+//   font-size: 20px;
+//   font-weight: 700;
+//   font-style: normal;
+//   line-height: 1;
+//   letter-spacing: 0.02;
+//   color: $color-btn;
+//   width: 100%;
+//   position: relative;
+//   padding-left: 100px;
+// }
+
+// .catalog__caption--firsova {
+//   &:before {
+//     content: "";
+//     display: block;
+//     width: 70px;
+//     height: 70px;
+//     background-repeat: no-repeat;
+//     background-size: auto;
+//     border-radius: 50%;
+//     position: absolute;
+//     left: 0;
+//     background-image: url(../../img/firsova-mobile@1x.jpg);
+//   }
+// }
+
+// .catalog__caption--demin {
+//   &:before {
+//     content: "";
+//     display: block;
+//     width: 70px;
+//     height: 70px;
+//     background-repeat: no-repeat;
+//     background-size: auto;
+//     border-radius: 50%;
+//     position: absolute;
+//     left: 0;
+//     background-image: url(../../img/demin-mobile@1x.jpg);
+//   }
+// }
+
+// .catalog__caption--smolov {
+//   &:before {
+//     content: "";
+//     display: block;
+//     width: 70px;
+//     height: 70px;
+//     background-repeat: no-repeat;
+//     background-size: auto;
+//     border-radius: 50%;
+//     position: absolute;
+//     left: 0;
+//     background-image: url(../../img/smolov-mobile@1x.jpg);
+//   }
+// }
+
+// .catalog__caption--rogovaya {
+//   &:before {
+//     content: "";
+//     display: block;
+//     width: 70px;
+//     height: 70px;
+//     background-repeat: no-repeat;
+//     background-size: auto;
+//     border-radius: 50%;
+//     position: absolute;
+//     left: 0;
+//     background-image: url(../../img/rogovaya-mobile@1x.jpg);
+//   }
+// }
+
+// .catalog__number {
+//   width: 100%;
+//   display: block;
+//   text-align: center;
+//   margin-top: -10px;
+// }
+
+// .catalog__about {
+//   font-family: $font;
+//   font-size: 15px;
+//   font-weight: 400;
+//   font-style: normal;
+//   line-height: 1.2;
+//   letter-spacing: 0.018;
+//   color: $color-text-gray;
+
+//   width: 166px;
+//   margin-top: 16px;
+// }
+
+// .catalog__want {
+//   font-family: $font;
+//   font-size: 15px;
+//   font-weight: 400;
+//   font-style: normal;
+//   line-height: 1.2;
+//   letter-spacing: 0.018;
+//   color: $color-text-gray;
+// }
+
+
+// .catalog__transport {
+//   width: 150px;
+//   display: block;
+//   margin: 0;
+// }
+
+// .catalog__level {
+//   display: block;
+//   margin: 0;
+// }
+
+// .catalog__link {
+//   font-family: $font;
+//   font-size: 17px;
+//   font-weight: 700;
+//   font-style: normal;
+//   line-height: 1.76;
+//   letter-spacing: 0.029;
+//   text-transform: uppercase;
+//   text-align: center;
+
+//   margin-top: 20px;
+//   width: 230px;
+//   padding-top: 13px;
+//   padding-bottom: 13px;
+//   background-color: $color-yellow;
+//   &--border-radius {
+//     border-radius: 40px;
+//   }
+// }
+
+// .catalog__still {
+//   font-family: $font;
+//   font-size: 17px;
+//   font-weight: 700;
+//   font-style: normal;
+//   line-height: 1.76;
+//   letter-spacing: 0.029;
+//   text-transform: uppercase;
+
+//   display: block;
+//   text-align: center;
+//   padding-left: 33px;
+// }
+
+// @media (min-width: 768px) {
+//   .catalog {
+//     background-color: $bac-color-bissenes;
+//     padding-bottom: 27px;
+//   }
+
+//   .catalog__box {
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//   }
+
+//   .catalog__list {
+//     list-style: none;
+//     padding-left: 0;
+//   }
+
+//   .catalog__item {
+//     background-color: $color-white;
+//     margin-bottom: 10px;
+//     display: flex;
+//     flex-flow: row;
+//     flex-wrap: wrap;
+//     padding-left: 18px;
+//     padding-bottom: 22px;
+//     width: 688px;
+
+//     &--border-radius {
+//       border-radius: 10px;
+//     }
+//   }
+
+//   .catalog__caption {
+//     font-family: $font;
+//     font-size: 20px;
+//     font-weight: 700;
+//     font-style: normal;
+//     line-height: 1;
+//     letter-spacing: 0.02;
+//     color: $color-btn;
+//     width: 100%;
+//     position: relative;
+//     padding-left: 200px;
+//   }
+
+//   .catalog__number {
+//     width: 100%;
+//     display: block;
+//     text-align: center;
+//     margin-top: -10px;
+//   }
+
+//   .catalog__about {
+//     font-family: $font;
+//     font-size: 15px;
+//     font-weight: 400;
+//     font-style: normal;
+//     line-height: 1.2;
+//     letter-spacing: 0.018;
+//     color: $color-text-gray;
+
+//     width: 166px;
+//     margin-top: 16px;
+//   }
+
+//   .catalog__want {
+//     font-family: $font;
+//     font-size: 15px;
+//     font-weight: 400;
+//     font-style: normal;
+//     line-height: 1.2;
+//     letter-spacing: 0.018;
+//     color: $color-text-gray;
+//   }
+
+
+//   .catalog__transport {
+//     width: 150px;
+//     display: block;
+//     margin: 0;
+//   }
+
+//   .catalog__level {
+//     display: block;
+//     margin: 0;
+//   }
+
+//   .catalog__link {
+//     font-family: $font;
+//     font-size: 17px;
+//     font-weight: 700;
+//     font-style: normal;
+//     line-height: 1.76;
+//     letter-spacing: 0.029;
+//     text-transform: uppercase;
+//     text-align: center;
+
+//     margin-top: 20px;
+//     width: 230px;
+//     padding-top: 13px;
+//     padding-bottom: 13px;
+//     background-color: $color-yellow;
+//     &--border-radius {
+//       border-radius: 40px;
+//     }
+//   }
+
+//   .catalog__still {
+//     font-family: $font;
+//     font-size: 17px;
+//     font-weight: 700;
+//     font-style: normal;
+//     line-height: 1.76;
+//     letter-spacing: 0.029;
+//     text-transform: uppercase;
+
+//     display: block;
+//     text-align: center;
+//   }
+
+// }
+
+// @media (min-width: 1440px) {
+//   .catalog {
+//     background-color: $bac-color-bissenes;
+//     padding-bottom: 27px;
+//   }
+
+//   .catalog__box {
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//   }
+
+//   .catalog__list {
+//     list-style: none;
+//     padding-left: 0;
+//   }
+
+//   .catalog__item {
+//     background-color: $color-white;
+//     margin-bottom: 10px;
+//     display: flex;
+//     flex-flow: row;
+//     flex-wrap: wrap;
+//     padding-left: 18px;
+//     padding-bottom: 22px;
+//     width: 270px;
+
+//     &--border-radius {
+//       border-radius: 10px;
+//     }
+//   }
+
+//   .catalog__caption-wrapper {
+//     display: flex;
+//     flex-flow: row;
+//     flex-wrap: wrap;
+//   }
+
+//   .catalog__caption {
+//     font-family: $font;
+//     font-size: 20px;
+//     font-weight: 700;
+//     font-style: normal;
+//     line-height: 1;
+//     letter-spacing: 0.02;
+//     color: $color-btn;
+//     width: 100%;
+//     position: relative;
+//     padding-left: 100px;
+//   }
+
+//   .catalog__caption--firsova {
+//     &:before {
+//       content: "";
+//       display: block;
+//       width: 70px;
+//       height: 70px;
+//       background-repeat: no-repeat;
+//       background-size: auto;
+//       border-radius: 50%;
+//       position: absolute;
+//       left: 0;
+//       background-image: url(../../img/firsova-mobile@1x.jpg);
+//     }
+//   }
+
+//   .catalog__caption--demin {
+//     &:before {
+//       content: "";
+//       display: block;
+//       width: 70px;
+//       height: 70px;
+//       background-repeat: no-repeat;
+//       background-size: auto;
+//       border-radius: 50%;
+//       position: absolute;
+//       left: 0;
+//       background-image: url(../../img/demin-mobile@1x.jpg);
+//     }
+//   }
+
+//   .catalog__caption--smolov {
+//     &:before {
+//       content: "";
+//       display: block;
+//       width: 70px;
+//       height: 70px;
+//       background-repeat: no-repeat;
+//       background-size: auto;
+//       border-radius: 50%;
+//       position: absolute;
+//       left: 0;
+//       background-image: url(../../img/smolov-mobile@1x.jpg);
+//     }
+//   }
+
+//   .catalog__caption--rogovaya {
+//     &:before {
+//       content: "";
+//       display: block;
+//       width: 70px;
+//       height: 70px;
+//       background-repeat: no-repeat;
+//       background-size: auto;
+//       border-radius: 50%;
+//       position: absolute;
+//       left: 0;
+//       background-image: url(../../img/rogovaya-mobile@1x.jpg);
+//     }
+//   }
+
+//   .catalog__number {
+//     width: 100%;
+//     display: block;
+//     text-align: center;
+//     margin-top: -10px;
+//   }
+
+//   .catalog__about {
+//     font-family: $font;
+//     font-size: 15px;
+//     font-weight: 400;
+//     font-style: normal;
+//     line-height: 1.2;
+//     letter-spacing: 0.018;
+//     color: $color-text-gray;
+
+//     width: 166px;
+//     margin-top: 16px;
+//   }
+
+//   .catalog__want {
+//     font-family: $font;
+//     font-size: 15px;
+//     font-weight: 400;
+//     font-style: normal;
+//     line-height: 1.2;
+//     letter-spacing: 0.018;
+//     color: $color-text-gray;
+//   }
+
+
+//   .catalog__transport {
+//     width: 150px;
+//     display: block;
+//     margin: 0;
+//   }
+
+//   .catalog__level {
+//     display: block;
+//     margin: 0;
+//   }
+
+//   .catalog__link {
+//     font-family: $font;
+//     font-size: 17px;
+//     font-weight: 700;
+//     font-style: normal;
+//     line-height: 1.76;
+//     letter-spacing: 0.029;
+//     text-transform: uppercase;
+//     text-align: center;
+
+//     margin-top: 20px;
+//     width: 230px;
+//     padding-top: 13px;
+//     padding-bottom: 13px;
+//     background-color: $color-yellow;
+//     &--border-radius {
+//       border-radius: 40px;
+//     }
+//   }
+
+//   .catalog__still {
+//     font-family: $font;
+//     font-size: 17px;
+//     font-weight: 700;
+//     font-style: normal;
+//     line-height: 1.76;
+//     letter-spacing: 0.029;
+//     text-transform: uppercase;
+
+//     display: block;
+//     text-align: center;
+//   }
+// }
+
 .catalog {
   background-color: $bac-color-bissenes;
+  padding-bottom: 27px;
 }
 
-.catalog__item {
+.catalog-list {
+  width: 270px;
+  margin-top: 0;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 950px;
+  }
+}
+
+.catalog-item {
+  position: relative;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
   background-color: $color-white;
+  margin-bottom: 40px;
+
+  border-radius: 20px;
 }
 
-.catalog__caption {
+.catalog-item__wrapper {
+
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+}
+
+.catalog-item__wrapper-name {
+
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+
+}
+
+
+.catalog-item__level {
+
+  position: initial;
+
+  order: 1;
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.catalog-item__name {
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  text-align: left;
+
   font-family: $font;
   font-size: 20px;
   font-weight: 700;
@@ -16,27 +561,112 @@
   color: $color-btn;
 }
 
-.catalog__about {
-  font-family: $font;
-  font-size: 15px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: 0.018;
-  color: $color-text-gray;
+.catalog-item__name-link {
+  width: 120px;
+  margin-top: 15px;
+  padding-left: 104px;
 }
 
-.catalog__want {
-  font-family: $font;
-  font-size: 15px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: 0.018;
-  color: $color-text-gray;
+.catalog-item__image {
+  display: block;
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
 }
 
-.catalog__link {
+.catalog-item__image-link {
+
+  position: absolute;
+
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  margin-right: 16px;
+  margin-left: 18px;
+
+}
+
+.catalog-item__indicator {
+  width: 6px;
+  height: 6px;
+  margin-top: 23px;
+  margin-right: 22px;
+  margin-left: auto;
+
+  border-radius: 3px;
+}
+
+.catalog-item__section {
+  position: relative;
+
+  width: 100%;
+
+  font-style: normal;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+
+    width: 100%;
+    height: 1px;
+  }
+
+  &--transport {
+    width: 150px;
+  }
+
+  &--level {
+    display: flex;
+    justify-content: flex-end;
+    width: 120px;
+  }
+}
+
+.catalog-item__section-text {
+  position: relative;
+
+  margin-left: 10px;
+  padding: 0 12px;
+}
+
+.catalog-item__like {
+  position: absolute;
+  top: 54px;
+  left: 67px;
+
+  display: flex;
+  flex-grow: row;
+  align-items: center;
+}
+
+.catalog-item__like-button {
+  width: 31px;
+  height: 31px;
+  margin-right: 8px;
+
+  border: none;
+  border-radius: 50%;
+}
+
+.catalog-item__like-count {
+  margin: 0;
+
+  font-style: normal;
+}
+
+.catalog-item__button {
+  display: block;
+
+  font-style: normal;
+  text-transform: uppercase;
+
+  border-radius: 15px;
+
+  width: 100%;
+
+  border-radius: 20px;
   font-family: $font;
   font-size: 17px;
   font-weight: 700;
@@ -44,6 +674,38 @@
   line-height: 1.76;
   letter-spacing: 0.029;
   text-transform: uppercase;
+  text-align: center;
+  background-color: $color-yellow;
+}
+
+.catalog-item__hashtags {
+  margin-top: 45px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.catalog-item__flag {
+  width: 100%;
+  margin-left: 24px;
+}
+
+.catalog-item__inner {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.catalog-item__transport {
+  order: 1;
+  margin-left: 24px;
+}
+
+.catalog-item__buttons {
+  width: 100%;
+  margin-top: 14px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .catalog__still {
@@ -54,4 +716,220 @@
   line-height: 1.76;
   letter-spacing: 0.029;
   text-transform: uppercase;
+
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .catalog-item {
+    width: 688px;
+    padding: 35px 0 25px 0;
+  }
+
+  .catalog-item__image {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 20px;
+  }
+
+  .catalog-item__wrapper {
+    align-content: flex-start;
+    padding-left: 260px;
+  }
+
+  .catalog-item__like {
+    position: static;
+  }
+
+  .catalog-item__image-link {
+    top: 35px;
+    left: 35px;
+
+    width: 190px;
+    height: 190px;
+    margin: 0;
+  }
+
+  .catalog-item__name-link {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+
+  .catalog-item__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .catalog-item__indicator {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 22px;
+  }
+
+  .catalog-item__hashtags {
+    width: 240px;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .catalog-item__transport {
+    margin-left: 0;
+  }
+
+  .catalog-item__section {
+    order: 1;
+    margin: 20px 0;
+
+    &--transport {
+      display: none;
+    }
+
+    &--level {
+      display: none;
+    }
+  }
+
+  .catalog-item__section-text {
+    margin-left: 70px;
+  }
+
+  .catalog-item__flag {
+    order: 1;
+    margin-left: 35px;
+  }
+
+  .catalog-item__inner {
+    position: relative;
+
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .catalog-item__buttons {
+    position: relative;
+    left: 260px;
+
+    display: flex;
+    flex-flow: row;
+    width: auto;
+    margin: 0;
+  }
+
+  .catalog-item__button {
+    width: 148px;
+    height: 50px;
+
+    font-size: 20px;
+    line-height: 50px;
+
+    border-radius: 25px;
+  }
+
+  .catalog-item__like-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .catalog-item__like-count {
+    font-size: 20px;
+  }
+
+  .catalog-item__level {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .catalog-item {
+    box-sizing: border-box;
+    min-height: 285px;
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 345px;
+    width: 950px;
+  }
+
+  .catalog-item__wrapper {
+    padding-left: 0;
+  }
+
+  .catalog-item__section {
+    display: none;
+  }
+
+  .catalog-item__image {
+    width: 285px;
+    height: 285px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .catalog-item__indicator {
+    position: absolute;
+
+    margin: 0;
+    margin-top: 9px;
+    margin-left: -20px;
+  }
+
+  .catalog-item__image-link {
+    top: 0;
+    left: 0;
+
+    width: 285px;
+    height: 285px;
+    margin: 0;
+  }
+
+  .catalog-item__name-link {
+    width: 330px;
+    padding: 0;
+  }
+
+  .catalog-item__hashtags {
+    width: 330px;
+    padding: 0;
+  }
+
+  .catalog-item__buttons {
+    position: static;
+
+    align-self: flex-end;
+    width: 330px;
+  }
+
+  .catalog-item__flag {
+    order: 1;
+    width: 225px;
+    margin-left: 0;
+  }
+
+  .contry-want.catalog-item__flag {
+    width: 225px;
+  }
+
+  .catalog-item__inner {
+    position: static;
+
+    flex-flow: row;
+    align-items: center;
+    order: 1;
+    align-self: flex-end;
+    width: 100%;
+  }
+
+  .catalog-item__level {
+    margin-right: 0;
+  }
 }

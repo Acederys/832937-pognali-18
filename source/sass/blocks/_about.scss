@@ -1,6 +1,21 @@
 .about {
-  background-image: url(../img/about-mobile@1x.png);
+  background-color: $color-dark-blue;
+  background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
+
+  &--border-radius {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.about__box {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 85px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .about__caption {
@@ -31,4 +46,74 @@
   font-size: 16px;
   letter-spacing: 0.022;
   color: $color-white;
+}
+
+.about__link {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .about {
+    background-color: $color-dark-blue;
+    background-image: none;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 380px;
+      position: absolute;
+      right: 0;
+      height: 550px;
+      background-image: url("../img/about-tablet@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .about__caption {
+    width: 100%;
+  }
+
+  .about__box {
+    width: 688px;
+  }
+
+  .about__box-text {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .about__box-link {
+    width: 100%;
+  }
+  .about__link {
+    font-family: $font;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    font-size: 24px;
+    letter-spacing: 0.024;
+    color: $color-btn;
+
+    display: block;
+    width: 275px;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-bottom: 25px;
+    padding-right: 125px;
+    background-color: $color-yellow;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1320px;
+  }
 }

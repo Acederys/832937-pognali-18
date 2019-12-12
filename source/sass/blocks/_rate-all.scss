@@ -1,5 +1,7 @@
 .rate-all {
   background-color: $bac-color-bissenes;
+  margin-top: 0;
+  padding-bottom: 38px;
 }
 
 .rate-all__caption {
@@ -9,6 +11,30 @@
   line-height: 1;
   font-size: 24px;
   letter-spacing: 0.024;
+  color: $color-caption;
+
+  margin: 0;
+  width: 101px;
+  position: relative;
+  margin-bottom: 46px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 99px;
+    height: 99px;
+    background-image: url("../../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: -204px;
+    top: -17px;
+  }
+}
+
+.rate-all__list {
+  padding-left: 0;
+  width: 200px;
 }
 
 .rate-all__item {
@@ -19,6 +45,14 @@
   font-size: 16px;
   letter-spacing: 0.022;
   color: $color-text-gray;
+  list-style: none;
+
+  &--border {
+    border-top: 1px solid $color-text-gray;
+    opacity: 0.5;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .rate-all__link {
@@ -29,4 +63,99 @@
   font-size: 16px;
   color: $color-dark-blue;
   text-decoration: none;
+  margin-top: 31px;
+}
+
+@media (min-width: 768px) {
+  .rate-all {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .rate-all__caption {
+    font-size: 45px;
+
+    margin: 0;
+    width: 100%;
+    position: relative;
+    margin-bottom: 46px;
+
+    &::after {
+      content: "";
+      display: none;
+      width: 99px;
+      height: 99px;
+      background-image: url("../../img/rates@1x.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: absolute;
+      right: -204px;
+      top: -17px;
+    }
+  }
+
+  .rate-all__list {
+    width: 688px;
+  }
+
+  .rate-all__item {
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    width: 562px;
+
+    &--border {
+      border-top: 1px solid $color-text-gray;
+      opacity: 0.5;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+
+  .rate-all__link {
+    font-size: 20px;
+    margin-top: 31px;
+    width: 100%;
+    text-align: left;
+    padding-left: 71px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .rate-all {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .rate-all__caption {
+    font-size: 45px;
+
+    text-align: center;
+  }
+
+  .rate-all__list {
+    width: 813px;
+  }
+
+  .rate-all__item {
+    font-size: 28px;
+    width: 813px;
+
+    &--border {
+      border-top: 1px solid $color-text-gray;
+      opacity: 0.5;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+
+  .rate-all__link {
+    font-size: 20px;
+    margin-top: 31px;
+    width: 100%;
+    text-align: left;
+    padding-left: 71px;
+  }
 }

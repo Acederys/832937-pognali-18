@@ -1,5 +1,17 @@
 .direction-about {
   background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 270px;
+  padding-left: 23px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+
+  &--border-radius {
+    border-radius: 10px;
+  }
 }
 
 .direction-about__caption {
@@ -10,24 +22,72 @@
   font-size: 21px;
   letter-spacing: 0.021;
   color: $color-text-blue;
-}
 
-.direction-about__text {
-  font-family: $font;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.13;
-  font-size: 16px;
-  letter-spacing: 0.018;
-  color: $color-text-contry;
+  margin: 0;
 }
 
 .direction-about__like {
   font-family: $font;
+  font-size: 16px;
   font-weight: 500;
   font-style: normal;
   line-height: 1.88;
-  font-size: 16px;
-  letter-spacing: 0.024;
+  letter-spacing: 0.03;
   color: $color-text-contry;
+}
+
+.direction-about__text {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: 0.03;
+  color: $color-text-contry;
+}
+
+@media (min-width: 768px) {
+  .direction-about {
+    width: 430px;
+    justify-content: space-between;
+
+    &--border-radius {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .direction-about__caption {
+    width: 100%;
+  }
+
+  .direction-about__like {
+    order: 1;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .direction-about {
+    width: 430px;
+    justify-content: space-between;
+
+    &--border-radius {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .direction-about__caption {
+    width: 100%;
+  }
+
+  .direction-about__like {
+    order: 1;
+    width: 100%;
+  }
 }

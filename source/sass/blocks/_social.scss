@@ -1,0 +1,28 @@
+.social__item {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: $color-yellow;
+  border-radius: 50%;
+
+  &:first-child {
+    background-image: url("../../img/facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../img/vk.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &:last-child {
+    background-image: url("../../img/instagram.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}

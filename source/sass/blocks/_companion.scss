@@ -1,6 +1,21 @@
 .companion {
-  background-image: url(../img/rogovaya-back-mobile@1x.png);
+  background-color: $color-dark-blue;
+  background-image: url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
+
+  margin-top: -30px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  &--border-radius {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}
+
+.companion__box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .companion__caption {
@@ -11,6 +26,8 @@
   font-size: 24px;
   letter-spacing: 0.024;
   color: $color-caption;
+
+  margin: 0;
 }
 
 .companion__text {
@@ -33,6 +50,34 @@
   color: $color-white;
 }
 
+.companion__list {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.companion__item {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.companion__item-info {
+  width: 270px;
+  height: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  &--firsova {
+    background-image: url("../../img/firsova-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &--demin {
+    background-image: url("../../img/demin-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
 .companion__link {
   background-color: $color-yellow;
   font-family: $font;
@@ -43,4 +88,104 @@
   letter-spacing: 0.018;
   color: $color-btn;
   text-decoration: none;
+
+  width: 270px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  margin-top: 20px;
+  &--border-radius {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .companion__caption {
+    width: 100%;
+  }
+
+  .companion__text {
+    width: 423px;
+  }
+
+  .companion__list  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .companion__item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .companion__item-info {
+    width: 285px;
+    height: 285px;
+    &--firsova {
+      background-image: url("../../img/firsova-tablet@1x.jpg");
+    }
+
+    &--demin {
+      background-image: url("../../img/demin-tablet@1x.jpg");
+    }
+  }
+
+  .companion__link  {
+    width: 618px;
+    font-size: 24px;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .companion__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 132px;
+    padding-right: 0;
+  }
+
+  .companion__caption-box {
+    width: 423px;
+    margin-bottom: 87px;
+    align-items: stretch;
+  }
+
+  .companion__caption {
+    width: 100%;
+  }
+
+  .companion__text {
+    width: 100%;
+  }
+
+  .companion__list  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .companion__item {
+    margin-left: 10px;
+  }
+
+  .companion__item-info {
+    width: 285px;
+    height: 285px;
+    margin-right: 60px;
+    &--firsova {
+      background-image: url("../../img/firsova-tablet@1x.jpg");
+    }
+
+    &--demin {
+      background-image: url("../../img/demin-tablet@1x.jpg");
+    }
+  }
+
+  .companion__link  {
+    width: 280px;
+    margin-top: 0;
+  }
 }

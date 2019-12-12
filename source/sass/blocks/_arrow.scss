@@ -1,0 +1,27 @@
+.arrow {
+  background-color: $bac-color-bissenes;
+  padding-bottom: 46px;
+}
+
+.arrow__box {
+  display: flex;
+  width: 270px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.arrow__link {
+  display: block;
+  width: 135px;
+  height: 35px;
+  background-color: $color-white;
+  &:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: 1px solid $bac-grey;
+  }
+  &:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}
