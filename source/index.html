@@ -12,9 +12,9 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="header__box container">
       <a class="header__logo"></a>
-      <a class="menu" href="#" aria-label="меню"></a>
+      <a class="header__menu" href="#" aria-label="меню"></a>
       <section class="nav">
         <h2 class="visually-hidden">навигация</h2>
         <a class="nav__logo" aria-label="Погнали"></a>
@@ -46,10 +46,10 @@
           с крутыми попутчиками!
         </h1>
         <ul class="main-header__list">
-          <li class="main-header__item"><a href="tel:+78005558628" aria-label="телефон: 8 800 555-86-28"></a></li>
-          <li class="main-header__item"><a href="email:mail@htmlacademy.ru" aria-label="email:mail@htmlacademy.ru"></a>
+          <li class="main-header__item"><a class="main-header__phone" href="tel:+78005558628" aria-label="телефон: 8 800 555-86-28"></a></li>
+          <li class="main-header__item"><a class="main-header__email" href="email:mail@htmlacademy.ru" aria-label="email:mail@htmlacademy.ru"></a>
           </li>
-          <li class="main-header__item"><a href="login.html">авторизация</a></li>
+          <li class="main-header__item"><a class="main-header__autorization" href="login.html">авторизация</a></li>
         </ul>
         <blockquote class="main-header__blockquote">
           <p class="main-header__blockquote-text">«Лучшее приложение,
@@ -63,8 +63,9 @@
       <div class="action__box container">
         <h2 class="visually-hidden">Порядок действий</h2>
         <ul class="action__list">
-          <li class="action__item">Выберите
-            направление</li>
+          <li class="action__item"><span>Выберите
+            направление</span>
+          <span>1</span></li>
           <li class="action__item  action__item--margin action__item--margin-decstop">
             Изучите идеи
             путешественников</li>

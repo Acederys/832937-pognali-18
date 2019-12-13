@@ -8,6 +8,11 @@
   position: relative;
 }
 
+.header__box {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__logo {
   display: block;
   width: 100px;
@@ -15,6 +20,14 @@
   background-image: url("../../img/logo-mobile-white@1x.png");
   background-repeat: no-repeat;
   background-size: auto;
+}
+
+.header__menu {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: $color-white;
+  box-shadow: 0 5px 0 0 $color-white;
 }
 
 @media (min-width: 768px) {
@@ -33,6 +46,7 @@
   .header {
     padding-top: 44px;
   }
+
   .header__logo {
     background-image: url("../../img/logo-desktop-white@1x.png");
   }

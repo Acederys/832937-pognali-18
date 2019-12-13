@@ -32,15 +32,54 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  align-items: center;
 }
 
-.main-header__item {
+.main-header__item a {
   font-family: $font;
   font-weight: 700;
   font-style: normal;
   line-height: 1.76;
   font-size: 17px;
   letter-spacing: 0.029;
+  text-transform: uppercase;
+  color: $color-text-blue;
+}
+
+.main-header__phone {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: $color-caption;
+  border-radius: 50%;
+  background-image: url("../../img/topmenu-phone.svg");
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: center;
+}
+
+.main-header__email {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: $color-add-2;
+  border-radius: 50%;
+  background-image: url("../../img/topmenu-mail.svg");
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: center;
+}
+
+.main-header__autorization {
+  display: block;
+  border-radius: 20px;
+padding-top: 7px;
+    padding-bottom: 4px;
+  text-align: center;
+  background-color: $color-yellow;
+  width: 189px; 
 }
 
 .main-header__blockquote {
