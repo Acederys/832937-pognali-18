@@ -8,6 +8,12 @@
   }
 }
 
+.rate__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 @media (min-width: 1440px) {
   .rate {
     padding-bottom: 187px;

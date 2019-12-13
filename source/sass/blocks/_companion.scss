@@ -14,8 +14,12 @@
 
 .companion__box {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+.companion__caption-box {
+  padding-left: 25px;
 }
 
 .companion__caption {
@@ -53,6 +57,9 @@
 .companion__list {
   padding-left: 0;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .companion__item {

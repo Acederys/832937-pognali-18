@@ -46,8 +46,10 @@
           с крутыми попутчиками!
         </h1>
         <ul class="main-header__list">
-          <li class="main-header__item"><a class="main-header__phone" href="tel:+78005558628" aria-label="телефон: 8 800 555-86-28"></a></li>
-          <li class="main-header__item"><a class="main-header__email" href="email:mail@htmlacademy.ru" aria-label="email:mail@htmlacademy.ru"></a>
+          <li class="main-header__item"><a class="main-header__phone" href="tel:+78005558628"
+              aria-label="телефон: 8 800 555-86-28"></a></li>
+          <li class="main-header__item"><a class="main-header__email" href="email:mail@htmlacademy.ru"
+              aria-label="email:mail@htmlacademy.ru"></a>
           </li>
           <li class="main-header__item"><a class="main-header__autorization" href="login.html">авторизация</a></li>
         </ul>
@@ -63,18 +65,22 @@
       <div class="action__box container">
         <h2 class="visually-hidden">Порядок действий</h2>
         <ul class="action__list">
-          <li class="action__item"><span>Выберите
-            направление</span>
-          <span>1</span></li>
+          <li class="action__item">
+            <span class="action__item-text">Выберите направление</span>
+            <span class="action__item-number">1</span>
+          </li>
           <li class="action__item  action__item--margin action__item--margin-decstop">
-            Изучите идеи
-            путешественников</li>
+            <span class="action__item-text">Изучите идеи путешественников</span>
+            <span class="action__item-number">2</span>
+          </li>
           <li class="action__item action__item--margin-decstop">
-            Находите тех,
-            кто похож на вас</li>
+            <span class="action__item-text">Находите тех, кто похож на вас</span>
+            <span class="action__item-number">3</span>
+          </li>
           <li class="action__item action__item--bac-rad action__item--margin action__item--margin-decstop">
-            Путешествуйте
-            вместе!</li>
+            <span class="action__item-text">Путешествуйте вместе!</span>
+            <span class="action__item-number">4</span>
+          </li>
         </ul>
       </div>
     </section>
@@ -106,7 +112,7 @@
         </div>
         <ul class="direction__list">
           <li class="direction__item">
-            <img src="tailand.jpg" alt="Таиланд">
+            <img class="direction__item-image" src="img/thailand-mobile@1x.jpg" alt="Таиланд">
             <div class="direction-about direction-about--border-radius">
               <h3 class="direction-about__caption">Таиланд</h3>
               <span class="direction-about__like">18321</span>
@@ -114,7 +120,7 @@
             </div>
           </li>
           <li class="direction__item">
-            <img src="france.jpg" alt="Франция">
+            <img class="direction__item-image" src="img/france-mobile@1x.jpg" alt="Франция">
             <div class="direction-about direction-about--border-radius">
               <h3 class="direction-about__caption">Франция</h3>
               <span class="direction-about__like">12518</span>
@@ -122,7 +128,7 @@
             </div>
           </li>
           <li class="direction__item">
-            <img src="czech.jpg" alt="Чехия">
+            <img class="direction__item-image" src="img/czech-mobile@1x.jpg" alt="Чехия">
             <div class="direction-about direction-about--border-radius">
               <h3 class="direction-about__caption">Чехия</h3>
               <span class="direction-about__like">5326</span>
@@ -179,12 +185,18 @@
             свой
             профиль</h2>
           <ul class="rate-all__list">
-            <li class="rate-all__item rate-all__item--border">Базовое размещение
-              <span>Бесплатно</span></li>
-            <li class="rate-all__item rate-all__item--border">Вывод на первых позициях
-              <span>99 руб./мес</span></li>
-            <li class="rate-all__item rate-all__item--border">Кастомный цвет карточки
-              <span>59 руб./мес</span></li>
+            <li class="rate-all__item">
+              <span class="rate-all__item-text">Базовое размещение</span>
+              <span class="rate-all__item-cost">Бесплатно</span>
+            </li>
+            <li class="rate-all__item">
+              <span class="rate-all__item-text">Вывод на первых позициях</span>
+              <span class="rate-all__item-cost">99 руб./мес</span>
+            </li>
+            <li class="rate-all__item">
+              <span class="rate-all__item-text">Кастомный цвет карточки</span>
+              <span class="rate-all__item-cost">59 руб./мес</span>
+            </li>
           </ul>
           <a class="rate-all__link" href="#modal">Показать тарифы для бизнеса</a>
         </article>
