@@ -1,5 +1,20 @@
-.main-footer__box {
+.main-footer {
   background-color: $color-yellow;
+  position: relative;
+  z-index: -1;
+  margin-top: -19px;
+  padding-bottom: 35px;
+  &--border-radius {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px
+  }
+}
+
+.main-footer__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 57px;
 }
 
 .main-footer__adress {
@@ -10,6 +25,26 @@
   font-size: 16px;
   letter-spacing: 0.022;
   color: $color-dark-blue;
+  text-transform: uppercase;
+  width: 210px;
+  padding-left: 61px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: $color-blue-link;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/contacts-location.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
 }
 
 .main-footer__adress-map {
@@ -21,4 +56,14 @@
   letter-spacing: 0.018;
   color: $color-dark-blue;
   text-decoration: none;
+  display: block;
+  background-color: transparent;
+  border: 3px solid $color-dark-blue;
+  border-radius: 5px;
+  padding-top: 24px;
+  padding-bottom: 21px;
+  padding-left: 24px;
+  padding-right: 23px;
+  width: 270px;
+  margin-top: 35px;
 }

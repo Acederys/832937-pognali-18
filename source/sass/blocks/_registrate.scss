@@ -2,6 +2,8 @@
   background-color: $color-dark-blue;
   padding-top: 129px;
   padding-bottom: 44px;
+  z-index: 1;
+  margin-top: -20px;
   &--border-radius {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -10,7 +12,7 @@
 
 .registrate__box {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -37,9 +39,13 @@
   letter-spacing: 0.022;
   color: $color-white;
 
-  width: 100%;
+  width: 200px;
   text-align: center;
   margin-bottom: 32px;
+}
+
+.registrate__text-link {
+  color: $color-yellow;
 }
 
 .registrate__email {
@@ -51,6 +57,8 @@
   letter-spacing: 0.018;
   color: $color-text-contry;
   width: 270px;
+  position: relative;
+  z-index: 1;
 
   padding-top: 24px;
   padding-left: 24px;
@@ -77,6 +85,18 @@
   margin-bottom: 20px;
 }
 
+.registrate__form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.registrate__link-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .registrate__link {
   font-family: $font;
   font-weight: 700;
@@ -88,9 +108,40 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  padding-left: 36px;
+  padding-left: 61px;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $color-blue-link;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:first-child::before {
+    background-image: url("../../img/contacts-phone.svg");
+  }
+  &:last-child::before {
+    background-image: url("../../img/contacts-mail.svg");
+  }
+}
+
+.registrate__button {
+  width: 66px;
+  height: 74px;
+  background: $color-yellow;
+  border: none;
+  border-radius: 10px;
+  margin-left: -43px;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {

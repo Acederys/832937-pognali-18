@@ -221,7 +221,7 @@
         <h2 class="registrate__caption">Заинтересовались?</h2>
         <p class="registrate__text">Зарегистрируйтесь,
           это быстро и бесплатно!
-          Уже зарегистрированы? Тогда скорее <a href="login.html">авторизуйтесь</a>.</p>
+          Уже зарегистрированы? Тогда скорее <a class="registrate__text-link" href="login.html">авторизуйтесь</a>.</p>
         <form action="https://echo.htmlacademy.ru" method="POST" class="registrate__form">
           <label for="email" class="visually-hidden">email</label>
           <input id="email" type="email" class="registrate__email registrate__email--border-radius"
@@ -232,12 +232,14 @@
         </form>
         <p class="registrate__question">Остались вопросы?
           Мы с радостью на них ответим!</p>
-        <a class="registrate__link" href="tel:+78005558628">8 800 555-86-28</a>
-        <a class="registrate__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="registrate__link-box">
+          <a class="registrate__link" href="tel:+78005558628">8 800 555-86-28</a>
+          <a class="registrate__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
       </div>
     </section>
-    <footer class="main-footer container">
-      <div class="main-footer__box">
+    <footer class="main-footer main-footer--border-radius">
+      <div class="main-footer__box  container">
         <address class="main-footer__adress">ул. Большая
           Конюшенная, 19/8</address>
         <a class="main-footer__adress-map" href="#">Проложить маршрут</a>
@@ -246,7 +248,7 @@
       Конюшенная, 19/8">
     </footer>
   </main>
-  <footer class="footer container container">
+  <footer class="footer container">
     <a class="footer__logo" aria-label="Погнали"></a>
     <ul class="footer__social-list social">
       <li class="social__item"><a href="#" aria-label="погнали в facebook"></a></li>
