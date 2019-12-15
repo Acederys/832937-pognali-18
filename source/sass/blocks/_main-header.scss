@@ -127,6 +127,14 @@ padding-top: 7px;
   .main-header__blockquote-text {
     width: 100%;
   }
+
+  .main-header__phone {
+    display: none;
+  }
+
+  .main-header__email {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {

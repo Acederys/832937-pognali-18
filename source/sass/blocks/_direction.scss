@@ -78,17 +78,27 @@
   .direction {
     padding-bottom: 75px;
   }
+  
+  .direction__box {
+    justify-content: flex-start;
+  }
+
+  .direction__caption-box {
+    width: 337px;
+  }
 
   .direction__caption {
     padding-left: 33px;
     margin-bottom: 60px;
     width: 100%;
+    font-size: 45px;
   }
 
   .direction__text {
     padding-left: 33px;
-    width: 375px;
+    width: 337px;
     margin-bottom: 105px;
+    font-size: 28px;
   }
 
   .direction__list {
