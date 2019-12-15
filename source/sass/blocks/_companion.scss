@@ -111,8 +111,21 @@
     width: 100%;
   }
 
+  .companion__box {
+    justify-content: space-between;
+  }
+
+  .companion__caption {
+    font-size: 45px;
+  }
+
   .companion__text {
     width: 423px;
+    font-size: 28px;
+  }
+
+  .companion__article {
+    width: 258px;
   }
 
   .companion__list  {

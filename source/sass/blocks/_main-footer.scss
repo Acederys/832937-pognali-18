@@ -67,3 +67,22 @@
   width: 270px;
   margin-top: 35px;
 }
+
+@media (min-width: 768px) {
+  .main-footer__box {
+    justify-content: flex-start;
+  }
+
+  .main-footer__adress {
+    width: 525px;
+    font-size: 28px;
+  }
+
+  .main-footer__adress-map  {
+    width: 618px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+}

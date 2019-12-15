@@ -170,12 +170,27 @@
 
   .registrate__email {
     font-size: 24px;
-    width: 618px;
-
+    width: 536px;
     padding-top: 30px;
     padding-left: 35px;
     padding-bottom: 32px;
+    &--border-radius {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
+
+  .registrate__button {
+    width: 82px;
+    height: 92px;
+    background: #ffd74b;
+    border: none;
+    border-radius: 10px;
+    margin-left: 0;
+    z-index: 2;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
 
   .registrate__question {
     font-size: 28px;

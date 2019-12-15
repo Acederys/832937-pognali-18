@@ -112,6 +112,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .rate-all__caption {
@@ -121,6 +122,7 @@
     width: 100%;
     position: relative;
     margin-bottom: 46px;
+    text-align: center;
 
     &::after {
       content: "";
@@ -143,7 +145,7 @@
   .rate-all__item {
     font-size: 28px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 562px;
 
     &--border {
@@ -152,6 +154,23 @@
       padding-top: 14px;
       padding-bottom: 14px;
     }
+    &::after {
+      left: 0;
+      right: auto;
+      padding: 16px 22px 15px 21px;
+    }
+  }
+
+  .rate-all__item-text {
+    text-align: start;
+  }
+
+  .rate-all__item-cost {
+    border-top: 1px solid #444444;
+    opacity: 0.5;
+    padding-top: 14px;
+    width: 200px;
+    text-align: end;
   }
 
   .rate-all__link {

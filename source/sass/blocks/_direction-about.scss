@@ -25,7 +25,7 @@
   font-size: 21px;
   letter-spacing: 0.021;
   color: $color-text-blue;
-
+  
   margin: 0;
 }
 
@@ -47,13 +47,15 @@
   line-height: 1.88;
   letter-spacing: 0.03;
   color: $color-text-contry;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
   .direction-about {
     width: 430px;
     justify-content: space-between;
-
+    padding-top: 35px;
+    margin-top: 0;
     &--border-radius {
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -69,6 +71,7 @@
   .direction-about__like {
     order: 1;
     width: 100%;
+    margin: 0;
   }
 }
 
