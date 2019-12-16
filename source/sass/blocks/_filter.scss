@@ -55,3 +55,38 @@
   flex-wrap: wrap;
   margin-top: 32px;
 }
+
+.filter__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 225px;
+  margin-bottom: 67px;
+}
+
+.filter__item {
+  background-color: $color-white;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.29;
+  width: 45px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &--active {
+  background-color: $color-btn;
+  }
+}
+
+.filter__item a {
+  color: $color-btn;
+  text-decoration: none;
+}
+
+.filter__item--active > a {
+  color: $color-white;
+}
