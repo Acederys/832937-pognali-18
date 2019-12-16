@@ -85,4 +85,25 @@
 
 @media (min-width: 1440px) {
 
+  .main-footer__box {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__adress {
+    padding-left: 110px;
+    width: 551px;
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -30px;
+    }
+  }
+
+  .main-footer__adress-map {
+    width: 324px;
+    border-radius: 20px;
+    margin-top: 0;
+    font-size: 24px;
+  }
 }

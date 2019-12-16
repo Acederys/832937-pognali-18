@@ -64,17 +64,19 @@
     content: "1";
     background-color: $color-add-3;
   }
+
   &:nth-child(2)::after {
     content: "2";
     background-color: $color-add-2;
   }
+
   &:last-child::after {
     content: "3";
     background-color: $color-yellow;
   }
 }
 
-.rate-all__item span {
+.rate-all__item-text {
   font-family: $font;
   font-weight: 300;
   font-style: normal;
@@ -83,9 +85,6 @@
   letter-spacing: 0.022;
   color: $color-text-gray;
   list-style: none;
-}
-
-.rate-all__item-text {
   border-top: 1px solid $color-text-gray;
   opacity: 0.5;
   padding-top: 14px;
@@ -93,6 +92,14 @@
 }
 
 .rate-all__item-cost {
+  font-family: $font;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.38;
+  font-size: 16px;
+  letter-spacing: 0.022;
+  color: $color-text-gray;
+  list-style: none;
   margin-bottom: 15px;
 }
 
@@ -154,6 +161,7 @@
       padding-top: 14px;
       padding-bottom: 14px;
     }
+
     &::after {
       left: 0;
       right: auto;
@@ -196,12 +204,13 @@
   }
 
   .rate-all__list {
-    width: 813px;
+    width: 100%;
   }
 
   .rate-all__item {
-    font-size: 28px;
-    width: 813px;
+    width: 100%;
+    padding-left: 62px;
+    justify-content: flex-start;
 
     &--border {
       border-top: 1px solid $color-text-gray;
@@ -209,6 +218,23 @@
       padding-top: 14px;
       padding-bottom: 14px;
     }
+
+    &::after {
+      left: -20px;
+      top: 1px;
+      padding: 14px 27px 16px 26px;
+      font-size: 28px;
+    }
+  }
+
+  .rate-all__item-text {
+    font-size: 28px;
+    width: 406px;
+  }
+
+  .rate-all__item-cost {
+    font-size: 28px;
+    width: 406px;
   }
 
   .rate-all__link {
@@ -217,5 +243,6 @@
     width: 100%;
     text-align: left;
     padding-left: 71px;
+    color: $color-tarife;
   }
 }

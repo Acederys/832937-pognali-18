@@ -135,6 +135,10 @@ padding-top: 7px;
   .main-header__email {
     display: none;
   }
+
+  .main-header__autorization {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -147,7 +151,9 @@ padding-top: 7px;
     }
 
     .main-header__caption {
-      width: 750px;
+      width: 396px;
+      font-size: 60px;
+      text-align: left;
     }
 
     .main-header__list {
@@ -161,7 +167,12 @@ padding-top: 7px;
       padding-left: 0;
     }
 
+    .main-header__blockquote-text {
+      font-size: 28px;
+    }
+
     .main-header__blockquote-cite {
       width: 282px;
+      font-size: 21px;
     }
 }

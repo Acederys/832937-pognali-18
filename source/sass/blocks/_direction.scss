@@ -139,7 +139,7 @@
 
   .direction__box {
     padding-top: 72px;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
@@ -165,8 +165,7 @@
   }
 
   .direction__link {
-    width: 270px;
-    margin-top: -365px;
-    margin-right: 240px;
+    width: 274px;
+    font-size: 24px;
   }
 }
