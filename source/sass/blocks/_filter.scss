@@ -2,7 +2,15 @@
   background-color: $color-filter;
   position: relative;
   margin-top: -20px;
+  padding-bottom: 27px;
   z-index: -1;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  &--border-radius {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }
 
 .filter__box {
@@ -47,6 +55,13 @@
   font-size: 16.5px;
   letter-spacing: 0.029;
   color: $color-text-blue;
+  width: 270px;
+  text-align: center;
+  display: block;
+  background-color: $color-gray-btn;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  border-radius: 20px;
 }
 
 .filter__continent {
@@ -89,4 +104,9 @@
 
 .filter__item--active > a {
   color: $color-white;
+}
+
+.filter__country {
+  padding-left: 0;
+  list-style: none;
 }
