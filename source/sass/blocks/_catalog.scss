@@ -80,23 +80,42 @@
   text-align: left;
   color: $color-text-gray;
   margin-bottom: 8px;
+
+  &--level {
+    display: none;
+  }
+
+  &--hobby {
+    display: none;
+  }
+
+  &--auto {
+    display: none;
+  }
+
+  &--food {
+    display: none;
+  }
 }
 
-.catalog__form-input-level {
-  display: none;
+.catalog__form-input {
+  &--level {
+    display: none;
+  }
+
+  &--hobby {
+    display: none;
+  }
+
+  &--auto {
+    display: none;
+  }
+
+  &--food {
+    display: none;
+  }
 }
 
-.catalog__form-input-hobby {
-  display: none;
-}
-
-.catalog__form-input-auto {
-  display: none;
-}
-
-.catalog__form-input-food {
-  display: none;
-}
 
 .catalog__form-btn {
   text-transform: uppercase;
@@ -347,6 +366,71 @@
 }
 
 @media (min-width: 768px) {
+  .catalog__form-box {
+    width: 689px;
+  }
+
+  .catalog__form-legend {
+    font-size: 20px;
+    width: 110px;
+  }
+
+  .catalog__fieldset {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  .catalog__form-label {
+    font-size: 20px;
+    width: 130px;
+    &--level {
+      display: none;
+    }
+  
+    &--hobby {
+      display: block;
+    }
+  
+    &--auto {
+      display: none;
+    }
+  
+    &--food {
+      display: block;
+    }
+  }
+  
+  .catalog__form-input {
+    &--level {
+      display: none;
+    }
+  
+    &--hobby {
+      display: block;
+    }
+  
+    &--auto {
+      display: none;
+    }
+  
+    &--food {
+      display: block;
+    }
+  }
+
+  .catalog__form-caption {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .catalog__form-legend {
+    border: none;
+  }
+
   .catalog-item {
     width: 688px;
     padding: 35px 0 25px 0;

@@ -42,6 +42,9 @@
     <header class="header-companion header-companion--border-radius">
       <div class="header-companion container">
         <h1 class="header-companion__caption header-companion__caption--border">Попутчики</h1>
+        <div class="header-companion__link-box">
+          <a class="header-companiom__link-index">На главную</a>
+        </div>
       </div>
     </header>
     <section class="filter filter--border-radius">
@@ -93,6 +96,14 @@
           <li class="country__item"><a href="#">Азербайджанм</a></li>
         </ul>
         <a class="filter__link">свернуть</a>
+        <div class="filter__link-box">
+          <a class="filter__link-all">Показать все</a>
+          <a class="filter__link-other">
+            <span class="filter__link-dot"></span>
+            <span class="filter__link-dot"></span>
+            <span class="filter__link-dot"></span>
+          </a>
+        </div>
       </div>
     </section>
     <section class="catalog">
@@ -102,31 +113,46 @@
             <h2 class="catalog__form-caption">Подберите идеального попутчика</h2>
             <fieldset class="catalog__fieldset">
               <legend class="catalog__form-legend">Хобби</legend>
-              <label class="catalog__form-label"  for="hobby"></label>
-              <input class="catalog__form-input-hobby" id="hobby" type="text">
+              <label class="catalog__form-label--hobby catalog__form-label" for="hobby-sport">
+                <input type="checkbox" class="catalog__form-input-hobby catalog__form-input" id="hobby-sport">Спортзал</label>
+              <label class="catalog__form-label--hobby catalog__form-label" for="hobby-hookan">
+                <input type="checkbox" class="catalog__form-input-hobby catalog__form-input" id="hobby-hookah">Кальян</label>
+              <label class="catalog__form-label--hobby catalog__form-label" for="hobby-sofa">
+                <input type="checkbox" class="catalog__form-input-hobby catalog__form-input" id="hobby-safa">диван</label>
             </fieldset>
             <fieldset class="catalog__fieldset">
               <legend class="catalog__form-legend">Музыка</legend>
-              <label class="catalog__form-label" for="music-rock"><input type="checkbox" class="catalog__form-input" id="music-rock" type="text">
+              <label class="catalog__form-label--music catalog__form-label" for="music-rock">
+                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-rock">
                 Тяжелый рок</label>
-              <label class="catalog__form-label"  for="music-rep"><input type="checkbox" class="catalog__form-input" id="music-rep" type="text"> Русский
-                рэп</label>
-              <label class="catalog__form-label"  for="music-euro"><input type="checkbox" class="catalog__form-input" id="music-euro" type="text"> Евроденс</label>
+              <label class="catalog__form-label--music catalog__form-label" for="music-rep">
+                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-rep"> 
+                Русский рэп</label>
+              <label class="catalog__form-label--music catalog__form-label" for="music-euro">
+                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-euro"> 
+                Евроденс</label>
             </fieldset>
             <fieldset class="catalog__fieldset">
               <legend class="catalog__form-legend">Еда</legend>
-              <label class="catalog__form-label"  for="food"></label>
-              <input class="catalog__form-input-food" id="food" type="text">
+              <label class="catalog__form-label--food catalog__form-label" for="food-meet">
+                <input type="checkbox" class="catalog__form-input--food catalog__form-input" id="food-meet">
+                Мясоед</label>
+              <label class="catalog__form-label--food catalog__form-label" for="food-pp">
+                <input type="checkbox" class="catalog__form-input--food catalog__form-input" id="food-pp">
+                Сидит на ПП</label>
+              <label class="catalog__form-label--food catalog__form-label" for="food--veg">
+                <input type="checkbox" class="catalog__form-input--food catalog__form-input" id="food-veg">
+                Веган-сыроед</label>
             </fieldset>
             <fieldset class="catalog__fieldset">
               <legend class="catalog__form-legend">Транспорт</legend>
-              <label class="catalog__form-label"  for="auto"></label>
-              <input class="catalog__form-input-auto" id="auto" type="text">
+              <label class="catalog__form-label--auto catalog__form-label" for="auto"></label>
+              <input class="catalog__form-input--auto catalog__form-input" id="auto" type="text">
             </fieldset>
             <fieldset class="catalog__fieldset">
               <legend class="catalog__form-legend">Левел</legend>
-              <label class="catalog__form-label"  for="level"></label>
-              <input class="catalog__form-input-level" id="level" type="text">
+              <label class="catalog__form-label" for="level"></label>
+              <input class="catalog__form-input--level catalog__form-input" id="level" type="text">
             </fieldset>
             <button class="catalog__form-btn" type="submit">Показать</button>
           </form>
