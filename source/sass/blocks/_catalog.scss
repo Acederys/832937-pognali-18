@@ -103,6 +103,10 @@
     display: none;
   }
 
+  &--music {
+    display: none;
+  }
+
   &--hobby {
     display: none;
   }
@@ -385,40 +389,52 @@
 
   .catalog__form-label {
     font-size: 20px;
-    width: 130px;
+    width: 150px;
+    position: relative;
+    padding-left: 30px;
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background-color: $color-white;
+      position: absolute;
+      left: 0;
+      top: -5px;
+    }
     &--level {
       display: none;
     }
   
     &--hobby {
       display: block;
+
     }
   
     &--auto {
-      display: none;
+      display: block;
+      width: 56px;
+      &::before {
+        content: "";
+        display: block;
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background-color: $color-white;
+        position: absolute;
+        left: 0;
+        top: -5px;
+      }
     }
   
     &--food {
       display: block;
     }
   }
-  
-  .catalog__form-input {
-    &--level {
-      display: none;
-    }
-  
-    &--hobby {
-      display: block;
-    }
-  
-    &--auto {
-      display: none;
-    }
-  
-    &--food {
-      display: block;
-    }
+
+  .catalog__form-btn {
+    width: 100%;
   }
 
   .catalog__form-caption {
@@ -556,6 +572,94 @@
 }
 
 @media (min-width: 1440px) {
+
+  .catalog__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog__form-box {
+    width: 285px;
+    background-color: $color-yellow;
+    border-radius: 20px;
+    padding: 47px;
+    margin-bottom: 28px;
+    max-height: 815px;;
+  }
+  
+  .catalog__fieldset {
+    border: none;
+    width: 100%;
+  }
+  
+  .catalog__form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .catalog__form-caption {
+    font-size: 30px;
+    width: 156px;
+  }
+
+  .catalog__form-legend {
+    font-size: 20px;
+    width: 220px;
+  }
+  
+  .catalog__form-label {
+    font-size: 20px;
+  
+    &--level {
+      display: none;
+    }
+  
+    &--hobby {
+      display: none;
+    }
+  
+    &--auto {
+      display: none;
+    }
+  
+    &--food {
+      display: none;
+    }
+  }
+  
+  .catalog__form-input {
+    &--level {
+      display: none;
+    }
+  
+    &--music {
+      display: none;
+    }
+  
+    &--hobby {
+      display: none;
+    }
+  
+    &--auto {
+      display: none;
+    }
+  
+    &--food {
+      display: none;
+    }
+  }
+
+  .catalog-list {
+    order: -1;
+  }
+
+  .catalog__form-btn {
+    width: 196px;
+    font-size: 20px;
+  }
+
   .catalog-item {
     box-sizing: border-box;
     min-height: 285px;
@@ -640,5 +744,11 @@
 
   .catalog-item__level {
     margin-right: 0;
+  }
+
+  .catalog__still {
+    font-size: 20px;
+    text-align: center;
+    width: 950px;
   }
 }

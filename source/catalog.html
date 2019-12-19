@@ -111,53 +111,66 @@
         <div class="catalog__form-box">
           <form class="catalog__form" action="GET">
             <h2 class="catalog__form-caption">Подберите идеального попутчика</h2>
-            <fieldset class="catalog__fieldset">
+            <div class="catalog__fieldset">
               <legend class="catalog__form-legend">Хобби</legend>
               <label class="catalog__form-label--hobby catalog__form-label" for="hobby-sport">
-                <input type="checkbox" class="catalog__form-input-hobby catalog__form-input" id="hobby-sport">Спортзал</label>
+                <input type="checkbox" class="catalog__form-input--hobby catalog__form-input"
+                  id="hobby-sport">Спортзал</label>
               <label class="catalog__form-label--hobby catalog__form-label" for="hobby-hookan">
-                <input type="checkbox" class="catalog__form-input-hobby catalog__form-input" id="hobby-hookah">Кальян</label>
+                <input type="checkbox" class="catalog__form-input--hobby catalog__form-input"
+                  id="hobby-hookah">Кальян</label>
               <label class="catalog__form-label--hobby catalog__form-label" for="hobby-sofa">
-                <input type="checkbox" class="catalog__form-input-hobby catalog__form-input" id="hobby-safa">диван</label>
-            </fieldset>
-            <fieldset class="catalog__fieldset">
+                <input type="checkbox" class="catalog__form-input--hobby catalog__form-input"
+                  id="hobby-safa">диван</label>
+            </div>
+            <div class="catalog__fieldset">
               <legend class="catalog__form-legend">Музыка</legend>
               <label class="catalog__form-label--music catalog__form-label" for="music-rock">
-                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-rock">
-                Тяжелый рок</label>
+                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-rock">Тяжелый
+                рок</label>
               <label class="catalog__form-label--music catalog__form-label" for="music-rep">
-                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-rep"> 
-                Русский рэп</label>
+                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-rep"> Русский
+                рэп</label>
               <label class="catalog__form-label--music catalog__form-label" for="music-euro">
-                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-euro"> 
-                Евроденс</label>
-            </fieldset>
-            <fieldset class="catalog__fieldset">
+                <input type="checkbox" class="catalog__form-input--music catalog__form-input"
+                  id="music-euro">Евроденс</label>
+            </div>
+            <div class="catalog__fieldset">
               <legend class="catalog__form-legend">Еда</legend>
               <label class="catalog__form-label--food catalog__form-label" for="food-meet">
-                <input type="checkbox" class="catalog__form-input--food catalog__form-input" id="food-meet">
-                Мясоед</label>
+                <input type="checkbox" class="catalog__form-input--food catalog__form-input"
+                  id="food-meet">Мясоед</label>
               <label class="catalog__form-label--food catalog__form-label" for="food-pp">
-                <input type="checkbox" class="catalog__form-input--food catalog__form-input" id="food-pp">
-                Сидит на ПП</label>
+                <input type="checkbox" class="catalog__form-input--food catalog__form-input" id="food-pp"> Сидит на
+                ПП</label>
               <label class="catalog__form-label--food catalog__form-label" for="food--veg">
-                <input type="checkbox" class="catalog__form-input--food catalog__form-input" id="food-veg">
-                Веган-сыроед</label>
-            </fieldset>
-            <fieldset class="catalog__fieldset">
+                <input type="checkbox" class="catalog__form-input--food catalog__form-input"
+                  id="food-veg">Веган-сыроед</label>
+            </div>
+            <div class="catalog__fieldset">
               <legend class="catalog__form-legend">Транспорт</legend>
-              <label class="catalog__form-label--auto catalog__form-label" for="auto"></label>
-              <input class="catalog__form-input--auto catalog__form-input" id="auto" type="text">
-            </fieldset>
-            <fieldset class="catalog__fieldset">
+              <label class="catalog__form-label--auto catalog__form-label" for="auto-air">
+                <input class="catalog__form-input--auto catalog__form-input" id="auto-air" type="text">
+              </label>
+              <label class="catalog__form-label--auto catalog__form-label" for="auto-bus">
+                <input class="catalog__form-input--auto catalog__form-input" id="auto-bus" type="text">
+              </label>
+              <label class="catalog__form-label--auto catalog__form-label" for="auto-bike">
+                <input class="catalog__form-input--auto catalog__form-input" id="auto-bike" type="text">
+              </label>
+              <label class="catalog__form-label--auto catalog__form-label" for="auto-ped">
+                <input class="catalog__form-input--auto catalog__form-input" id="auto-ped" type="text">
+              </label>
+
+            </div>
+            <div class="catalog__fieldset">
               <legend class="catalog__form-legend">Левел</legend>
               <label class="catalog__form-label" for="level"></label>
               <input class="catalog__form-input--level catalog__form-input" id="level" type="text">
-            </fieldset>
+            </div>
             <button class="catalog__form-btn" type="submit">Показать</button>
           </form>
         </div>
-
         <ul class="catalog-list">
           <li class="catalog-list__item catalog-item">
             <div class="catalog-item__wrapper">
@@ -369,9 +382,17 @@
       </div>
     </section>
     <section class="arrow">
-      <div class="arrow__box container">
-        <a class="arrow__link" href="#" aria-label="назад"></a>
-        <a class="arrow__link" href="#" aria-label="вперед"></a>
+      <div class="container">
+        <div class="arrow__box">
+          <div class="arrow__page">
+            <a class="arrow__page-item" href="#">1</a>
+            <a class="arrow__page-item" href="#">2</a>
+            <a class="arrow__page-item" href="#">3</a>
+            <a class="arrow__page-item" href="#">4</a>
+          </div>
+          <a class="arrow__link" href="#" aria-label="назад"></a>
+          <a class="arrow__link" href="#" aria-label="вперед"></a>
+        </div>
       </div>
     </section>
   </main>
