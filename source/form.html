@@ -10,34 +10,34 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__box container">
-          <a class="header__logo"></a>
-          <a class="header__menu" href="#" aria-label="меню"></a>
-          <section class="nav">
-            <h2 class="visually-hidden">навигация</h2>
-            <a class="nav__logo" aria-label="Погнали"></a>
-            <button class="nav__close" type="submit">
-              <span class="visually-hidden">Закрыть</span>
-            </button>
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#">О сервисе</a></li>
-              <li class="nav__item"><a href="#">Направления</a></li>
-              <li class="nav__item"><a href="#">Попутчики</a></li>
-            </ul>
-            <a class="nav__link nav__link--border-radius" href="login.html">авторизация</a>
-            <ul class="nav__info info">
-              <li class="info__item"><a href="tel:+78005558628">8 800 555-86-28</a></li>
-              <li class="info__item"><a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-            </ul>
-            <ul class="social nav__social">
-              <li class="social__item nav__social-item"><a href="#" aria-label="погнали в facebook"></a></li>
-              <li class="social__item nav__social-item"><a href="#" aria-label="погнали в vkontact"></a></li>
-              <li class="social__item nav__social-item"><a href="#" aria-label="погнали в instagram"></a></li>
-            </ul>
-          </section>
-        </div>
-      </header>
+  <header class="header">
+    <div class="header__box container">
+      <a class="header__logo"></a>
+      <a class="header__menu" href="#" aria-label="меню"></a>
+      <section class="nav">
+        <h2 class="visually-hidden">навигация</h2>
+        <a class="nav__logo" aria-label="Погнали"></a>
+        <button class="nav__close" type="submit">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">О сервисе</a></li>
+          <li class="nav__item"><a href="#">Направления</a></li>
+          <li class="nav__item"><a href="#">Попутчики</a></li>
+        </ul>
+        <a class="nav__link nav__link--border-radius" href="login.html">авторизация</a>
+        <ul class="nav__info info">
+          <li class="info__item"><a href="tel:+78005558628">8 800 555-86-28</a></li>
+          <li class="info__item"><a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+        </ul>
+        <ul class="social nav__social">
+          <li class="social__item nav__social-item"><a href="#" aria-label="погнали в facebook"></a></li>
+          <li class="social__item nav__social-item"><a href="#" aria-label="погнали в vkontact"></a></li>
+          <li class="social__item nav__social-item"><a href="#" aria-label="погнали в instagram"></a></li>
+        </ul>
+      </section>
+    </div>
+  </header>
   <main class="main">
     <header class="header-form header-form--border-radius">
       <div class="header-form__box container">
@@ -45,90 +45,105 @@
       </div>
     </header>
     <section class="about-form">
-      <div class="about-form__box ">
-        <p class="about-form__number">80</p>
-        <p class="about-form__level">level</p>
-      </div>
-      <img class="about-form-photo" src="me.svg" alt="мое фото">
-      <a class="about-form__new-photo" href="#">Сменить фото</a>
-      <div class="tags">
-        <h2 class="tags__caption">Тэги</h2>
-        <p class="tags_text">#бургер #бар #футбол #концерт #крафт</p>
-      </div>
-      <div class="transport">
-        <h2 class="transport__caption">Транспорт</h2>
-        <span class="transport__item" aria-label="самолет"></span>
-        <span class="transport__item" aria-label="автобус"></span>
-        <span class="transport__item" aria-label="велосипед"></span>
-        <span class="transport__item" aria-label="пешком"></span>
+      <div class="about-form__box container">
+        <div class="about-form__box-level">
+          <p class="about-form__number">80</p>
+          <p class="about-form__level">level</p>
+        </div>
+        <img class="about-form-photo" src="img/photo-account-mobile@1x.jpg" alt="мое фото">
+        <a class="about-form__new-photo" href="#">Сменить фото</a>
+        <div class="tags">
+          <h2 class="tags__caption">Тэги</h2>
+          <p class="tags__text">#бургер #бар #футбол #концерт #крафт</p>
+        </div>
+        <div class="transport">
+          <h2 class="transport__caption">Транспорт</h2>
+          <span class="transport__item transport__item--air" aria-label="самолет"></span>
+          <span class="transport__item transport__item--bus" aria-label="автобус"></span>
+          <span class="transport__item transport__item--baik" aria-label="велосипед"></span>
+          <span class="transport__item transport__item--ped" aria-label="пешком"></span>
+        </div>
       </div>
     </section>
-    <section class="plan">
-      <h2 class="plan__caption">Мои планы:</h2>
-      <ol class="plan__list">
-        <li class="plan__item">
-          <h3 class="plan__item-caption">Франция, Италия</h3>
-          <p class="plan__text">3 попутчика</p>
-          <p class="plan__text">26 мар — 29 мар</p>
-          <a class="plan__change" href="#">Изменить</a>
-        </li>
-        <li class="plan__item">
-          <h3 class="plan__item-caption">Таиланд, Индонезия</h3>
-          <p class="plan__text">1 попутчик</p>
-          <p class="plan__text">1 июл — 15 июл</p>
-          <a class="plan__change" href="#">Изменить</a>
-        </li>
-      </ol>
+    <section class="plan plan--border-radius">
+      <div class="plan__box container">
+        <h2 class="plan__caption">Мои планы:</h2>
+        <ul class="plan__list">
+          <li class="plan__item">
+            <h3 class="plan__item-caption">1. Франция, Италия</h3>
+            <p class="plan__text">3 попутчика</p>
+            <p class="plan__text">26 мар — 29 мар</p>
+            <a class="plan__change" href="#">Изменить</a>
+          </li>
+          <li class="plan__item">
+            <h3 class="plan__item-caption">2. Таиланд, Индонезия</h3>
+            <p class="plan__text">1 попутчик</p>
+            <p class="plan__text">1 июл — 15 июл</p>
+            <a class="plan__change" href="#">Изменить</a>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="plan-add">
-      <h2 class="plan-add__caption">Добавить план:</h2>
-      <form class="plan-add__form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="plan-add__item item-add">
-          <legend class="item-add__step">Шаг 1. </legend>
-          <h3 class="item-add__step">Даты пребывания</h3>
-          <p class="item-add__text">Укажите предпочтительное количество попутчиков, которых
-            вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-          <label class="plan-add__label" for="companion">ищу попутчиков:
-            <span class="plan-add__span">Чел.</span></label>
-          <input id="companion" class="plann-add__input" type="text">
-          <label class="plan-add__label" for="duration">Длительность:
-            <span class="plan-add__span">дн.</span></label>
-          <input id="duration" class="plann-add__input" type="text">
-          <input id="children" class="plann-add__checkbox" type="checkbox">
-          <label class="plan-add__label-checkbox" for="children">Можно с детьми</label>
-          <label class="plan-add__month" for="plan-add__month">Март 2019</label>
-          <input class="plan-add__month-input" id="plan-add__month" class="plan-add__input" type="month">
-          <button class="plan-add__button" type="submit">Следующий шаг</button>
-        </fieldset>
-        <fieldset class="plan-add__item item-add">
-          <legend class="item-add__step">Шаг 2. </legend>
-          <h3 class="item-add__step">Маршрут</h3>
-          <p class="item-add__text">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу
-            несколько.</p>
-          <label for="country-1">Босния и герцегов</label>
-          <input id="country-1" class="plan-add__input" type="text">
-          <label for="country-2">Чехия</label>
-          <input id="country-2" class="plan-add__input" type="text">
-          <label for="country-option">Выберите страну</label>
-          <input id="country-option" class="plan-add__input" type="text">
-          <a class="plan-add__country-add" href="#">Добавить страну</a>
-          <button class="plan-add__button" type="submit">Следующий шаг</button>
-          <a class="plan-add__back plan-add__button" href="#">На шаг назад</a>
-        </fieldset>
-        <fieldset class="plan-add__item item-add">
-          <legend class="item-add__step">Шаг 3. </legend>
-          <h3 class="item-add__step">Развлечения</h3>
-          <p class="item-add__text">Наконец, расскажите о своих планах времяпровождения.
-            Можно писать в свободной форме и ставить тэги.
-          </p>
-          <label for="plan-text-1">Босния и герцегов</label>
-          <textarea id="plan-text-1" class="plan-add__textarea"></textarea>
-          <label for="plan-text-2">Чехия</label>
-          <textarea id="plan-text-2" class="plan-add__textarea"></textarea>
-          <button class="plan-add__button" type="submit">Отправить</button>
-          <a class="plan-add__back plan-add__button" href="#">На шаг назад</a>
-        </fieldset>
-      </form>
+    <section class="plan-add plan-add--border-radius">
+      <div class="plan-add__box container">
+        <h2 class="plan-add__caption">Добавить план:</h2>
+        <form class="plan-add__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="plan-add__item item-add">
+            <h2 class="plan-add__item-step">Шаг 1. </h2>
+            <h3 class="plan-add__item-step">Даты пребывания</h3>
+            <p class="plan-add__item-text">Укажите предпочтительное количество попутчиков, которых
+              вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <label class="plan-add__label" for="companion">ищу попутчиков:
+              <span class="plan-add__span">Чел.</span>
+              <input id="companion" class="plann-add__input" type="text">
+            </label>
+            
+            <label class="plan-add__label" for="duration">Длительность:
+              <span class="plan-add__span">дн.</span>
+              <input id="duration" class="plann-add__input" type="text">
+            </label>
+            <label class="plan-add__label plan-add__label--checkbox" for="children">
+              <input id="children" class="plann-add__checkbox" type="checkbox">
+              Можно с детьми</label>
+            <label class="plan-add__label" for="plan-add__month">
+              Март 2019
+              <input class="plan-add__month-input" id="plan-add__month" class="plan-add__input" type="month">
+            </label>
+            <button class="plan-add__button" type="submit">Следующий шаг</button>
+          </div>
+          <div class="plan-add__item item-add">
+            <h2 class="plan-add__item-step">Шаг 2. </h2>
+              <h3 class="plan-add__item-step">Маршрут</h3>
+              <p class="plan-add__item-text">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу
+                несколько.</p>
+              <label for="country-1">
+                <input id="country-1" class="plan-add__input" type="text" placeholder="Босния и герцегов">
+              </label>
+              <label for="country-2">
+                <input id="country-2" class="plan-add__input" type="text" placeholder="Чехия">
+              </label>
+              <label for="country-option">
+                <input id="country-option" class="plan-add__input" type="text" placeholder="Выберите страну">
+              </label>
+              <a class="plan-add__country-add" href="#">Добавить страну</a>
+              <button class="plan-add__button" type="submit">Следующий шаг</button>
+              <a class="plan-add__button--back plan-add__button" href="#">На шаг назад</a>
+          </div>
+          <div class="plan-add__item item-add">
+            <h2 class="plan-add__item-step">Шаг 3. </h2>
+            <h3 class="plan-add__item-step">Развлечения</h3>
+            <p class="plan-add__item-text">Наконец, расскажите о своих планах времяпровождения.
+              Можно писать в свободной форме и ставить тэги.
+            </p>
+            <label class="plan-add__label plan-add__label--textarea" for="plan-text-1">Босния и герцегов</label>
+            <textarea id="plan-text-1" class="plan-add__textarea"></textarea>
+            <label class="plan-add__label plan-add__label--textarea" for="plan-text-2">Чехия</label>
+            <textarea id="plan-text-2" class="plan-add__textarea"></textarea>
+            <button class="plan-add__button" type="submit">Отправить</button>
+            <a class="plan-add__button--back plan-add__button" href="#">На шаг назад</a>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer container container">
