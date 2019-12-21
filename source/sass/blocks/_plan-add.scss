@@ -16,6 +16,7 @@
   font-style: normal;
   line-height: 1;
   letter-spacing: 0.024;
+  color: $color-btn;
 
   margin: 0;
   width: 100%;
@@ -108,6 +109,13 @@
   color: $color-span;
 }
 
+.plan-add__button-box {
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .plan-add__button {
   font-family: $font;
   font-size: 17px;
@@ -122,7 +130,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
-  width: 270px;
+  width: 230px;
   border: none;
   border-radius: 20px;
   margin-top: 23px;
@@ -139,4 +147,85 @@
   line-height: 1;
   letter-spacing: 0.02;
   color: $color-span;
+}
+
+@media (min-width: 768px) {
+  .plan-add {
+    padding-top: 58px;
+  }
+
+  .plan-add__box {
+    width: 618px;
+  }
+
+  .plan-add__caption {
+    font-size: 36px;
+  }
+
+  .plan-add__form {
+    width: 618px;
+  }
+
+  .plan-add__item {
+    padding-top: 49px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-bottom: 55px;
+    border-radius: 20px;
+  }
+
+  .plan-add__item-step {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .plan-add__item-text {
+    font-size: 20px;
+  }
+
+  .plan-add__label {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &--checkbox {
+      justify-content: flex-start;
+    }
+    &--textarea {
+      font-size: 30px;
+    }
+  }
+
+  .plan-add__input {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .plan-add__textarea {
+    width: 100%;
+  }
+
+  .plan-add__button-box {
+    width: 100%;
+    justify-content: space-between;
+
+  }
+
+  .plan-add__button {
+    width: 285px;
+    padding-top: 22px;
+    font-size: 24px;
+    padding-bottom: 17px;
+    text-align: left;
+    padding-left: 34px;
+    text-transform: unset;
+    &--back {
+      width: 182px;
+      padding-top: 22px;
+      font-size: 24px;
+      padding-bottom: 17px;
+      padding-left: 34px;
+    }
+  }
+
 }

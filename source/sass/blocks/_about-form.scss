@@ -17,7 +17,7 @@
   width: 100px;
 }
 
-.about-form-photo {
+.about-form__photo {
   display: block;
   width: 100px;
   height: 100px;
@@ -41,4 +41,39 @@
   background-color: $bac-grey;
   border-radius: 20px;
   margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+
+  .about-form {
+    padding-bottom: 40px;
+  }
+
+  .about-form__box {
+    width: 618px;
+  }
+
+  .about-form__box-level {
+    order: -2;
+    width: 94px;
+  }
+
+  .about-form__photo {
+    width: 94px;
+    height: 94px;
+  }
+
+  .about-form__photo  {
+    border-radius: 10px;
+  }
+
+  .about-form__new-photo {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 1320px;
+    margin: 0 auto;
+  }
 }

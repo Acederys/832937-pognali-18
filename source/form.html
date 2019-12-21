@@ -50,7 +50,7 @@
           <p class="about-form__number">80</p>
           <p class="about-form__level">level</p>
         </div>
-        <img class="about-form-photo" src="img/photo-account-mobile@1x.jpg" alt="мое фото">
+        <img class="about-form__photo" src="img/photo-account-mobile@1x.jpg" alt="мое фото">
         <a class="about-form__new-photo" href="#">Сменить фото</a>
         <div class="tags">
           <h2 class="tags__caption">Тэги</h2>
@@ -58,10 +58,12 @@
         </div>
         <div class="transport">
           <h2 class="transport__caption">Транспорт</h2>
-          <span class="transport__item transport__item--air" aria-label="самолет"></span>
-          <span class="transport__item transport__item--bus" aria-label="автобус"></span>
-          <span class="transport__item transport__item--baik" aria-label="велосипед"></span>
-          <span class="transport__item transport__item--ped" aria-label="пешком"></span>
+          <div class="transport__item-box">
+            <span class="transport__item transport__item--air" aria-label="самолет"></span>
+            <span class="transport__item transport__item--bus" aria-label="автобус"></span>
+            <span class="transport__item transport__item--baik" aria-label="велосипед"></span>
+            <span class="transport__item transport__item--ped" aria-label="пешком"></span>
+          </div>
         </div>
       </div>
     </section>
@@ -70,16 +72,20 @@
         <h2 class="plan__caption">Мои планы:</h2>
         <ul class="plan__list">
           <li class="plan__item">
-            <h3 class="plan__item-caption">1. Франция, Италия</h3>
-            <p class="plan__text">3 попутчика</p>
-            <p class="plan__text">26 мар — 29 мар</p>
-            <a class="plan__change" href="#">Изменить</a>
+            <h3 class="plan__item-caption"><span>1.</span> Франция, Италия</h3>
+            <div class="plan__text-box">
+              <p class="plan__text">3 попутчика</p>
+              <p class="plan__text">26 мар — 29 мар</p>
+              <a class="plan__change" href="#">Изменить</a>
+            </div>
           </li>
           <li class="plan__item">
-            <h3 class="plan__item-caption">2. Таиланд, Индонезия</h3>
-            <p class="plan__text">1 попутчик</p>
-            <p class="plan__text">1 июл — 15 июл</p>
-            <a class="plan__change" href="#">Изменить</a>
+            <h3 class="plan__item-caption"><span>2.</span> Таиланд, Индонезия</h3>
+            <div class="plan__text-box">
+              <p class="plan__text">1 попутчик</p>
+              <p class="plan__text">1 июл — 15 июл</p>
+              <a class="plan__change" href="#">Изменить</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -95,39 +101,41 @@
               вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             <label class="plan-add__label" for="companion">ищу попутчиков:
               <span class="plan-add__span">Чел.</span>
-              <input id="companion" class="plann-add__input" type="text">
+              <input class="plan-add__input" id="companion" class="plann-add__input" type="text">
             </label>
-            
             <label class="plan-add__label" for="duration">Длительность:
               <span class="plan-add__span">дн.</span>
-              <input id="duration" class="plann-add__input" type="text">
+              <input class="plan-add__input" id="duration" class="plann-add__input" type="text">
             </label>
             <label class="plan-add__label plan-add__label--checkbox" for="children">
               <input id="children" class="plann-add__checkbox" type="checkbox">
               Можно с детьми</label>
             <label class="plan-add__label" for="plan-add__month">
               Март 2019
-              <input class="plan-add__month-input" id="plan-add__month" class="plan-add__input" type="month">
+              <input class="plan-add__input" class="plan-add__month-input" id="plan-add__month" class="plan-add__input"
+                type="month">
             </label>
             <button class="plan-add__button" type="submit">Следующий шаг</button>
           </div>
           <div class="plan-add__item item-add">
             <h2 class="plan-add__item-step">Шаг 2. </h2>
-              <h3 class="plan-add__item-step">Маршрут</h3>
-              <p class="plan-add__item-text">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу
-                несколько.</p>
-              <label for="country-1">
-                <input id="country-1" class="plan-add__input" type="text" placeholder="Босния и герцегов">
-              </label>
-              <label for="country-2">
-                <input id="country-2" class="plan-add__input" type="text" placeholder="Чехия">
-              </label>
-              <label for="country-option">
-                <input id="country-option" class="plan-add__input" type="text" placeholder="Выберите страну">
-              </label>
-              <a class="plan-add__country-add" href="#">Добавить страну</a>
+            <h3 class="plan-add__item-step">Маршрут</h3>
+            <p class="plan-add__item-text">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу
+              несколько.</p>
+            <label for="country-1">
+              <input id="country-1" class="plan-add__input" type="text" placeholder="Босния и герцегов">
+            </label>
+            <label for="country-2">
+              <input id="country-2" class="plan-add__input" type="text" placeholder="Чехия">
+            </label>
+            <label for="country-option">
+              <input id="country-option" class="plan-add__input" type="text" placeholder="Выберите страну">
+            </label>
+            <a class="plan-add__country-add" href="#">Добавить страну</a>
+            <div class="plan-add__button-box">
               <button class="plan-add__button" type="submit">Следующий шаг</button>
               <a class="plan-add__button--back plan-add__button" href="#">На шаг назад</a>
+            </div>
           </div>
           <div class="plan-add__item item-add">
             <h2 class="plan-add__item-step">Шаг 3. </h2>
@@ -139,8 +147,10 @@
             <textarea id="plan-text-1" class="plan-add__textarea"></textarea>
             <label class="plan-add__label plan-add__label--textarea" for="plan-text-2">Чехия</label>
             <textarea id="plan-text-2" class="plan-add__textarea"></textarea>
-            <button class="plan-add__button" type="submit">Отправить</button>
-            <a class="plan-add__button--back plan-add__button" href="#">На шаг назад</a>
+            <div class="plan-add__button-box">
+              <button class="plan-add__button" type="submit">Отправить</button>
+              <a class="plan-add__button--back plan-add__button" href="#">На шаг назад</a>
+            </div>
           </div>
         </form>
       </div>

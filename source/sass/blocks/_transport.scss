@@ -31,6 +31,12 @@
   margin-bottom: 28px;
 }
 
+.transport__item-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .transport__item {
   width: 33px;
   height: 33px;
@@ -39,16 +45,40 @@
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
+
   &--air {
     background-image: url("../../img/plane.svg");
   }
-  &--bus  {
+
+  &--bus {
     background-image: url("../../img/bus.svg");
   }
-  &--baik  {
+
+  &--baik {
     background-image: url("../../img/bike.svg");
   }
-  &--ped  {
+
+  &--ped {
     background-image: url("../../img/run.svg");
+  }
+}
+
+@media (min-width: 768px) {
+
+  .transport {
+    order: -1;
+    width: 310px;
+    flex-direction: column-reverse;
+  }
+
+  .transport__caption {
+    margin-bottom: 0;
+    margin-top: 28px;
+    font-size: 20px;
+  }
+
+  .transport__item  {
+    width: 43px;
+    height: 43px;
   }
 }
