@@ -138,3 +138,34 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 1440px) {
+  .plan__box {
+    width: 1320px;
+  }
+
+  .plan__list {
+    width: 1320px;
+  }
+
+  .plan__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .plan__item-caption {
+    font-size: 24px;
+  }
+  
+  .plan__item-caption span {
+    order: 0;
+    padding-right: 38px;
+  }
+
+  .plan__text-box {
+    width: 660px;
+    border: none;
+  }
+}

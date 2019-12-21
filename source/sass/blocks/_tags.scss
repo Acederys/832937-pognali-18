@@ -53,3 +53,17 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 1440px) {
+  .tags {
+    width: 730px;
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  .tags__caption {
+    text-align: left;
+    padding-left: 39px;
+    margin: 0;
+  }
+}

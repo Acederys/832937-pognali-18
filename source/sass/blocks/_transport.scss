@@ -82,3 +82,11 @@
     height: 43px;
   }
 }
+
+
+@media (min-width: 1440px) {
+  .transport {
+    order: 0;
+    padding-bottom: 0;
+  }
+}

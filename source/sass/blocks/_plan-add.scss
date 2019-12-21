@@ -4,6 +4,7 @@
   z-index: 2;
   padding-top: 30px;
   margin-top: -20px;
+
   &--border-radius {
     border-radius: 20px;
   }
@@ -71,6 +72,10 @@
   margin-top: 18px;
 }
 
+.plan-add__nav {
+  display: none;
+}
+
 .plan-add__label {
   font-family: $font;
   font-size: 16px;
@@ -83,6 +88,7 @@
 
   width: 100%;
   margin-top: 21px;
+
   &--checkbox {
     font-family: $font;
     font-size: 15px;
@@ -92,6 +98,7 @@
     letter-spacing: 0.015;
     text-transform: unset;
   }
+
   &--textarea {
     text-transform: unset;
     font-size: 18px;
@@ -134,6 +141,7 @@
   border: none;
   border-radius: 20px;
   margin-top: 23px;
+
   &--back {
     background-color: $color-white;
   }
@@ -183,14 +191,20 @@
     font-size: 20px;
   }
 
+  .plan-add__nav {
+    display: none;
+  }
+
   .plan-add__label {
     font-size: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     &--checkbox {
       justify-content: flex-start;
     }
+
     &--textarea {
       font-size: 30px;
     }
@@ -219,6 +233,7 @@
     text-align: left;
     padding-left: 34px;
     text-transform: unset;
+
     &--back {
       width: 182px;
       padding-top: 22px;
@@ -228,4 +243,109 @@
     }
   }
 
+}
+
+
+@media (min-width: 1440px) {
+  .plan-add__box {
+    width: 1320px;
+  }
+
+  .plan-add__form {
+    width: 1320px;
+  }
+
+  .plan__item-caption {
+    font-size: 36px;
+  }
+
+  .plan-add__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 160px;
+    padding-top: 100px;
+    padding-right: 160px;
+    padding-bottom: 105px;
+  }
+
+  .plan-add__step-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    order: -1;
+  }
+
+  .plan-add__item-step {
+    &:first-child {
+      width: 116px;
+    }
+    &:last-child {
+      width: 300px;
+    }
+  }
+
+  .plan-add__item-text {
+    font-size: 20px;
+    width: 576px;
+    order: 0;
+  }
+
+  .plan-add__nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 180px;
+    order: 0;
+  }
+
+  .plan-add__nav-item {
+    font-family: $font;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0.69;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $color-black;
+    opacity: 0.6;
+    margin-bottom: 26px;
+    padding-left: 42px;
+
+    width: 100%;
+    position: relative;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  .plan-add__com-box {
+    width: 560px;
+  }
+
+  .plan-add__label {
+    width: 560px;
+    border-top: 1px solid $bac-grey;
+    &--checkbox{
+      width: 180px;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    &--month {
+      font-size: 36px;
+      width: 100%;
+    }
+  }
+
+  .plan-add__label-country {
+    width: 100%;
+  }
+
+  .plan-add__button {
+    order: 6;
+  }
 }
