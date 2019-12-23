@@ -6,6 +6,9 @@
   margin-top: -30px;
   padding-top: 120px;
   padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+
   &--border-radius {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -72,6 +75,7 @@
   height: 270px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+
   &--firsova {
     background-image: url("../../img/firsova-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -101,6 +105,7 @@
   padding-bottom: 24px;
   padding-left: 24px;
   margin-top: 20px;
+
   &--border-radius {
     border-radius: 10px;
   }
@@ -109,14 +114,11 @@
 @media (min-width: 768px) {
   .companion__caption {
     width: 100%;
+    font-size: 45px;
   }
 
   .companion__box {
     justify-content: space-between;
-  }
-
-  .companion__caption {
-    font-size: 45px;
   }
 
   .companion__text {
@@ -128,7 +130,7 @@
     width: 258px;
   }
 
-  .companion__list  {
+  .companion__list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -142,6 +144,7 @@
   .companion__item-info {
     width: 285px;
     height: 285px;
+
     &--firsova {
       background-image: url("../../img/firsova-tablet@1x.jpg");
     }
@@ -151,7 +154,7 @@
     }
   }
 
-  .companion__link  {
+  .companion__link {
     width: 618px;
     font-size: 24px;
     margin-top: 80px;
@@ -181,7 +184,7 @@
     width: 100%;
   }
 
-  .companion__list  {
+  .companion__list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -195,6 +198,7 @@
     width: 285px;
     height: 285px;
     margin-right: 60px;
+
     &--firsova {
       background-image: url("../../img/firsova-tablet@1x.jpg");
     }
@@ -204,7 +208,7 @@
     }
   }
 
-  .companion__link  {
+  .companion__link {
     width: 280px;
     margin-top: 0;
   }

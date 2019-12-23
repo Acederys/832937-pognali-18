@@ -3,6 +3,8 @@
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+  z-index: 1;
 
   &--border-radius {
     border-bottom-left-radius: 20px;
@@ -92,6 +94,7 @@
   .about__box-link {
     width: 100%;
   }
+
   .about__link {
     font-family: $font;
     font-weight: 700;
@@ -110,7 +113,6 @@
     padding-right: 125px;
     background-color: $color-yellow;
   }
-
 }
 
 @media (min-width: 1440px) {

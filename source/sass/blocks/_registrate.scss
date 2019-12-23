@@ -4,6 +4,7 @@
   padding-bottom: 44px;
   z-index: 1;
   margin-top: -20px;
+
   &--border-radius {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -63,9 +64,11 @@
   padding-top: 24px;
   padding-left: 24px;
   padding-bottom: 24px;
+
   &::placeholder {
     color: $color-text-contry;
   }
+
   &--border-radius {
     border-radius: 10px;
   }
@@ -112,6 +115,7 @@
   margin-top: 16px;
   margin-bottom: 6px;
   position: relative;
+
   &::before {
     content: "";
     display: block;
@@ -126,9 +130,11 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &:first-child::before {
     background-image: url("../../img/contacts-phone.svg");
   }
+
   &:last-child::before {
     background-image: url("../../img/contacts-mail.svg");
   }
@@ -158,14 +164,12 @@
 
   .registrate__caption {
     font-size: 45px;
-
   }
 
   .registrate__text {
     font-size: 28px;
 
     width: 606px;
-
   }
 
   .registrate__email {
@@ -174,6 +178,7 @@
     padding-top: 30px;
     padding-left: 35px;
     padding-bottom: 32px;
+
     &--border-radius {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
@@ -190,7 +195,7 @@
     z-index: 2;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-}
+  }
 
   .registrate__question {
     font-size: 28px;

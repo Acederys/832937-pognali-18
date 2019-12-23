@@ -4,9 +4,7 @@
   padding-top: 27px;
   padding-left: 27px;
   padding-right: 27px;
-  // display: block;
   display: none;
-
 }
 
 .nav__logo {
@@ -26,7 +24,7 @@
   padding-left: 0;
 }
 
-.nav__item a{
+.nav__item a {
   font-family: $font;
   font-size: 30px;
   font-weight: 500;
@@ -53,6 +51,7 @@
   padding-bottom: 16px;
   width: 270px;
   text-align: center;
+
   &--border-radius {
     border-radius: 20px;
   }
@@ -83,7 +82,6 @@
     width: 768px;
     padding-top: 43px;
     padding-left: 39px;
-    // display: flex;
     display: none;
   }
 
@@ -105,7 +103,7 @@
     width: 100%;
   }
 
-  .nav__item a{
+  .nav__item a {
     font-family: $font;
     font-size: 30px;
     font-weight: 500;
@@ -150,7 +148,6 @@
     padding-left: 60px;
     padding-top: 20px;
     padding-bottom: 18px;
-    // display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     left: 0;
@@ -177,7 +174,7 @@
     padding-left: 36px;
   }
 
-  .nav__item a{
+  .nav__item a {
     font-size: 20px;
   }
 
@@ -193,7 +190,6 @@
     flex-wrap: wrap;
     padding-left: 0;
     list-style: none;
-    margin-left: 0;
     position: relative;
     margin-left: 397px;
   }

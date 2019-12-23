@@ -5,6 +5,8 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 
   &--border-radius {
     border-bottom-right-radius: 25px;
@@ -43,7 +45,6 @@
 }
 
 @media (min-width: 768px) {
-
   .header-companion {
     display: flex;
     justify-content: space-between;
@@ -74,12 +75,5 @@
     text-align: left;
     text-transform: uppercase;
     color: $color-white;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    width: 1320px;
-    margin: 0 auto;
   }
 }

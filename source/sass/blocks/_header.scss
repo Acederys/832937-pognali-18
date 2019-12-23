@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   padding-top: 25px;
   position: relative;
+  z-index: 1;
 }
 
 .header__box {
@@ -32,7 +33,6 @@
 }
 
 @media (min-width: 768px) {
-
   .header__box {
     width: 689px;
   }

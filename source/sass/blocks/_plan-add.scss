@@ -222,7 +222,6 @@
   .plan-add__button-box {
     width: 100%;
     justify-content: space-between;
-
   }
 
   .plan-add__button {
@@ -242,7 +241,6 @@
       padding-left: 34px;
     }
   }
-
 }
 
 
@@ -281,6 +279,7 @@
     &:first-child {
       width: 116px;
     }
+
     &:last-child {
       width: 300px;
     }
@@ -329,7 +328,8 @@
   .plan-add__label {
     width: 560px;
     border-top: 1px solid $bac-grey;
-    &--checkbox{
+
+    &--checkbox {
       width: 180px;
       font-size: 20px;
       text-transform: uppercase;

@@ -1,16 +1,18 @@
 .header-form {
   background-color: $color-text-blue;
   padding-top: 59px;
-  
+
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+
   &--border-radius {
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
   }
 }
-
 
 .header-form__caption {
   font-family: $font;
@@ -38,7 +40,6 @@
 }
 
 @media (min-width: 768px) {
-
   .header-form {
     display: flex;
     justify-content: space-between;
@@ -46,7 +47,7 @@
     align-items: baseline;
   }
 
-  .header-form__caption  {
+  .header-form__caption {
     font-size: 60px;
     padding-bottom: 65px;
 

@@ -33,7 +33,6 @@
 }
 
 @media (min-width: 1440px) {
-
   .arrow__box {
     width: 950px;
     background-color: $color-white;
@@ -42,11 +41,11 @@
     padding-bottom: 25px;
     padding-left: 28px;
   }
+
   .arrow__page {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
   }
 
   .arrow__page-item {

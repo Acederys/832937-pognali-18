@@ -64,7 +64,6 @@
 }
 
 @media (min-width: 768px) {
-
   .transport {
     order: -1;
     width: 310px;
@@ -77,12 +76,11 @@
     font-size: 20px;
   }
 
-  .transport__item  {
+  .transport__item {
     width: 43px;
     height: 43px;
   }
 }
-
 
 @media (min-width: 1440px) {
   .transport {

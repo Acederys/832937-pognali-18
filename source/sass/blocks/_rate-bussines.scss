@@ -23,7 +23,6 @@
 
 .rate-bussines__list {
   width: 219px;
-  padding-left: 0;
   padding-left: 25px;
 }
 
@@ -70,7 +69,6 @@
 @media (min-width: 768px) {
   .rate-bussines {
     padding-top: 77px;
-    // display: flex;
     justify-content: center;
     flex-wrap: wrap;
     display: none;
@@ -124,7 +122,6 @@
     top: 190px;
     left: 345px;
     width: 750px;
-
   }
 
   .rate-bussines__caption {

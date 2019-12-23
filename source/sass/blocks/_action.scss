@@ -1,5 +1,5 @@
 .action {
-  background-color: $color-dark-blue;
+  // background-color: $color-dark-blue;
   background: linear-gradient($color-text-blue 160px, $color-dark-blue 161px, $color-dark-blue);
 
   padding-top: 30px;
@@ -206,6 +206,7 @@
   .action__item-text {
     width: 200px;
   }
+
   .action__item-number {
     width: 10px;
     font-size: 24px;

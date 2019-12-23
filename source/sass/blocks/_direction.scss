@@ -5,6 +5,7 @@
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   position: relative;
+  margin-top: -20px;
 }
 
 .direction__box {
@@ -22,7 +23,6 @@
   font-size: 24px;
   letter-spacing: 0.024;
   color: $color-caption;
-
   padding-left: 24px;
 }
 
@@ -80,7 +80,7 @@
   .direction {
     padding-bottom: 75px;
   }
-  
+
   .direction__box {
     justify-content: flex-start;
   }
@@ -101,7 +101,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  
+
   .direction__item-image {
     order: 1;
     width: 186px;
@@ -117,7 +117,6 @@
 
   .direction__list {
     padding-left: 0;
-    width: 100%;
     width: 618px;
 
     &--border-radius {
