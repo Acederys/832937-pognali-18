@@ -6,6 +6,7 @@
   border-bottom-right-radius: 25px;
   position: relative;
   margin-top: -20px;
+  z-index: 4;
 }
 
 .direction__box {
@@ -48,10 +49,10 @@
 }
 
 .direction__item-image {
-  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: 186px;
-  height: 140px;
+  width: 270px;
+  height: 110px;
   z-index: 1;
 }
 
