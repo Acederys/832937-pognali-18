@@ -14,7 +14,13 @@
 <body>
   <header class="header">
     <div class="header__box container">
-      <a class="header__logo"></a>
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+          <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+        </picture>
+      </a>
       <a class="header__menu" href="#" aria-label="меню"></a>
       <section class="nav">
         <h2 class="visually-hidden">навигация</h2>

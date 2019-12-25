@@ -19,9 +19,12 @@
   display: block;
   width: 100px;
   height: 19px;
-  background-image: url("../../img/logo-mobile-white@1x.png");
-  background-repeat: no-repeat;
-  background-size: auto;
+  text-align: center;
+}
+
+.header__logo img {
+  width: 100px;
+  height: 19px;
 }
 
 .header__menu {
@@ -44,16 +47,18 @@
   .header__logo {
     width: 198px;
     height: 53px;
-    background-image: url("../../img/logo-tablet-white@1x.png");
+  }
+
+  .header__logo img {
+    display: block;
+    width: 198px;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1440px) {
   .header {
     padding-top: 44px;
-  }
-
-  .header__logo {
-    background-image: url("../../img/logo-desktop-white@1x.png");
   }
 }
