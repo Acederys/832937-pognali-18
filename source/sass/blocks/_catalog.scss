@@ -1,500 +1,142 @@
-// .catalog {
-//   background-color: $bac-color-bissenes;
-//   padding-bottom: 27px;
-// }
-
-// .catalog__box {
-//   display: flex;
-//   justify-content: center;
-//   flex-wrap: wrap;
-// }
-
-// .catalog__list {
-//   list-style: none;
-//   padding-left: 0;
-// }
-
-// .catalog__item {
-//   background-color: $color-white;
-//   margin-bottom: 10px;
-//   display: flex;
-//   flex-flow: row;
-//   flex-wrap: wrap;
-//   padding-left: 18px;
-//   padding-bottom: 22px;
-//   width: 270px;
-
-//   &--border-radius {
-//     border-radius: 10px;
-//   }
-// }
-
-// .catalog__caption {
-//   font-family: $font;
-//   font-size: 20px;
-//   font-weight: 700;
-//   font-style: normal;
-//   line-height: 1;
-//   letter-spacing: 0.02;
-//   color: $color-btn;
-//   width: 100%;
-//   position: relative;
-//   padding-left: 100px;
-// }
-
-// .catalog__caption--firsova {
-//   &:before {
-//     content: "";
-//     display: block;
-//     width: 70px;
-//     height: 70px;
-//     background-repeat: no-repeat;
-//     background-size: auto;
-//     border-radius: 50%;
-//     position: absolute;
-//     left: 0;
-//     background-image: url(../../img/firsova-mobile@1x.jpg);
-//   }
-// }
-
-// .catalog__caption--demin {
-//   &:before {
-//     content: "";
-//     display: block;
-//     width: 70px;
-//     height: 70px;
-//     background-repeat: no-repeat;
-//     background-size: auto;
-//     border-radius: 50%;
-//     position: absolute;
-//     left: 0;
-//     background-image: url(../../img/demin-mobile@1x.jpg);
-//   }
-// }
-
-// .catalog__caption--smolov {
-//   &:before {
-//     content: "";
-//     display: block;
-//     width: 70px;
-//     height: 70px;
-//     background-repeat: no-repeat;
-//     background-size: auto;
-//     border-radius: 50%;
-//     position: absolute;
-//     left: 0;
-//     background-image: url(../../img/smolov-mobile@1x.jpg);
-//   }
-// }
-
-// .catalog__caption--rogovaya {
-//   &:before {
-//     content: "";
-//     display: block;
-//     width: 70px;
-//     height: 70px;
-//     background-repeat: no-repeat;
-//     background-size: auto;
-//     border-radius: 50%;
-//     position: absolute;
-//     left: 0;
-//     background-image: url(../../img/rogovaya-mobile@1x.jpg);
-//   }
-// }
-
-// .catalog__number {
-//   width: 100%;
-//   display: block;
-//   text-align: center;
-//   margin-top: -10px;
-// }
-
-// .catalog__about {
-//   font-family: $font;
-//   font-size: 15px;
-//   font-weight: 400;
-//   font-style: normal;
-//   line-height: 1.2;
-//   letter-spacing: 0.018;
-//   color: $color-text-gray;
-
-//   width: 166px;
-//   margin-top: 16px;
-// }
-
-// .catalog__want {
-//   font-family: $font;
-//   font-size: 15px;
-//   font-weight: 400;
-//   font-style: normal;
-//   line-height: 1.2;
-//   letter-spacing: 0.018;
-//   color: $color-text-gray;
-// }
-
-
-// .catalog__transport {
-//   width: 150px;
-//   display: block;
-//   margin: 0;
-// }
-
-// .catalog__level {
-//   display: block;
-//   margin: 0;
-// }
-
-// .catalog__link {
-//   font-family: $font;
-//   font-size: 17px;
-//   font-weight: 700;
-//   font-style: normal;
-//   line-height: 1.76;
-//   letter-spacing: 0.029;
-//   text-transform: uppercase;
-//   text-align: center;
-
-//   margin-top: 20px;
-//   width: 230px;
-//   padding-top: 13px;
-//   padding-bottom: 13px;
-//   background-color: $color-yellow;
-//   &--border-radius {
-//     border-radius: 40px;
-//   }
-// }
-
-// .catalog__still {
-//   font-family: $font;
-//   font-size: 17px;
-//   font-weight: 700;
-//   font-style: normal;
-//   line-height: 1.76;
-//   letter-spacing: 0.029;
-//   text-transform: uppercase;
-
-//   display: block;
-//   text-align: center;
-//   padding-left: 33px;
-// }
-
-// @media (min-width: 768px) {
-//   .catalog {
-//     background-color: $bac-color-bissenes;
-//     padding-bottom: 27px;
-//   }
-
-//   .catalog__box {
-//     display: flex;
-//     justify-content: center;
-//     flex-wrap: wrap;
-//   }
-
-//   .catalog__list {
-//     list-style: none;
-//     padding-left: 0;
-//   }
-
-//   .catalog__item {
-//     background-color: $color-white;
-//     margin-bottom: 10px;
-//     display: flex;
-//     flex-flow: row;
-//     flex-wrap: wrap;
-//     padding-left: 18px;
-//     padding-bottom: 22px;
-//     width: 688px;
-
-//     &--border-radius {
-//       border-radius: 10px;
-//     }
-//   }
-
-//   .catalog__caption {
-//     font-family: $font;
-//     font-size: 20px;
-//     font-weight: 700;
-//     font-style: normal;
-//     line-height: 1;
-//     letter-spacing: 0.02;
-//     color: $color-btn;
-//     width: 100%;
-//     position: relative;
-//     padding-left: 200px;
-//   }
-
-//   .catalog__number {
-//     width: 100%;
-//     display: block;
-//     text-align: center;
-//     margin-top: -10px;
-//   }
-
-//   .catalog__about {
-//     font-family: $font;
-//     font-size: 15px;
-//     font-weight: 400;
-//     font-style: normal;
-//     line-height: 1.2;
-//     letter-spacing: 0.018;
-//     color: $color-text-gray;
-
-//     width: 166px;
-//     margin-top: 16px;
-//   }
-
-//   .catalog__want {
-//     font-family: $font;
-//     font-size: 15px;
-//     font-weight: 400;
-//     font-style: normal;
-//     line-height: 1.2;
-//     letter-spacing: 0.018;
-//     color: $color-text-gray;
-//   }
-
-
-//   .catalog__transport {
-//     width: 150px;
-//     display: block;
-//     margin: 0;
-//   }
-
-//   .catalog__level {
-//     display: block;
-//     margin: 0;
-//   }
-
-//   .catalog__link {
-//     font-family: $font;
-//     font-size: 17px;
-//     font-weight: 700;
-//     font-style: normal;
-//     line-height: 1.76;
-//     letter-spacing: 0.029;
-//     text-transform: uppercase;
-//     text-align: center;
-
-//     margin-top: 20px;
-//     width: 230px;
-//     padding-top: 13px;
-//     padding-bottom: 13px;
-//     background-color: $color-yellow;
-//     &--border-radius {
-//       border-radius: 40px;
-//     }
-//   }
-
-//   .catalog__still {
-//     font-family: $font;
-//     font-size: 17px;
-//     font-weight: 700;
-//     font-style: normal;
-//     line-height: 1.76;
-//     letter-spacing: 0.029;
-//     text-transform: uppercase;
-
-//     display: block;
-//     text-align: center;
-//   }
-
-// }
-
-// @media (min-width: 1440px) {
-//   .catalog {
-//     background-color: $bac-color-bissenes;
-//     padding-bottom: 27px;
-//   }
-
-//   .catalog__box {
-//     display: flex;
-//     justify-content: center;
-//     flex-wrap: wrap;
-//   }
-
-//   .catalog__list {
-//     list-style: none;
-//     padding-left: 0;
-//   }
-
-//   .catalog__item {
-//     background-color: $color-white;
-//     margin-bottom: 10px;
-//     display: flex;
-//     flex-flow: row;
-//     flex-wrap: wrap;
-//     padding-left: 18px;
-//     padding-bottom: 22px;
-//     width: 270px;
-
-//     &--border-radius {
-//       border-radius: 10px;
-//     }
-//   }
-
-//   .catalog__caption-wrapper {
-//     display: flex;
-//     flex-flow: row;
-//     flex-wrap: wrap;
-//   }
-
-//   .catalog__caption {
-//     font-family: $font;
-//     font-size: 20px;
-//     font-weight: 700;
-//     font-style: normal;
-//     line-height: 1;
-//     letter-spacing: 0.02;
-//     color: $color-btn;
-//     width: 100%;
-//     position: relative;
-//     padding-left: 100px;
-//   }
-
-//   .catalog__caption--firsova {
-//     &:before {
-//       content: "";
-//       display: block;
-//       width: 70px;
-//       height: 70px;
-//       background-repeat: no-repeat;
-//       background-size: auto;
-//       border-radius: 50%;
-//       position: absolute;
-//       left: 0;
-//       background-image: url(../../img/firsova-mobile@1x.jpg);
-//     }
-//   }
-
-//   .catalog__caption--demin {
-//     &:before {
-//       content: "";
-//       display: block;
-//       width: 70px;
-//       height: 70px;
-//       background-repeat: no-repeat;
-//       background-size: auto;
-//       border-radius: 50%;
-//       position: absolute;
-//       left: 0;
-//       background-image: url(../../img/demin-mobile@1x.jpg);
-//     }
-//   }
-
-//   .catalog__caption--smolov {
-//     &:before {
-//       content: "";
-//       display: block;
-//       width: 70px;
-//       height: 70px;
-//       background-repeat: no-repeat;
-//       background-size: auto;
-//       border-radius: 50%;
-//       position: absolute;
-//       left: 0;
-//       background-image: url(../../img/smolov-mobile@1x.jpg);
-//     }
-//   }
-
-//   .catalog__caption--rogovaya {
-//     &:before {
-//       content: "";
-//       display: block;
-//       width: 70px;
-//       height: 70px;
-//       background-repeat: no-repeat;
-//       background-size: auto;
-//       border-radius: 50%;
-//       position: absolute;
-//       left: 0;
-//       background-image: url(../../img/rogovaya-mobile@1x.jpg);
-//     }
-//   }
-
-//   .catalog__number {
-//     width: 100%;
-//     display: block;
-//     text-align: center;
-//     margin-top: -10px;
-//   }
-
-//   .catalog__about {
-//     font-family: $font;
-//     font-size: 15px;
-//     font-weight: 400;
-//     font-style: normal;
-//     line-height: 1.2;
-//     letter-spacing: 0.018;
-//     color: $color-text-gray;
-
-//     width: 166px;
-//     margin-top: 16px;
-//   }
-
-//   .catalog__want {
-//     font-family: $font;
-//     font-size: 15px;
-//     font-weight: 400;
-//     font-style: normal;
-//     line-height: 1.2;
-//     letter-spacing: 0.018;
-//     color: $color-text-gray;
-//   }
-
-
-//   .catalog__transport {
-//     width: 150px;
-//     display: block;
-//     margin: 0;
-//   }
-
-//   .catalog__level {
-//     display: block;
-//     margin: 0;
-//   }
-
-//   .catalog__link {
-//     font-family: $font;
-//     font-size: 17px;
-//     font-weight: 700;
-//     font-style: normal;
-//     line-height: 1.76;
-//     letter-spacing: 0.029;
-//     text-transform: uppercase;
-//     text-align: center;
-
-//     margin-top: 20px;
-//     width: 230px;
-//     padding-top: 13px;
-//     padding-bottom: 13px;
-//     background-color: $color-yellow;
-//     &--border-radius {
-//       border-radius: 40px;
-//     }
-//   }
-
-//   .catalog__still {
-//     font-family: $font;
-//     font-size: 17px;
-//     font-weight: 700;
-//     font-style: normal;
-//     line-height: 1.76;
-//     letter-spacing: 0.029;
-//     text-transform: uppercase;
-
-//     display: block;
-//     text-align: center;
-//   }
-// }
-
 .catalog {
   background-color: $bac-color-bissenes;
   padding-bottom: 27px;
+  z-index: 0;
+  margin-top: -32px;
+  position: relative;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.catalog__form-box {
+  width: 270px;
+  background-color: $color-yellow;
+  border-radius: 20px;
+  padding: 26px;
+  margin-bottom: 28px;
+}
+
+.catalog__fieldset {
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__form {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.catalog__form-caption {
+  font-family: $font;
+  font-size: 22.5px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.022;
+  text-align: left;
+  color: $color-btn;
+  width: 118px;
+}
+
+.catalog__form-legend {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-btn;
+  width: 220px;
+  border-top: 1px solid $color-text-gray;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
+  margin: 0;
+  padding-top: 13px;
+  text-transform: uppercase;
+}
+
+.catalog__form-label {
+  font-family: $font;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.015;
+  text-align: left;
+  color: $color-text-gray;
+  margin-bottom: 8px;
+
+  &--level {
+    display: none;
+  }
+
+  &--hobby {
+    display: none;
+  }
+
+  &--auto {
+    display: none;
+  }
+
+  &--food {
+    display: none;
+  }
+}
+
+.catalog__form-input {
+  &--level {
+    display: none;
+  }
+
+  &--music {
+    display: none;
+  }
+
+  &--hobby {
+    display: none;
+  }
+
+  &--auto {
+    display: none;
+  }
+
+  &--food {
+    display: none;
+  }
+}
+
+.catalog__form-btn {
+  text-transform: uppercase;
+  font-family: $font;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-text-blue;
+  width: 230px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: none;
+  background-color: $color-white;
+  border-radius: 20px;
 }
 
 .catalog-list {
   width: 270px;
   margin-top: 0;
+  padding-left: 0;
 
   @media (min-width: 768px) {
     width: 768px;
@@ -519,24 +161,18 @@
 }
 
 .catalog-item__wrapper {
-
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-
 }
 
 .catalog-item__wrapper-name {
-
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
-
 }
 
-
 .catalog-item__level {
-
   position: initial;
 
   order: 1;
@@ -548,14 +184,12 @@
 
 .catalog-item__name {
   font-style: normal;
-  text-align: center;
   margin: 0;
   text-align: left;
 
   font-family: $font;
   font-size: 20px;
   font-weight: 700;
-  font-style: normal;
   line-height: 1;
   letter-spacing: 0.02;
   color: $color-btn;
@@ -576,7 +210,6 @@
 }
 
 .catalog-item__image-link {
-
   position: absolute;
 
   width: 70px;
@@ -584,7 +217,6 @@
   margin-top: 15px;
   margin-right: 16px;
   margin-left: 18px;
-
 }
 
 .catalog-item__indicator {
@@ -599,9 +231,7 @@
 
 .catalog-item__section {
   position: relative;
-
   width: 100%;
-
   font-style: normal;
 
   &::before {
@@ -660,9 +290,6 @@
   display: block;
 
   font-style: normal;
-  text-transform: uppercase;
-
-  border-radius: 15px;
 
   width: 100%;
 
@@ -670,7 +297,6 @@
   font-family: $font;
   font-size: 17px;
   font-weight: 700;
-  font-style: normal;
   line-height: 1.76;
   letter-spacing: 0.029;
   text-transform: uppercase;
@@ -722,6 +348,82 @@
 }
 
 @media (min-width: 768px) {
+  .catalog__form-box {
+    width: 689px;
+  }
+
+  .catalog__form-legend {
+    font-size: 20px;
+    width: 110px;
+    border: none;
+  }
+
+  .catalog__fieldset {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  .catalog__form-label {
+    font-size: 20px;
+    width: 150px;
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background-color: $color-white;
+      position: absolute;
+      left: 0;
+      top: -5px;
+    }
+
+    &--level {
+      display: none;
+    }
+
+    &--hobby {
+      display: block;
+    }
+
+    &--auto {
+      display: block;
+      width: 56px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background-color: $color-white;
+        position: absolute;
+        left: 0;
+        top: -5px;
+      }
+    }
+
+    &--food {
+      display: block;
+    }
+  }
+
+  .catalog__form-btn {
+    width: 100%;
+  }
+
+  .catalog__form-caption {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
   .catalog-item {
     width: 688px;
     padding: 35px 0 25px 0;
@@ -847,6 +549,93 @@
 }
 
 @media (min-width: 1440px) {
+  .catalog__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog__form-box {
+    width: 285px;
+    background-color: $color-yellow;
+    border-radius: 20px;
+    padding: 47px;
+    margin-bottom: 28px;
+    max-height: 815px;
+  }
+
+  .catalog__fieldset {
+    border: none;
+    width: 100%;
+  }
+
+  .catalog__form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .catalog__form-caption {
+    font-size: 30px;
+    width: 156px;
+  }
+
+  .catalog__form-legend {
+    font-size: 20px;
+    width: 220px;
+  }
+
+  .catalog__form-label {
+    font-size: 20px;
+
+    &--level {
+      display: none;
+    }
+
+    &--hobby {
+      display: none;
+    }
+
+    &--auto {
+      display: none;
+    }
+
+    &--food {
+      display: none;
+    }
+  }
+
+  .catalog__form-input {
+    &--level {
+      display: none;
+    }
+
+    &--music {
+      display: none;
+    }
+
+    &--hobby {
+      display: none;
+    }
+
+    &--auto {
+      display: none;
+    }
+
+    &--food {
+      display: none;
+    }
+  }
+
+  .catalog-list {
+    order: -1;
+  }
+
+  .catalog__form-btn {
+    width: 196px;
+    font-size: 20px;
+  }
+
   .catalog-item {
     box-sizing: border-box;
     min-height: 285px;
@@ -931,5 +720,11 @@
 
   .catalog-item__level {
     margin-right: 0;
+  }
+
+  .catalog__still {
+    font-size: 20px;
+    text-align: center;
+    width: 950px;
   }
 }

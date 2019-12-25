@@ -8,6 +8,9 @@
   padding-top: 25px;
   padding-right: 25px;
   padding-bottom: 25px;
+  margin-top: -10px;
+  z-index: 2;
+  position: relative;
 
   &--border-radius {
     border-radius: 10px;
@@ -44,12 +47,15 @@
   line-height: 1.88;
   letter-spacing: 0.03;
   color: $color-text-contry;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
   .direction-about {
     width: 430px;
     justify-content: space-between;
+    padding-top: 35px;
+    margin-top: 0;
 
     &--border-radius {
       border-top-left-radius: 10px;
@@ -66,6 +72,7 @@
   .direction-about__like {
     order: 1;
     width: 100%;
+    margin: 0;
   }
 }
 

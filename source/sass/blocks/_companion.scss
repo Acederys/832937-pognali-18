@@ -6,6 +6,9 @@
   margin-top: -30px;
   padding-top: 120px;
   padding-bottom: 30px;
+  position: relative;
+  z-index: 3;
+
   &--border-radius {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -14,8 +17,12 @@
 
 .companion__box {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+.companion__caption-box {
+  padding-left: 25px;
 }
 
 .companion__caption {
@@ -53,6 +60,9 @@
 .companion__list {
   padding-left: 0;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .companion__item {
@@ -65,6 +75,7 @@
   height: 270px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+
   &--firsova {
     background-image: url("../../img/firsova-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -94,6 +105,7 @@
   padding-bottom: 24px;
   padding-left: 24px;
   margin-top: 20px;
+
   &--border-radius {
     border-radius: 10px;
   }
@@ -102,13 +114,23 @@
 @media (min-width: 768px) {
   .companion__caption {
     width: 100%;
+    font-size: 45px;
+  }
+
+  .companion__box {
+    justify-content: space-between;
   }
 
   .companion__text {
     width: 423px;
+    font-size: 28px;
   }
 
-  .companion__list  {
+  .companion__article {
+    width: 258px;
+  }
+
+  .companion__list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -122,6 +144,7 @@
   .companion__item-info {
     width: 285px;
     height: 285px;
+
     &--firsova {
       background-image: url("../../img/firsova-tablet@1x.jpg");
     }
@@ -131,7 +154,7 @@
     }
   }
 
-  .companion__link  {
+  .companion__link {
     width: 618px;
     font-size: 24px;
     margin-top: 80px;
@@ -161,7 +184,7 @@
     width: 100%;
   }
 
-  .companion__list  {
+  .companion__list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -175,6 +198,7 @@
     width: 285px;
     height: 285px;
     margin-right: 60px;
+
     &--firsova {
       background-image: url("../../img/firsova-tablet@1x.jpg");
     }
@@ -184,7 +208,7 @@
     }
   }
 
-  .companion__link  {
+  .companion__link {
     width: 280px;
     margin-top: 0;
   }

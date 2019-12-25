@@ -5,15 +5,16 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Погнали!</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="header__box container">
       <a class="header__logo" href="index.html"></a>
-      <a class="menu" href="#" aria-label="меню"></a>
+      <a class="header__menu" href="#" aria-label="меню"></a>
       <section class="nav">
         <h2 class="visually-hidden">навигация</h2>
         <a class="nav__logo" aria-label="Погнали"></a>
@@ -41,60 +42,136 @@
   <main class="main">
     <header class="header-companion header-companion--border-radius">
       <div class="header-companion container">
-        <h1 class="header-companion__caption">Попутчики</h1>
+        <h1 class="header-companion__caption header-companion__caption--border">Попутчики</h1>
+        <div class="header-companion__link-box">
+          <a class="header-companion__link-index">На главную</a>
+        </div>
       </div>
     </header>
-    <section class="filter">
-      <h2 class="filter__caption">Фильтрация по странам</h2>
-      <nav class="filter__continent continent">
-        <a class="continent__item" href="#">Европа</a>
-        <a class="continent__item" href="#">Азия</a>
-        <a class="continent__item" href="#">Америка</a>
-        <a class="continent__item" href="#">Острова</a>
-      </nav>
-      <ul class="filter__list">
-        <li class="filter__item"><a href="#">А</a></li>
-        <li class="filter__item"><a href="#">В</a></li>
-        <li class="filter__item"><a href="#">Б</a></li>
-        <li class="filter__item"><a href="#">Г</a></li>
-        <li class="filter__item"><a href="#">Д</a></li>
-        <li class="filter__item"><a href="#">Е</a></li>
-        <li class="filter__item"><a href="#">З</a></li>
-        <li class="filter__item"><a href="#">И</a></li>
-        <li class="filter__item"><a href="#">К</a></li>
-        <li class="filter__item"><a href="#">Л</a></li>
-        <li class="filter__item"><a href="#">М</a></li>
-        <li class="filter__item"><a href="#">Н</a></li>
-        <li class="filter__item"><a href="#">О</a></li>
-        <li class="filter__item"><a href="#">П</a></li>
-        <li class="filter__item"><a href="#">Р</a></li>
-        <li class="filter__item"><a href="#">С</a></li>
-        <li class="filter__item"><a href="#">Т</a></li>
-        <li class="filter__item"><a href="#">У</a></li>
-        <li class="filter__item"><a href="#">Ф</a></li>
-        <li class="filter__item"><a href="#">Х</a></li>
-        <li class="filter__item"><a href="#">Ч</a></li>
-        <li class="filter__item"><a href="#">Ш</a></li>
-        <li class="filter__item"><a href="#">Э</a></li>
-        <li class="filter__item"><a href="#">Ю</a></li>
-        <li class="filter__item"><a href="#">Я</a>
-        </li>
-      </ul>
-      <ul class="filter__country country">
-        <li class="country__item"><a href="#">Афганистан</a></li>
-        <li class="country__item"><a href="#">Албания</a></li>
-        <li class="country__item"><a href="#">Алжир</a></li>
-        <li class="country__item"><a href="#">Андорра</a></li>
-        <li class="country__item"><a href="#">Аргентина</a></li>
-        <li class="country__item"><a href="#">Армения</a></li>
-        <li class="country__item"><a href="#">Австралия</a></li>
-        <li class="country__item"><a href="#">Австрия</a></li>
-        <li class="country__item"><a href="#">Азербайджанм</a></li>
-      </ul>
-      <a class="filter__link">свернуть</a>
+    <section class="filter filter--border-radius">
+      <div class="filter__box container">
+        <h2 class="filter__caption">Фильтрация по странам</h2>
+        <nav class="filter__continent continent">
+          <a class="continent__item continent__item--active" href="#">Европа</a>
+          <a class="continent__item" href="#">Азия</a>
+          <a class="continent__item" href="#">Америка</a>
+          <a class="continent__item" href="#">Острова</a>
+        </nav>
+        <ul class="filter__list">
+          <li class="filter__item filter__item--active"><a href="#">А</a></li>
+          <li class="filter__item"><a href="#">В</a></li>
+          <li class="filter__item"><a href="#">Б</a></li>
+          <li class="filter__item"><a href="#">Г</a></li>
+          <li class="filter__item"><a href="#">Д</a></li>
+          <li class="filter__item"><a href="#">Е</a></li>
+          <li class="filter__item"><a href="#">З</a></li>
+          <li class="filter__item"><a href="#">И</a></li>
+          <li class="filter__item"><a href="#">К</a></li>
+          <li class="filter__item"><a href="#">Л</a></li>
+          <li class="filter__item"><a href="#">М</a></li>
+          <li class="filter__item"><a href="#">Н</a></li>
+          <li class="filter__item"><a href="#">О</a></li>
+          <li class="filter__item"><a href="#">П</a></li>
+          <li class="filter__item"><a href="#">Р</a></li>
+          <li class="filter__item"><a href="#">С</a></li>
+          <li class="filter__item"><a href="#">Т</a></li>
+          <li class="filter__item"><a href="#">У</a></li>
+          <li class="filter__item"><a href="#">Ф</a></li>
+          <li class="filter__item"><a href="#">Х</a></li>
+          <li class="filter__item"><a href="#">Ч</a></li>
+          <li class="filter__item"><a href="#">Ш</a></li>
+          <li class="filter__item"><a href="#">Э</a></li>
+          <li class="filter__item"><a href="#">Ю</a></li>
+          <li class="filter__item"><a href="#">Я</a>
+          </li>
+        </ul>
+        <ul class="filter__country country">
+          <li class="country__item"><a href="#">Афганистан</a></li>
+          <li class="country__item"><a href="#">Албания</a></li>
+          <li class="country__item"><a href="#">Алжир</a></li>
+          <li class="country__item"><a href="#">Андорра</a></li>
+          <li class="country__item"><a href="#">Аргентина</a></li>
+          <li class="country__item"><a href="#">Армения</a></li>
+          <li class="country__item"><a href="#">Австралия</a></li>
+          <li class="country__item"><a href="#">Австрия</a></li>
+          <li class="country__item"><a href="#">Азербайджанм</a></li>
+        </ul>
+        <a class="filter__link">свернуть</a>
+        <div class="filter__link-box">
+          <a class="filter__link-all">Показать все</a>
+          <a class="filter__link-other">
+            <span class="filter__link-dot"></span>
+            <span class="filter__link-dot"></span>
+            <span class="filter__link-dot"></span>
+          </a>
+        </div>
+      </div>
     </section>
     <section class="catalog">
       <div class="catalog__box container">
+        <div class="catalog__form-box">
+          <form class="catalog__form" action="GET">
+            <h2 class="catalog__form-caption">Подберите идеального попутчика</h2>
+            <div class="catalog__fieldset">
+              <legend class="catalog__form-legend">Хобби</legend>
+              <label class="catalog__form-label--hobby catalog__form-label" for="hobby-sport">
+                <input type="checkbox" class="catalog__form-input--hobby catalog__form-input"
+                  id="hobby-sport">Спортзал</label>
+              <label class="catalog__form-label--hobby catalog__form-label" for="hobby-hookan">
+                <input type="checkbox" class="catalog__form-input--hobby catalog__form-input"
+                  id="hobby-hookah">Кальян</label>
+              <label class="catalog__form-label--hobby catalog__form-label" for="hobby-sofa">
+                <input type="checkbox" class="catalog__form-input--hobby catalog__form-input"
+                  id="hobby-safa">диван</label>
+            </div>
+            <div class="catalog__fieldset">
+              <legend class="catalog__form-legend">Музыка</legend>
+              <label class="catalog__form-label--music catalog__form-label" for="music-rock">
+                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-rock">Тяжелый
+                рок</label>
+              <label class="catalog__form-label--music catalog__form-label" for="music-rep">
+                <input type="checkbox" class="catalog__form-input--music catalog__form-input" id="music-rep"> Русский
+                рэп</label>
+              <label class="catalog__form-label--music catalog__form-label" for="music-euro">
+                <input type="checkbox" class="catalog__form-input--music catalog__form-input"
+                  id="music-euro">Евроденс</label>
+            </div>
+            <div class="catalog__fieldset">
+              <legend class="catalog__form-legend">Еда</legend>
+              <label class="catalog__form-label--food catalog__form-label" for="food-meet">
+                <input type="checkbox" class="catalog__form-input--food catalog__form-input"
+                  id="food-meet">Мясоед</label>
+              <label class="catalog__form-label--food catalog__form-label" for="food-pp">
+                <input type="checkbox" class="catalog__form-input--food catalog__form-input" id="food-pp"> Сидит на
+                ПП</label>
+              <label class="catalog__form-label--food catalog__form-label" for="food--veg">
+                <input type="checkbox" class="catalog__form-input--food catalog__form-input"
+                  id="food-veg">Веган-сыроед</label>
+            </div>
+            <div class="catalog__fieldset">
+              <legend class="catalog__form-legend">Транспорт</legend>
+              <label class="catalog__form-label--auto catalog__form-label" for="auto-air">
+                <input class="catalog__form-input--auto catalog__form-input" id="auto-air" type="text">
+              </label>
+              <label class="catalog__form-label--auto catalog__form-label" for="auto-bus">
+                <input class="catalog__form-input--auto catalog__form-input" id="auto-bus" type="text">
+              </label>
+              <label class="catalog__form-label--auto catalog__form-label" for="auto-bike">
+                <input class="catalog__form-input--auto catalog__form-input" id="auto-bike" type="text">
+              </label>
+              <label class="catalog__form-label--auto catalog__form-label" for="auto-ped">
+                <input class="catalog__form-input--auto catalog__form-input" id="auto-ped" type="text">
+              </label>
+
+            </div>
+            <div class="catalog__fieldset">
+              <legend class="catalog__form-legend">Левел</legend>
+              <label class="catalog__form-label" for="level"></label>
+              <input class="catalog__form-input--level catalog__form-input" id="level" type="text">
+            </div>
+            <button class="catalog__form-btn" type="submit">Показать</button>
+          </form>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-list__item catalog-item">
             <div class="catalog-item__wrapper">
@@ -128,7 +205,7 @@
                 <span class="catalog-item__section-text">транспорт:</span>
               </p>
               <div class="catalog-item__transport transport">
-               
+
               </div>
               <p class="catalog-item__section catalog-item__section--level">
                 <span class="catalog-item__section-text">левел:</span>
@@ -178,8 +255,8 @@
               <p class="catalog-item__section catalog-item__section--transport">
                 <span class="catalog-item__section-text">транспорт:</span>
               </p>
-              <div class="catalog-item__transport transport">
-               
+              <div class="catalog-item__transport">
+
               </div>
               <p class="catalog-item__section catalog-item__section--level">
                 <span class="catalog-item__section-text">левел:</span>
@@ -231,7 +308,7 @@
                 <span class="catalog-item__section-text">транспорт:</span>
               </p>
               <div class="catalog-item__transport transport">
-               
+
               </div>
               <p class="catalog-item__section catalog-item__section--level">
                 <span class="catalog-item__section-text">левел:</span>
@@ -282,7 +359,7 @@
                 <span class="catalog-item__section-text">транспорт:</span>
               </p>
               <div class="catalog-item__transport transport">
-                
+
               </div>
               <p class="catalog-item__section catalog-item__section--level">
                 <span class="catalog-item__section-text">левел:</span>
@@ -306,9 +383,17 @@
       </div>
     </section>
     <section class="arrow">
-      <div class="arrow__box container">
-        <a class="arrow__link" href="#" aria-label="назад"></a>
-        <a class="arrow__link" href="#" aria-label="вперед"></a>
+      <div class="container">
+        <div class="arrow__box">
+          <div class="arrow__page">
+            <a class="arrow__page-item" href="#">1</a>
+            <a class="arrow__page-item" href="#">2</a>
+            <a class="arrow__page-item" href="#">3</a>
+            <a class="arrow__page-item" href="#">4</a>
+          </div>
+          <a class="arrow__link" href="#" aria-label="назад"></a>
+          <a class="arrow__link" href="#" aria-label="вперед"></a>
+        </div>
       </div>
     </section>
   </main>

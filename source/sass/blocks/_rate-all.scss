@@ -2,6 +2,7 @@
   background-color: $bac-color-bissenes;
   margin-top: 0;
   padding-bottom: 38px;
+  width: 250px;
 }
 
 .rate-all__caption {
@@ -34,10 +35,48 @@
 
 .rate-all__list {
   padding-left: 0;
-  width: 200px;
 }
 
 .rate-all__item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+
+  &::after {
+    content: "";
+    font-family: $font;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.38;
+    font-size: 16px;
+    letter-spacing: 0.022;
+    color: $color-white;
+    display: block;
+    padding: 5px 12px 5px 12px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+  }
+
+  &:first-child::after {
+    content: "1";
+    background-color: $color-add-3;
+  }
+
+  &:nth-child(2)::after {
+    content: "2";
+    background-color: $color-add-2;
+  }
+
+  &:last-child::after {
+    content: "3";
+    background-color: $color-yellow;
+  }
+}
+
+.rate-all__item-text {
   font-family: $font;
   font-weight: 300;
   font-style: normal;
@@ -46,13 +85,22 @@
   letter-spacing: 0.022;
   color: $color-text-gray;
   list-style: none;
+  border-top: 1px solid $color-text-gray;
+  opacity: 0.5;
+  padding-top: 14px;
+  width: 200px;
+}
 
-  &--border {
-    border-top: 1px solid $color-text-gray;
-    opacity: 0.5;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
+.rate-all__item-cost {
+  font-family: $font;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.38;
+  font-size: 16px;
+  letter-spacing: 0.022;
+  color: $color-text-gray;
+  list-style: none;
+  margin-bottom: 15px;
 }
 
 .rate-all__link {
@@ -71,6 +119,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .rate-all__caption {
@@ -80,6 +129,7 @@
     width: 100%;
     position: relative;
     margin-bottom: 46px;
+    text-align: center;
 
     &::after {
       content: "";
@@ -102,7 +152,7 @@
   .rate-all__item {
     font-size: 28px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 562px;
 
     &--border {
@@ -111,6 +161,24 @@
       padding-top: 14px;
       padding-bottom: 14px;
     }
+
+    &::after {
+      left: 0;
+      right: auto;
+      padding: 16px 22px 15px 21px;
+    }
+  }
+
+  .rate-all__item-text {
+    text-align: start;
+  }
+
+  .rate-all__item-cost {
+    border-top: 1px solid #444444;
+    opacity: 0.5;
+    padding-top: 14px;
+    width: 200px;
+    text-align: end;
   }
 
   .rate-all__link {
@@ -136,12 +204,13 @@
   }
 
   .rate-all__list {
-    width: 813px;
+    width: 100%;
   }
 
   .rate-all__item {
-    font-size: 28px;
-    width: 813px;
+    width: 100%;
+    padding-left: 62px;
+    justify-content: flex-start;
 
     &--border {
       border-top: 1px solid $color-text-gray;
@@ -149,6 +218,23 @@
       padding-top: 14px;
       padding-bottom: 14px;
     }
+
+    &::after {
+      left: -20px;
+      top: 1px;
+      padding: 14px 27px 16px 26px;
+      font-size: 28px;
+    }
+  }
+
+  .rate-all__item-text {
+    font-size: 28px;
+    width: 406px;
+  }
+
+  .rate-all__item-cost {
+    font-size: 28px;
+    width: 406px;
   }
 
   .rate-all__link {
@@ -157,5 +243,6 @@
     width: 100%;
     text-align: left;
     padding-left: 71px;
+    color: $color-tarife;
   }
 }

@@ -6,6 +6,13 @@
   flex-wrap: wrap;
   padding-top: 25px;
   position: relative;
+  z-index: 1;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
 }
 
 .header__logo {
@@ -17,7 +24,19 @@
   background-size: auto;
 }
 
+.header__menu {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: $color-white;
+  box-shadow: 0 5px 0 0 $color-white;
+}
+
 @media (min-width: 768px) {
+  .header__box {
+    width: 689px;
+  }
+
   .header {
     padding-top: 30px;
   }
@@ -33,6 +52,7 @@
   .header {
     padding-top: 44px;
   }
+
   .header__logo {
     background-image: url("../../img/logo-desktop-white@1x.png");
   }

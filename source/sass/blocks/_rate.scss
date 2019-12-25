@@ -2,10 +2,20 @@
   background-color: $bac-color-bissenes;
   padding-top: 82px;
   padding-bottom: 18px;
+  position: relative;
+  z-index: 2;
+  margin-top: -20px;
+
   &--border-radius {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
+}
+
+.rate__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 1440px) {

@@ -1,5 +1,21 @@
 .filter {
   background-color: $color-filter;
+  position: relative;
+  margin-top: -20px;
+  padding-bottom: 27px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  &--border-radius {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+.filter__box {
+  padding-top: 60px;
 }
 
 .filter__caption {
@@ -11,6 +27,24 @@
   letter-spacing: 0.022;
   text-transform: uppercase;
   color: $color-dark-blue;
+  margin: 0;
+
+  padding-left: 27px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    background-color: transparent;
+    background-image: url("../../img/filter.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    left: 0;
+    top: 5px;
+  }
 }
 
 .filter__link {
@@ -22,4 +56,142 @@
   font-size: 16.5px;
   letter-spacing: 0.029;
   color: $color-text-blue;
+  width: 270px;
+  text-align: center;
+  display: block;
+  background-color: $color-gray-btn;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  border-radius: 20px;
+}
+
+.filter__continent {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.filter__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 225px;
+  margin-bottom: 67px;
+}
+
+.filter__item {
+  background-color: $color-white;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.29;
+  width: 45px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &--active {
+    background-color: $color-btn;
+  }
+}
+
+.filter__item a {
+  color: $color-btn;
+  text-decoration: none;
+}
+
+.filter__item--active > a {
+  color: $color-white;
+}
+
+.filter__country {
+  padding-left: 0;
+  list-style: none;
+}
+
+.filter__link-box {
+  display: none;
+}
+
+.filter__link-all {
+  display: none;
+}
+
+.filter__link-other {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .filter__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .filter__caption {
+    display: none;
+  }
+
+  .filter__list {
+    display: none;
+  }
+
+  .filter__country {
+    display: none;
+  }
+
+  .filter__link {
+    display: none;
+  }
+
+  .filter__link-all {
+    display: block;
+    font-family: $font;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+    color: $color-dark-blue;
+    margin-right: 20px;
+  }
+
+  .filter__continent {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 420px;
+    margin: 0;
+  }
+
+  .filter__link-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 230px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .filter__link-other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 27px;
+  }
+
+  .filter__link-dot {
+    width: 5px;
+    height: 5px;
+    background-color: $color-dark-blue;
+    border-radius: 50%;
+    display: block;
+  }
 }

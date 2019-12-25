@@ -1,4 +1,4 @@
-.info__item a{
+.info__item a {
   font-family: $font;
   font-size: 16px;
   font-weight: bold;
@@ -13,7 +13,7 @@
 }
 
 @media (min-width: 768px) {
-  .info__item a{
+  .info__item a {
     font-size: 28px;
   }
 
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: 1440px) {
-  .info__item a{
+  .info__item a {
     display: none;
   }
 
@@ -40,7 +40,10 @@
       right: 50px;
       border-radius: 50%;
     }
-    &:last-child:before {
+  }
+
+  .info__item:last-child {
+    &::before {
       right: 0;
       background-color: $color-add-2;
     }
