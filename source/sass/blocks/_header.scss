@@ -12,7 +12,7 @@
 .header__box {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  width: 270px;
 }
 
 .header__logo {
@@ -32,7 +32,8 @@
   width: 25px;
   height: 3px;
   background-color: $color-white;
-  box-shadow: 0 5px 0 0 $color-white;
+  box-shadow: 0 8px 0 0 #ffffff;
+  margin-top: 4px;
 }
 
 @media (min-width: 768px) {

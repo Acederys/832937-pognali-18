@@ -13,9 +13,9 @@
 }
 
 .about__box {
-  padding-top: 40px;
+  padding-top: 12px;
   padding-left: 20px;
-  padding-bottom: 85px;
+  padding-bottom: 67px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -27,8 +27,13 @@
   font-style: normal;
   line-height: 1;
   font-size: 24px;
-  letter-spacing: 0.024;
+  letter-spacing: 0.024px;
   color: $color-caption;
+}
+
+.about__box-text {
+  margin-top: -15px;
+  padding-left: 3px;
 }
 
 .about__text {
@@ -37,8 +42,9 @@
   font-style: normal;
   line-height: 1.38;
   font-size: 16px;
-  letter-spacing: 0.022;
+  letter-spacing: 0.05px;
   color: $color-white;
+  width: 212px;
 }
 
 .about__article {
@@ -47,8 +53,11 @@
   font-style: normal;
   line-height: 1.38;
   font-size: 16px;
-  letter-spacing: 0.022;
+  letter-spacing: 0.022px;
   color: $color-white;
+
+  width: 200px;
+  margin-top: 18px;
 }
 
 .about__link {
@@ -101,7 +110,7 @@
     font-style: normal;
     line-height: 1;
     font-size: 24px;
-    letter-spacing: 0.024;
+    letter-spacing: 0.024px;
     color: $color-btn;
 
     display: block;
