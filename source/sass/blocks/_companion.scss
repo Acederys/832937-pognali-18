@@ -1,13 +1,18 @@
 .companion {
   background-color: $color-dark-blue;
-  background-image: url("../img/rogovaya-back-mobile@1x.png");
+  background-image: url("../../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
 
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/rogovaya-mobile@2x.jpg");
+  }
+
   margin-top: -30px;
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 30px;
   position: relative;
-  z-index: 3;
+  z-index: 4;
 
   &--border-radius {
     border-bottom-left-radius: 25px;
@@ -23,6 +28,10 @@
 
 .companion__caption-box {
   padding-left: 25px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .companion__caption {
@@ -45,6 +54,9 @@
   font-size: 16px;
   letter-spacing: 0.022px;
   color: $color-white;
+  margin-top: 20px;
+  margin-bottom: 0;
+  width: 216px;
 }
 
 .companion__article {
@@ -55,6 +67,7 @@
   font-size: 16px;
   letter-spacing: 0.022px;
   color: $color-white;
+  margin-top: 21px;
 }
 
 .companion__list {
@@ -63,11 +76,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 41px;
 }
 
 .companion__item {
   list-style: none;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .companion__item-info {
@@ -75,6 +89,9 @@
   height: 270px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 
   &--firsova {
     background-image: url("../../img/firsova-mobile@1x.jpg");
@@ -89,6 +106,65 @@
   }
 }
 
+.companion__item-info--firsova {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/firsova-mobile@2x.jpg");
+  }
+}
+
+.companion__item-info--demin {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/demin-mobile@2x.jpg");
+  }
+}
+
+.companion__level-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  border: 2px solid $color-caption;
+  padding: 9px 4px 0px 3px;
+  max-height: 60px;
+  background-color: $color-bac-black;
+  margin-top: 18px;
+  margin-left: 16px;
+}
+
+.companion__level-number {
+  margin: 0;
+  font-family: $font;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.024px;
+  text-align: center;
+  color: $color-white;
+  width: 100%;
+  margin-bottom: -6px;
+  margin-left: -5px;
+}
+
+.companion__level {
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.014px;
+  text-align: center;
+  color: $color-white;
+  width: 29px;
+
+  border-top: 1px solid $color-white;
+}
+
 .companion__link {
   background-color: $color-yellow;
   font-family: $font;
@@ -101,17 +177,38 @@
   text-decoration: none;
 
   width: 270px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   padding-left: 24px;
-  margin-top: 20px;
+  padding-right: 24px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   &--border-radius {
     border-radius: 10px;
   }
 }
 
+.companion__link-svg {
+  polygon {
+    fill: $color-btn;
+  }
+}
+
 @media (min-width: 768px) {
+
+  .companion {
+    background-image: url("../../img/rogovaya-tablet@1x.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/rogovaya-tablet@2x.jpg");
+    }
+  }
+
   .companion__caption {
     width: 100%;
     font-size: 45px;
@@ -151,6 +248,22 @@
 
     &--demin {
       background-image: url("../../img/demin-tablet@1x.jpg");
+    }
+  }
+
+  .companion__item-info--firsova {
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/firsova-tablet@2x.jpg");
+    }
+  }
+
+  .companion__item-info--demin {
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/demin-tablet@2x.jpg");
     }
   }
 

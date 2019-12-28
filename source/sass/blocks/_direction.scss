@@ -6,13 +6,20 @@
   border-bottom-right-radius: 25px;
   position: relative;
   margin-top: -20px;
-  z-index: 4;
+  z-index: 5;
 }
 
 .direction__box {
   padding-top: 72px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.direction__caption-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -25,6 +32,8 @@
   letter-spacing: 0.024pxpx;
   color: $color-caption;
   padding-left: 24px;
+  margin-bottom: 2px;
+  width: 100%;
 }
 
 .direction__text {
@@ -37,12 +46,13 @@
   color: $color-text-gray;
 
   padding-left: 24px;
+  width: 219px;
 }
 
 .direction__list {
   padding-left: 0;
   list-style: none;
-  margin-top: 42px;
+  margin-top: 43px;
 }
 
 .direction__item {
@@ -50,8 +60,8 @@
 }
 
 .direction__item-image {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   width: 270px;
   height: 110px;
   z-index: 1;
@@ -68,13 +78,23 @@
   color: $color-btn;
   text-decoration: none;
 
-  padding-top: 23px;
+  padding-top: 22px;
   padding-left: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
+  padding-right: 23px;
   width: 270px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   &--border-radius {
     border-radius: 10px;
+  }
+}
+
+.direction__link-svg {
+  polygon {
+    fill: $color-btn; 
   }
 }
 

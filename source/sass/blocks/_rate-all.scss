@@ -3,6 +3,7 @@
   margin-top: 0;
   padding-bottom: 38px;
   width: 250px;
+  padding-left: 14px;
 }
 
 .rate-all__caption {
@@ -28,13 +29,25 @@
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    right: -204px;
-    top: -17px;
+    right: -143px;
+    top: -11px;
+  }
+}
+
+.rate-all__caption::after {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/rates@2x.png");
   }
 }
 
 .rate-all__list {
   padding-left: 0;
+  margin-top: -5px;
+  margin-left: 0;
+  margin-bottom: 30px;
+  margin-right: 0;
 }
 
 .rate-all__item {
@@ -57,7 +70,8 @@
     padding: 5px 12px 5px 12px;
     border-radius: 50%;
     position: absolute;
-    right: 0;
+    right: -7px;
+    top: 9px;
   }
 
   &:first-child::after {
@@ -87,7 +101,7 @@
   list-style: none;
   border-top: 1px solid $color-text-gray;
   opacity: 0.5;
-  padding-top: 14px;
+  padding-top: 12px;
   width: 200px;
 }
 
@@ -100,7 +114,7 @@
   letter-spacing: 0.022px;
   color: $color-text-gray;
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .rate-all__link {
@@ -142,6 +156,14 @@
       position: absolute;
       right: -204px;
       top: -17px;
+    }
+  }
+
+  .rate-all__caption::after {
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/rates@2x.png");
     }
   }
 

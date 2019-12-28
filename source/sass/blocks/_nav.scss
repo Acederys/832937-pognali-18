@@ -14,6 +14,11 @@
   background-image: url("../../img/logo-mobile-blue@1x.png");
   background-repeat: no-repeat;
   background-size: auto;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/logo-mobile-blue@2x.png");
+  }
 }
 
 .nav__list {
@@ -89,6 +94,11 @@
     width: 198px;
     height: 46px;
     background-image: url("../../img/logo-tablet-blue@1x.png");
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/logo-tablet-blue@2x.png");
+    }
   }
 
   .nav__list {
@@ -158,6 +168,11 @@
     width: 198px;
     height: 46px;
     background-image: url("../../img/logo-desktop-blue@1x.png");
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/logo-desktop-blue@2x.png");
+    }
   }
 
   .nav__list {

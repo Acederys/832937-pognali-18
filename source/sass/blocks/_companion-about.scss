@@ -6,25 +6,116 @@
   flex-wrap: wrap;
   padding-bottom: 22px;
   width: 270px;
+  padding-top: 24px;
 
   &--border-radius {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
+}
+
+.companion-about__contry-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  margin-top: -36px;
+
+}
+
+.companion-about__contry {
+  display: block;
+  width: 35px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin-right: 18px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--shri-lanka {
+    background-image: url("../../img/flag-sri-lanka.svg");
+  }
+
+  &--tailand {
+    background-image: url("../../img/flag-thailand.svg");
+  }
+
+  &--seychelles {
+    background-image: url("../../img/flag-seychelles.svg");
+  }
+
+  &--belgium {
+    background-image: url("../../img/flag-belgium.svg");
+  }
+
+  &--czech {
+    background-image: url("../../img/flag-czech.svg");
+  }
+}
+
+.companion-about__caption {
+  font-family: $font;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.021px;
+  text-align: center;
+  color: $color-btn;
+  margin: 0;
 }
 
 .companion-about__text {
   font-family: $font;
   font-size: 16px;
   font-weight: 400;
-  font-style: normal;
+  font-style: 0.018px;
   line-height: 1.13;
   letter-spacing: normal;
   color: $color-text-gray;
 
-  width: 177px;
+  width: 180px;
   text-align: center;
   margin-bottom: 17px;
+}
+
+.companion-about__transport {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.companion-abot__transport-item {
+  display: block;
+  width: 24px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  opacity: 0.15;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.companion-abot__transport-svg {
+  height: 21px;
+
+  polygon {
+    fill: $color-btn;
+  }
 }
 
 @media (min-width: 768px) {

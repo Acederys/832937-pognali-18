@@ -1,7 +1,7 @@
 .main-footer {
   background-color: $color-yellow;
   position: relative;
-  z-index: 0;
+  z-index: 1;
   margin-top: -19px;
   padding-bottom: 35px;
 
@@ -13,9 +13,9 @@
 
 .main-footer__box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 57px;
+  padding-top: 33px;
 }
 
 .main-footer__adress {
@@ -30,21 +30,26 @@
   width: 210px;
   padding-left: 61px;
   position: relative;
+}
 
-  &::before {
-    content: "";
-    background-color: $color-blue-link;
-    display: block;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("../../img/contacts-location.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
+.main-footer__adress-box {
+  background-color: $color-blue-link;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+
+span.main-footer__adress-box svg {
+  position: relative;
+  top: 10px;
+
+  polygon {
+    fill: $color-yellow;
   }
 }
 
@@ -60,13 +65,18 @@
   display: block;
   background-color: transparent;
   border: 3px solid $color-dark-blue;
-  border-radius: 5px;
-  padding-top: 24px;
-  padding-bottom: 21px;
-  padding-left: 24px;
+  border-radius: 10px;
+  padding-top: 16px;
+  padding-bottom: 19px;
+  padding-left: 20px;
   padding-right: 23px;
   width: 270px;
-  margin-top: 35px;
+  margin-top: 34px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 @media (min-width: 768px) {

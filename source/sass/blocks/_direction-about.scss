@@ -7,13 +7,38 @@
   padding-left: 23px;
   padding-top: 25px;
   padding-right: 25px;
-  padding-bottom: 25px;
-  margin-top: -10px;
+  padding-bottom: 33px;
+  margin-top: -14px;
   z-index: 2;
   position: relative;
 
   &--border-radius {
     border-radius: 10px;
+  }
+}
+
+.direction-about__contry {
+  display: block;
+  width: 35px;
+  height: 24px;
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &--tailand {
+    background-image: url("../../img/flag-thailand.svg");
+  }
+
+  &--france {
+    background-image: url("../../img/flag-france.svg");
+  }
+
+  &--czech {
+    background-image: url("../../img/flag-czech.svg");
   }
 }
 
@@ -39,15 +64,25 @@
   color: $color-text-contry;
 }
 
+.direction-about__like-svg {
+
+  polygon {
+    fill: $bac-color-bissenes;
+  }
+}
+
 .direction-about__text {
   font-family: $font;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.88;
   letter-spacing: 0.03px;
+  line-height: 0;
   color: $color-text-contry;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 2px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (min-width: 768px) {

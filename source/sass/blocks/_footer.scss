@@ -1,9 +1,10 @@
 .footer {
   background-color: $color-white;
   padding-top: 38px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  margin-top: -241px;
+  padding-bottom: 15px;
 
   &--border-radius {
     border-top-right-radius: 25px;
@@ -11,11 +12,21 @@
   }
 }
 
+.footer__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .footer__logo {
   display: block;
   width: 100px;
   height: 15px;
-  background-image: url("../../img/logo-mobile-blue@1x.png");
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/logo-mobile-blue@2x.png");
+    background-size: 100%;
+  }
 }
 
 .footer__social-list {
@@ -24,6 +35,8 @@
   flex-wrap: wrap;
   list-style: none;
   width: 100%;
+  margin-top: 43px;
+  padding-left: 0;
 }
 
 @media (min-width: 768px) {
@@ -37,6 +50,12 @@
     height: 52px;
     background-repeat: no-repeat;
     background-size: auto;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/logo-tablet-blue@2x.png");
+      background-size: 100%;
+    }
   }
 
   .footer__social-list {
@@ -59,6 +78,12 @@
     height: 52px;
     background-repeat: no-repeat;
     background-size: auto;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/logo-desktop-blue@2x.png");
+      background-size: 100%;
+    }
   }
 
   .footer__social-list {

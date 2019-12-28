@@ -4,25 +4,10 @@
   height: 45px;
   background-color: $color-yellow;
   border-radius: 50%;
+}
 
-  &:first-child {
-    background-image: url("../../img/facebook.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30%;
-  }
-
-  &:nth-child(2) {
-    background-image: url("../../img/vk.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 55%;
-  }
-
-  &:last-child {
-    background-image: url("../../img/instagram.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 45%;
-  }
+.social__item a {
+  position: relative;
+  top: 12px;
+  left: 13px;
 }
