@@ -4,21 +4,44 @@
   padding-top: 27px;
   padding-left: 27px;
   padding-right: 27px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav.nav__js {
+  position: absolute;
+}
+
+.nav--closed {
   display: none;
+}
+
+.nav--opened {
+  display: flex;
 }
 
 .nav__logo {
   display: block;
   width: 96px;
   height: 15px;
-  background-image: url("../../img/logo-mobile-blue@1x.png");
-  background-repeat: no-repeat;
-  background-size: auto;
 
   @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
     background-image: url("../../img/logo-mobile-blue@2x.png");
+    background-size: 96px 15px;
   }
+}
+
+.nav__close {
+  height: 20px;
+  border: none;
+  width: 20px;
+  background-color: $color-white;
+  background-image: url("../../img/menu-close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .nav__list {
@@ -27,6 +50,7 @@
   flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
+  margin-top: 69px;
 }
 
 .nav__item a {
@@ -52,13 +76,14 @@
 
   display: block;
   background-color: $color-yellow;
-  padding-top: 18px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   width: 270px;
   text-align: center;
+  margin-top: 33px;
 
   &--border-radius {
-    border-radius: 20px;
+    border-radius: 32px;
   }
 }
 
@@ -68,37 +93,57 @@
   flex-wrap: wrap;
   padding-left: 0;
   list-style: none;
+  margin-top: 50px;
 }
 
 .nav__social.social {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 58px;
+  margin-top: 16px;
+  padding-left: 0;
+  width: 100%;
 }
 
 .nav__social-item.social__item {
   background-color: transparent;
+  width: 37px;
+
+  &:nth-child(2) {
+    margin-right: 11px;
+  }
+}
+
+.nav__social-item-svg {
+  polygon {
+    fill: $color-nav-social;
+  }
 }
 
 
 @media (min-width: 768px) {
   .nav {
-    width: 768px;
-    padding-top: 43px;
-    padding-left: 39px;
-    display: none;
+    width: 188px;
+    padding: 0;
+    display: flex;
+    background-color: transparent;
   }
 
   .nav__logo {
     width: 198px;
     height: 46px;
     background-image: url("../../img/logo-tablet-blue@1x.png");
+    display: none;
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
       background-image: url("../../img/logo-tablet-blue@2x.png");
+      display: none;
     }
+  }
+
+  .nav__close {
+    display: none;
   }
 
   .nav__list {
@@ -107,10 +152,12 @@
     flex-wrap: wrap;
     list-style: none;
     padding-left: 99px;
+    display: none;
   }
 
   .nav__item {
     width: 100%;
+    display: none;
   }
 
   .nav__item a {
@@ -125,10 +172,16 @@
   }
 
   .nav__link {
-    width: 189px;
-    position: absolute;
-    top: 40px;
-    right: 40px;
+    position: relative;
+    margin: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    height: 50px;
+    padding-top: 9px;
+    padding-left: 10px;
+    font-size: 20px;
   }
 
   .nav__info {
@@ -138,6 +191,7 @@
     padding-left: 0;
     list-style: none;
     margin-left: 97px;
+    display: none;
   }
 
   .nav__social.social {
@@ -145,6 +199,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 58px;
+    display: none;
   }
 
   .nav__social-item.social__item {

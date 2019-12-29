@@ -146,8 +146,11 @@
 
 @media (min-width: 768px) {
   .main-header {
-    padding-top: 75px;
+    padding-top: 55px;
     background-image: url("../../img/globe-back-tablet@1x.jpg");
+    background-position: -356px 287px;
+    background-size: 1476px 612px;
+    padding-bottom: 354px;
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -155,12 +158,29 @@
     }
   }
 
+  .main-header__box {
+    justify-content: flex-start;
+  }
+
   .main-header__caption {
-    width: 618px;
+    width: 397px;
+    font-size: 60px;
+    line-height: 1.17;
+    letter-spacing: 0.07px;
+    max-height: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 
   .main-header__caption::after {
     background-image: url("../../img/traveller-illustration-tablet@1x.png");
+    position: relative;
+    right: -61px;
+    top: 19px;
+    background-position: center;
+    background-size: 99%;
+    height: 451px;
+    width: 376px;
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -168,8 +188,29 @@
     }
   }
 
+  .main-header__list {
+    display: none;
+  }
+
+  .main-header__blockquote {
+    width: 330px;
+    margin-top: 68px;
+    padding-left: 14px;
+  }
+
   .main-header__blockquote-text {
-    width: 100%;
+    width: 270px;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03px;
+  }
+
+  .main-header__blockquote-cite {
+    font-size: 21px;
+    line-height: 1.19;
+    letter-spacing: 0.024px;
+    width: 250px;
+    margin-top: 19px;
   }
 
   .main-header__phone {

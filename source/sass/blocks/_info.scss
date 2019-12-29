@@ -6,10 +6,38 @@
   letter-spacing: 0.022px;
   text-transform: uppercase;
   color: $color-dark-blue;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
 }
 
 .info__item {
-  padding-left: 61px;
+  width: 100%;
+}
+
+.info__item-svg-box {
+  display: block;
+  width: 45px;
+  height: 45px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: $color-blue-link;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.info__item-svg {
+    margin-top: 10px;
+    margin-left: 8px;
+
+  polygon {
+    fill: $color-yellow;
+  }
 }
 
 @media (min-width: 768px) {
@@ -29,6 +57,7 @@
   }
 
   .info__item {
+
     &::before {
       content: "";
       display: block;

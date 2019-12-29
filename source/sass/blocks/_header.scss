@@ -42,7 +42,11 @@
   }
 
   .header {
-    padding-top: 30px;
+    padding-top: 26px;
+  }
+
+  .header__menu {
+    margin-top: 20px;
   }
 
   .header__logo {
@@ -52,9 +56,8 @@
 
   .header__logo img {
     display: block;
-    width: 198px;
+    width: 173px;
     height: auto;
-    margin: 0 auto;
   }
 }
 
