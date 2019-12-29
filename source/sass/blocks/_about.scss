@@ -74,44 +74,62 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 380px;
-      position: absolute;
-      right: 0;
-      height: 550px;
-      background-image: url("../../img/about-tablet@1x.png");
-      background-repeat: no-repeat;
-
-      @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-        background-image: url("../../img/about-tablet@2x.png");
-      }
-    }
+    background-image: url("../../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 376px 548px;
+    background-position: 387px 84px;
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
       background-image: url("../../img/about-tablet@2x.png");
     }
+
+    &--border-radius {
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
   }
 
   .about__caption {
     width: 100%;
+    font-size: 45px;
+    line-height: 1;
+    letter-spacing: 0.045px;
+    margin-top: 65px;
+    margin-left: 14px;
   }
 
   .about__box {
     width: 688px;
+    padding-bottom: 88px;
   }
 
   .about__box-text {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 310px;
+    margin-bottom: 33px;
+    margin-top: 3px;
+    padding-left: 15px;
+  }
+
+  .about__text {
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.13px;
+    width: 303px;
+    margin-top: 0;
+  }
+
+  .about__article {
+    font-size: 21px;
+    line-height: 1.19;
+    letter-spacing: 0.024px;
+    width: 291px;
+    margin-top: 35px;
   }
 
   .about__box-link {
     width: 100%;
+    padding-left: 15px;
   }
 
   .about__link {
@@ -125,12 +143,22 @@
 
     display: block;
     width: 275px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding-top: 25px;
     padding-left: 35px;
-    padding-bottom: 25px;
-    padding-right: 125px;
+    padding-bottom: 31px;
+    padding-right: 36px;
     background-color: $color-yellow;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .about__link-svg {
+    polygon {
+      fill: $color-btn; 
+    }
   }
 }
 
